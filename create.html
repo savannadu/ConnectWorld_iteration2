@@ -1,0 +1,52 @@
+<!-- navbar to push content below --> 
+<nav class="navbar"></nav><br/>
+<!--custom nav bar-->
+<div class="nav-bar">
+    <!--simulate mobile taskbar-->
+    <div id='dummy-taskbar'>
+        <span id="dummy-time" class="pull-left">8:37PM</span>
+        <span id="dummy-battery" class="pull-right">Singtel 3G 63%</span>
+        <span class="pull-right glyphicon glyphicon-signal"></span>
+    </div>
+    <div class="option-btn pull-right">
+        <div class="glyph text-center"></div>
+    </div>
+    <div class="option-btn pull-left" ng-click="goToPage();">
+        <div class="glyph text-center"><span class="glyphicon glyphicon-arrow-left"></span></div>
+    </div>
+
+    <div class='col-centered text-center textOver pageTitle'>Create Event</div>
+    
+</div>
+
+<!--container to change content using angular-->
+<div class="container-fluid">
+    <div class="grey-text"><h6>Personal</h6></div>
+    <div>
+        <div class="list-group">
+            <a href="index.html#/personal-event" class="list-group-item item-height no-padding">
+                <div class="pull-left type personal"></div>
+                <div class="group-item-container">
+                    <div class="text-middle text-middle50"><h4 class="list-group-item-heading">Personal Event</h4></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="grey-text"><h6>Group meeting</h6></div>
+    <div>
+        <div class="list-group">
+            <a href="index.html#/group-meeting" ng-click="setGroup(g.title)" class="list-group-item item-height no-padding" ng-repeat="g in thisGroupsObjData track by $index">
+                <div class="pull-left type group"></div>
+                <div class="group-item-container">
+                    <div class="text-middle text-middle50"><h4 class="list-group-item-heading">{{g.title}}</h4></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>

@@ -1,0 +1,60 @@
+<!-- navbar to push content below --> 
+<nav class="navbar"></nav><br/>
+<!--custom nav bar-->
+<div class="nav-bar">
+    <!--simulate mobile taskbar-->
+    <div id='dummy-taskbar'>
+        <span id="dummy-time" class="pull-left">8:37PM</span>
+        <span id="dummy-battery" class="pull-right">Singtel 3G 63%</span>
+        <span class="pull-right glyphicon glyphicon-signal"></span>
+    </div>
+    <div class="option-btn pull-left" onclick="window.location = 'index.html#/group'">
+        <div class="glyph text-center"><span class="glyphicon glyphicon-arrow-left"></span></div>
+    </div>
+    <div class="option-btn pull-right" ng-click="addGroup()">
+        <div class="glyph text-center"><span class="glyphicon glyphicon-ok"></span></div>
+    </div>
+    <div class='col-centered text-center'><h5>New Group</h5></div>
+</div>
+
+<!--container to change content using angular-->
+<div class="container-fluid full-height" style="background-color: #ffffff;">
+
+    <div class="item-group">
+        <input type="text" ng-model="groupName" class="custom-input" placeholder="Group name">
+    </div>
+    
+    <div class="grey-text"><h6>Members</h6></div>
+    <!-- Preloading member list -->
+
+    <div id="memberList">
+        <div class="item-group" id="memberGroup">
+            <div class="item-panel" ng-repeat="member in members track by $index">
+                <div ng-if="member == thisUserWDot" class="pull-right adminBadge">admin</div>
+                <div ng-if="member != thisUserWDot" class="pull-right"><div class="glyphicon glyphicon-remove deleteMembers" ng-click="removeMember($index)"></div></div>
+                <span class="text-middle" ng-if="member == thisUserWDot">You</span>
+                <span class="text-middle" ng-if="member != thisUserWDot">{{member}}</span>
+            </div>    
+        </div>
+    </div>
+    
+    
+    <!-- END Preloading member list -->
+    
+    <div id='newMemberInput'>
+        <div class="input-group">
+            <input id='newMemberName' type='text' class='form-control' placeholder='Enter new member student ID' required>
+            <div class="input-group-btn">
+                <button class='btn btn-default' ng-click='addMember();'>Add</button>
+                <button class='btn btn-danger' type='button' ng-click='closeAddMembersField();'>Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Member button panel -->
+
+    <div id='addMemberBtn' class="fullWidth btn btn-default" ng-click="showAddMembersField();">
+        <span><b>Add Member</b></span>    
+    </div>
+
+</div>

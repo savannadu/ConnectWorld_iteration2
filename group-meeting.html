@@ -1,0 +1,204 @@
+<!-- navbar to push content below --> 
+<nav class="navbar"></nav><br/>
+<!--custom nav bar-->
+<div class="nav-bar">
+    <!--simulate mobile taskbar-->
+    <div id='dummy-taskbar'>
+        <span id="dummy-time" class="pull-left">8:37PM</span>
+        <span id="dummy-battery" class="pull-right">Singtel 3G 63%</span>
+        <span class="pull-right glyphicon glyphicon-signal"></span>
+    </div>
+    <div class="option-btn pull-left" ng-click="backToCreate();">
+        <div class="glyph text-center"><span class="glyphicon glyphicon-arrow-left"></span></div>
+    </div>
+    <div class="option-btn pull-right" ng-click="createGroupMeeing();">
+        <div class="glyph text-center"><span class="glyphicon glyphicon-ok"></span></div>
+    </div>
+    <div class='col-centered text-center textOver pageTitle'>{{group}}</div>
+</div>
+
+<!--container to change content using angular-->
+<div class="container-fluid full-height" style="background-color: #ffffff;">
+    
+    <div class="item-group">
+        <span class="text-middle">Title <span class="error glyphicon glyphicon-exclamation-sign" ng-if="errorMsgTitle != ''"></span></span>
+        <input type="text" ng-model="meetingTitle" class="custom-input" placeholder="Title">
+    </div>
+    
+    <div class="item-group">
+        <div class="item-header"><span class="text-middle-header pull-right">{{attendeesArr.length}}/{{groupMembers.length}}</span><span class="text-middle-header">WHO TO ATTEND?</span></div>
+        <div class="item-panel">
+            <span class="pull-right custom-checkbox custom-checkbox-all glyphicon glyphicon-ok" ng-click="clickAllAttendee();"></span>
+            <span class="text-middle-header text-middle">Select All</span>
+        </div>
+        
+        <div class="item-panel" ng-repeat="m in groupMembers track by $index">
+            <span class="pull-right custom-checkbox glyphicon glyphicon-ok" ng-class="{'custom-checkbox-checked': m == thisUserWDot || attendeesWDot.indexOf(m) > -1, 'custom-checkbox-you': m == thisUserWDot}" ng-click="clickAttendee(m);"></span>
+            <span class="text-middle" ng-if='m == thisUserWDot'>You</span>
+            <span class="text-middle" ng-if='m != thisUserWDot'>{{m}}</span>
+        </div>
+
+    </div>
+
+    <div class="item-group">
+        <!--<div class="item-header"><span class="text-middle-header">WHO TO ATTEND?</span></div>-->
+        <div class="item-panel" ng-click="clickDuration();">
+            <span class="pull-right"><i class="chevron"></i></span>
+            <span class="pull-right"><span class="text-middle grey-text">{{hour}} h {{min}} m</span></span>
+            <span class="text-middle">Duration <span class="error glyphicon glyphicon-exclamation-sign" ng-if="errorMsgDuration != ''"></span></span>
+        </div>
+        
+<!--        <div class="item-panel" ng-click="findCommonTime();" ng-if="hour != '00' || min != '00'">
+            <span class="pull-right"><i class="chevron"></i></span>
+            <span class="pull-right"><span class="text-middle grey-text">{{selectedTime}}</span></span>
+            <span class="text-middle">Start Time <span class="error glyphicon glyphicon-exclamation-sign" ng-if="errorMsgStartTime != ''"></span></span>
+        </div>-->
+        
+        <div class="item-panel" ng-click="clickRepeat();">
+            <span class="pull-right"><i class="chevron"></i></span>
+            <span class="pull-right"><span class="text-middle grey-text">{{repeat}}</span></span>
+            <span class="text-middle">Repeat</span>
+        </div>
+        <div class="item-panel" ng-click="clickReminders();">
+            <span class="pull-right"><i class="chevron"></i></span>
+            <span class="pull-right"><span class="text-middle grey-text">{{reminder}}</span></span>
+            <span class="text-middle">Reminders</span>
+        </div>
+    </div>
+    <div class="item-group">
+        <span class="text-middle">Venue</span>
+        <input type="text" ng-model="groupVenue" class="custom-input" placeholder="Venue">
+    </div>
+    
+    <div class="item-group dummyHeight" ng-if="hour != '00' || min != '00'">
+    </div>
+
+</div>
+
+<div class="startTimeBtn" ng-click="findCommonTime();" ng-if="hour != '00' || min != '00'">
+    <span class="text-center" ng-if="!selectedTime">Select Start Time<span class="error glyphicon glyphicon-exclamation-sign" ng-if="errorMsgStartTime != ''"></span></span>
+    <span class="text-center" ng-if="selectedTime">Start Time - {{selectedTime}}</span>
+</div>
+
+<!-- repeat dialog -->
+<div class="dialog-container repeat" ng-click="clickCloseRepeat();">
+    <div class="dialog-content">
+        <div class="item-group">
+            <div class="dialog-header text-center"><p>Repeat</p></div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left chevron-active"></i></span>
+                <span class="text-middle active-option" label="One-time event">One-time event</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="Daily">Daily</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="Weekly">Weekly</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="Monthly">Monthly</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- reminders dialog -->
+<div class="dialog-container reminder" ng-click="clickCloseReminders();">
+    <div class="dialog-content">
+        <div class="item-group">
+            <div class="dialog-header text-center"><p>Reminders</p></div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left chevron-active"></i></span>
+                <span class="text-middle active-option" label="None">No reminder</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="0 minutes">0 minutes</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="5 minutes">5 minutes</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="10 minutes">10 minutes</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="15 minutes">15 minutes</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="30 minutes">30 minutes</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="1 hour">1 hour</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="1 day">1 day</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="2 days">2 days</span>
+            </div>
+            <div class="item-panel">
+                <span class="pull-left"><i class="chevron chevron-left"></i></span>
+                <span class="text-middle" label="1 week">1 week</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- duration dialog -->
+<div class="dialog-container duration" ng-click="clickCloseDuration();">
+    <div class="dialog-content">
+        <div class="item-group">
+            <div class="dialog-header text-center"><p>Duration</p></div>
+            <div class="duration-panel">
+                <div class="duration-slim-panel">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="hour-container duoScrollH">
+                    <div class="hour-panel" ng-repeat="h in hourArr track by $index">{{h}}</div>
+                </div>
+
+                <!-- this div is use to control the scroll of the covered div -->
+                <div class="hour-container-ghost duoScrollH">
+                    <div class="hour-panel" ng-repeat="h in hourArr track by $index">{{h}}</div>
+                </div>
+
+                <div class="min-container duoScrollM">
+                    <div class="hour-panel" ng-repeat="m in minArr track by $index">{{m}}</div>
+                </div>
+
+                <!-- this div is use to control the scroll of the covered div -->
+                <div class="hour-container-ghost2 duoScrollM">
+                    <div class="hour-panel" ng-repeat="m in minArr track by $index">{{m}}</div>
+                </div>
+
+                <!-- cover for fade off effect -->
+                <div class="greybar"></div>
+                <div class="greybar greybar2"></div>
+                <div class="greybar greybar3"></div>
+                <div class="greybar greybar2"></div>
+                <div class="greybar lastGreyBar"></div>
+
+                <div class="hLabel">H</div>
+                <div class="mLabel">M</div>
+                <div class="centerLine"></div>
+
+            </div>
+            <!-- END duration panel -->
+            <div class="cancel">Cancel</div>
+            <div class="ok">Ok</div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+<!-- navbar to push content below --> 
+<nav class="navbar"></nav><br/>
+<!--custom nav bar-->
+<div class="nav-bar">
+    <!--simulate mobile taskbar-->
+    <div id='dummy-taskbar'>
+        <span id="dummy-time" class="pull-left">8:37PM</span>
+        <span id="dummy-battery" class="pull-right">Singtel 3G 63%</span>
+        <span class="pull-right glyphicon glyphicon-signal"></span>
+    </div>
+    <div class="option-btn pull-right" ng-click="changeUrl();">
+        <div class="glyph text-center"><span class="glyphicon glyphicon-plus"></span></div>
+    </div>
+    
+    <div id="monthweekday" class="pull-right">
+        <div class="mwd" onclick="window.location = 'index.html#/calendar'">M</div>
+        <div class="mwd active-mwd">W</div>
+        <!--<div class="mwd">D</div>-->
+    </div>
+    <div id="display">
+        <div id="month">{{displayMonth}}</div>
+        <div id="dayyear">
+            <div id="day">{{displayDay}}</div>
+            <div id="year">{{displayYear}}</div>
+        </div>
+    </div>
+
+</div>
+
+<!--container to change content using angular-->
+<div class="container-fluid" style="background-color: #ffffff;">
+    <div class="row fixed-days">
+        <div class="timing-container" style="height: 23px; color:transparent; background-color: #F5F7FA;">1</div>
+        <div class="col-days width-bytime  text-center" ng-repeat="d in calendarDays track by $index">{{d}}</div>
+    </div> 
+    <!--whole container to container the different months with overflow -->
+    <div class="row scroll-x" id="weekScrollPanel">
+
+        <!-- container that stretch to the length of x number of months -->
+        <div class="weeks-bigContainer">
+
+            <div class="perWeek-container" ng-repeat="w in numOfWeeksArr track by $index">
+                <div class="timing-container border-bottom" style="height: 55px; color:transparent;">1</div>
+                <!-- dates across the week -->
+                <div class="calcell width-bytime border-bottom text-center" ng-repeat="d in numOfWeeksArr[$index] track by $index" ng-click="selectDay($index);">
+                    <div class="cal-date" month="{{d.month}}" ng-class="{'today-date': d.day == 1 && d.month == displayMonth, 'not-this-month': d.month != displayMonth}">{{d.day}}</div>
+                    <div class="event-dot" ng-if="d.event != false"></div>
+                </div>
+                <!-- END dates across the week -->
+                <div class="timeslots-container">
+                    <!-- timing cells -->
+                    <div class="timing-container">
+                        <div class="time-cell" style="padding-left: 10px; padding-top: 2px;" ng-repeat="t in timeslots track by $index">{{t}}</div>
+                    </div>
+                    <!-- loop seven days -->
+                    <div class="time-cell-container width-bytime text-center" ng-repeat="d in numOfWeeksArr[$index] track by $index">
+                          
+                            <!--if have events on the day-->
+                            <div id="{{d.month+d.day}}" style="position: relative;" ng-if="d.event != false">
+                                    {{setEventHeight(d.event,d.month + d.day);}}                                
+                            </div>
+                        <!-- loop out time per day -->
+                        <div class="time-cell" ng-repeat="t in timeslots track by $index" ng-class="{'greyOutTime': d.month !=displayMonth}"></div>
+                        <!-- END time loop -->
+                        
+                    </div>
+                    <!-- END day loop -->
+                </div>
+            </div>
+        </div>
+    </div>
+    {{setTimeHeight();}}
+    <!--END month container-->
+
+</div>
+
+<!--custom bottom menu-->
+<div id="dummy-footer"></div>
+<div class="bottom-menu">
+    <div class="menu-tab text-center groupIcon" onclick="window.location = 'index.html#/group'"></div>
+    <div class="menu-tab text-center" onclick="window.location = 'index.html#/events'"><span class="glyphicon glyphicon-home"></span></div>
+    <div class="menu-tab text-center active-tab" onclick="window.location = 'index.html#/calendar'"><span class="glyphicon glyphicon-calendar"></span></div>
+</div>

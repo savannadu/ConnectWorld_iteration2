@@ -1,0 +1,17 @@
+/* 
+    Document   : events
+    Created on : Oct 8, 2014, 6:21:06 PM
+    Author     : mxchee.2012
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+container{
+    height: 100px;
+    width: 300px;
+    background-color: #22b1e3;
+}

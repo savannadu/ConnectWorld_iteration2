@@ -1,0 +1,76 @@
+<!-- navbar to push content below --> 
+<nav class="navbar"></nav><br/>
+<!--custom nav bar-->
+<div class="nav-bar">
+    <!--simulate mobile taskbar-->
+    <div id='dummy-taskbar'>
+        <span id="dummy-time" class="pull-left">8:37PM</span>
+        <span id="dummy-battery" class="pull-right">Singtel 3G 63%</span>
+        <span class="pull-right glyphicon glyphicon-signal"></span>
+    </div>
+    <div class="option-btn pull-left" onclick="window.location = 'index.html#/group'">
+        <div class="glyph text-center"><span class="glyphicon glyphicon-arrow-left"></span></div>
+    </div>
+    <div class='col-centered text-center textOver pageTitle'>{{callGroup.title}}</div>
+</div>
+
+
+<div class="container-fluid full-height" style="background-color: #ffffff;">
+
+    <!-- Preloading member list -->
+
+    <div id="memberList">
+        <div class="item-group" id="memberGroup">
+            <div class="item-panel" ng-repeat="member in members">
+                <span class="text-middle">{{member.name}}</span>  
+            </div>    
+        </div>
+    </div>
+    <!-- END Preloading member list -->
+
+    <div id='newMemberInput'>
+        <div class="input-group">
+            <input id='newMemberName' type='text' class='form-control' placeholder='Enter new member student ID' required>
+            <div class="input-group-btn">
+                <button class='btn btn-default' ng-click='addMember();'>Add</button>
+                <button class='btn btn-danger' type='button' ng-click='closeAddMembersField();'>Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Member button panel -->
+
+    <div id='addMemberBtn' class="fullWidth btn btn-default" ng-click="showAddMembersField();">
+        <span><b>Add Member</b></span>    
+    </div>
+
+    <!-- END Add Member button panel -->
+
+    <!-- Delete and remove from group field -->
+    <div class="fullWidth btn btn-danger" ng-click="showExit();">
+        <span><b>DELETE AND EXIT GROUP</b></span>    
+    </div>
+
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>-->
+                <h4 class="modal-title text-center" id="myModalLabel">Exit "{{callGroup.title}}" Group</h4>
+            </div>
+            <div class="modal-body text-center">
+            </div>
+            <div class="modal-footer">
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-default modal-btn btn-5" ng-click="hideExit()">Cancel</button>
+                    <button type="button" class="btn btn-danger modal-btn btn-5" onclick="window.location = 'index.html#/group'" ng-click="hideExit()">Exit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
