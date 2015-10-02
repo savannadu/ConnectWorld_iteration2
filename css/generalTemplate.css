@@ -1,0 +1,46 @@
+#footer-navbar-icons1, #footer-navbar-icons2, #footer-navbar-icons3, #footer-navbar-icons4, #footer-navbar-icons5{
+    padding:0;
+    border: 0;
+    font-size:2.5em;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    min-height: 1px;
+    width:19%;
+    color: white;
+    display: inline-block;
+}
+
+#navbar-template{
+    position: absolute;
+    top:0;
+    background-color: #fe7400;
+    display: table;
+    vertical-align: middle;
+    color:white;
+    font-size:1.5em;
+    width: 100%;
+    padding:0.5em;
+}
+
+#footer-template {
+    position: fixed;
+    bottom:0;
+    padding:0;
+    background-color: #434a54;
+    padding-top:0.3em;
+    width:100%;
+    z-index: 100;
+}
+
+@font-face {
+    font-family: 'forte', 'Roboto-Regular';
+    src: url('../fonts/FORTE.TTF');
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-size:2.5em;
+}
+
+#page-title{
+    font-family: 'forte', sans-serif;
+    color:white;
+}
