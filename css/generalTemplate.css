@@ -9,6 +9,7 @@
     width:19%;
     color: white;
     display: inline-block;
+    float: left;
 }
 
 #navbar-template{
@@ -28,7 +29,8 @@
     bottom:0;
     padding:0;
     background-color: #434a54;
-    padding-top:0.3em;
+    padding-top:0.4em;
+    padding-top:0.4em;
     width:100%;
     z-index: 100;
 }
@@ -43,4 +45,23 @@
 #page-title{
     font-family: 'forte', sans-serif;
     color:white;
+}
+
+#customized-dropdown-menu {
+    right: -1em;
+    left:auto;
+    background-color: #f0f0ee;
+    bottom: 112%;
+}
+
+.dropdown-menu li a{
+    color: black;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 1.3em;
+    float: right;
+}
+
+.dropdown-menu .divider {
+    float: right;
+    width: 100%;
 }
