@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="letssmuApp">
+<html lang="en" ng-app="connectWorld">
     <head>
         <meta charset="utf-8">
-        <title>Let's SMU-eet</title>
+        <title>ConnectWorld</title>
         <!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">-->
         <meta name="viewport" content="initial-scale=1; maximum-scale=1; minimum-scale=1;" />
 
         <!-- bootstrap and bootflat css -->
         <link rel="stylesheet" href="css/site.min.css">
+        <link rel="stylesheet" href="css/generalTemplate.css">
         <link href="css/custom.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -27,6 +29,8 @@
 
         <!--custom script-->
         <script src="js/script.js"></script>
+        <script src="js/binhscript.js"></script>
+
 
         <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
         <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
@@ -35,9 +39,54 @@
 
     </head>
 
-    <body style= "background-color: white;">
+    <body style= "position: absolute;background-color: white;padding:0; margin:0">
 
-        <div class="full-height" ng-view></div>
+        <div style="padding:0" ng-view></div>
+
+        <!--Navigation bar at footer-->
+        <div class="footer" id="footer-template">
+                <a ng-href="#/exploreBuddy">
+                    <div id="footer-navbar-icons1">
+                        <i class="fa fa-user "></i>
+                    </div>
+                </a>
+                <a ng-href="#/exploreCommunity">
+                    <div id="footer-navbar-icons2">
+                        <i class=" fa fa-users "></i>
+                    </div>
+                </a>
+                <a ng-href="#/message">
+                    <div id="footer-navbar-icons3">
+                        <i class="fa fa-comments"></i>
+                    </div>
+                </a>
+                <a ng-href="#/notification">
+                    <div id="footer-navbar-icons4">
+                        <i class="fa fa-bell"></i>
+                    </div>
+                </a>
+                <div class="dropup">
+                    <div id="footer-navbar-icons5">
+                        <div class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-list"></i>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="customized-dropdown-menu">
+                            <li><a href="#/myProfile"> My Profile </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#/myBuddy"> My buddy </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#/myCommunity"> My Community </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="login.html"> Log out </a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
         <!-- Bootstrap's JS files.-->
         <script src="js/bootstrap.js"></script>
