@@ -45,29 +45,49 @@
 
         <!--Navigation bar at footer-->
         <div class="footer" id="footer-template">
-            < style="width:100%;display: table;vertical-align: middle;">
-                <a id="link-3" ng-href="/exploreBuddy">
+                <a ng-href="#/exploreBuddy">
                     <div id="footer-navbar-icons1">
                         <i class="fa fa-user "></i>
                     </div>
                 </a>
-                <a id="link-3" ng-href="/exploreCommunity">
+                <a ng-href="#/exploreCommunity">
                     <div id="footer-navbar-icons2">
                         <i class=" fa fa-users "></i>
                     </div>
                 </a>
-
+                <a ng-href="#/message">
                     <div id="footer-navbar-icons3">
                         <i class="fa fa-comments"></i>
                     </div>
+                </a>
+                <a ng-href="#/notification">
                     <div id="footer-navbar-icons4">
                         <i class="fa fa-bell"></i>
                     </div>
+                </a>
+                <div class="dropup">
                     <div id="footer-navbar-icons5">
-                        <i class="fa fa-list"></i>
+                        <div class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-list"></i>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="customized-dropdown-menu">
+                            <li><a href="#/myProfile"> My Profile </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#/myBuddy"> My buddy </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#/myCommunity"> My Community </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="login.html"> Log out </a></li>
+
+                        </ul>
+
                     </div>
+                </div>
             </div>
         </div>
+
+
+
         <!-- Bootstrap's JS files.-->
         <script src="js/bootstrap.js"></script>
 
