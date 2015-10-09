@@ -1,0 +1,124 @@
+<html ng-app="connectWorld" ng-controller="editMyProfileController">
+<head>
+    <meta charset="utf-8">
+    <title>ConnectWorld</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">-->
+    <meta name="viewport" content="initial-scale=1; maximum-scale=1; minimum-scale=1;"/>
+    <!-- navbar-template -->
+    <div id="navbar-template">
+        <div id="editMyProfile"> Edit Profile: {{basicInfo.name}}</div>
+    </div>
+
+    <!-- bootstrap and bootflat css -->
+    <link rel="stylesheet" href="css/site.min.css">
+    <link rel="stylesheet" href="css/generalTemplate.css">
+    <link rel="stylesheet" href="css/myProfile.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <link href="bower_components/angular-xeditable/dist/css/xeditable.css" rel="stylesheet">
+    <script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!--angular-->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <!-- jQuery scroll to panel -->
+    <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.scrollstop.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="js/jquery.scrollsnap.js" type="text/javascript"></script>
+
+    <!--custom script-->
+    <script src="js/script.js"></script>
+    <script src="js/savannascript.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+
+</head>
+
+<p style="position: absolute;background-color: white;padding:0; margin:0">
+
+<div style="padding:0">
+    <br/>
+    <br/>
+    <br/>
+    <!--container to add content -->
+    <div class="container-fluid">
+        <form editable-form name="editableForm" onaftersave="saveUser()">
+            <div class="thumbnail">
+
+                <div class="avarta">
+                    <img src="./img/buddyProfilePic.png" alt="Profile Picture">
+
+                    <div>
+                        <button type="button" class="edit" ng-click="editableForm.$show()"
+                                ng-show="!editableForm.$visible">
+                            Edit
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="biContainer thumbnail">
+                <table class="gridtable">
+                    <th colspan="2">Basic Information</th>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <span editable-text="basicInfo.gender" e-name="gender" onbeforesave="checkGender($data)"
+                                  e-required>{{basicInfo.gender | uppercase || 'empty'}}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Birthday</td>
+                        <td>
+                            <span editable-text="basicInfo.birthday " e-name="birthday "
+                                  e-required>{{basicInfo.birthday | date || 'empty'}}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nationality</td>
+                        <td>
+                            <span editable-text="basicInfo.nationality " e-name="nationality"
+                                  e-required>{{basicInfo.nationality | date || 'empty'}}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td>
+                            <span editable-text="basicInfo.location " e-name="location"
+                                  e-required>{{basicInfo.location | date || 'empty'}}</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buttons">
+                <!-- button to show form -->
+                <button type="button" class="btn btn-default" ng-click="editableForm.$show()"
+                        ng-show="!editableForm.$visible">
+                    Edit
+                </button>
+                <!-- buttons to submit / cancel form -->
+                 <span ng-show="editableForm.$visible">
+                    <button type="submit" class="btn btn-primary" ng-disabled="editableForm.$waiting">
+                        Save
+                    </button>
+                    <button type="button" class="btn btn-default" ng-disabled="editableForm.$waiting"
+                            ng-click="editableForm.$cancel()">
+                        Cancel
+                    </button>
+                  </span>
+            </div>
+        </form>
+    </div>
+</div>
+</p>
+
+</body>
+</html>

@@ -1,11 +1,14 @@
 <!--Page Title-->
 
+<html lang="en" ng-app="connectWorld" ng-controller="myProfileController">
+<head>
+    <meta charset="utf-8">
     <title>ConnectWorld</title>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">-->
-    <!--meta name="viewport" content="initial-scale=1; maximum-scale=1; minimum-scale=1;"/>
+    <meta name="viewport" content="initial-scale=1; maximum-scale=1; minimum-scale=1;"/>
     <!-- navbar-template -->
     <div id="navbar-template">
-        <div id="page-title"> My Profile </div>
+        <div id="myProfile"> {{basicInfo.name}}</div>
     </div>
 
     <!-- bootstrap and bootflat css -->
@@ -37,12 +40,16 @@
     <script src="js/savannascript.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
 
+</head>
+
 <body style="position: absolute;background-color: white;padding:0; margin:0">
 
 <div style="padding:0">
     <br/>
+    <br/>
+    <br/>
     <!--container to add content -->
-    <div class="container-fluid" ng-controller="myProfileController">
+    <div class="container-fluid">
         <layer 1 id="infoLayer">
             <div class="thumbnail">
                 <div class="avarta">
@@ -130,7 +137,7 @@
             </div>
             </p>
         </layer>
-        <layer 2 class="layer2 hide" id="formLayer">
+        <layer 2 class="layer2" id="formLayer">
             <div class="thumbnail">
                 <div class="avarta">
                     <img src="./img/buddyProfilePic.png" alt="Profile Picture">
@@ -239,3 +246,4 @@
 <script src="js/jquery.fs.stepper.min.js"></script>
 
 </body>
+</html>
