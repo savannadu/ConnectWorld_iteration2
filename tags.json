@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Cooking" },
+  { "id": 2, "name": "Reading" },
+  { "id": 3, "name": "Korean Drama" },
+  { "id": 4, "name": "Coding" },
+  { "id": 5, "name": "Design" },
+  { "id": 6, "name": "Painting" },
+  { "id": 7, "name": "Singing" },
+  { "id": 8, "name": "Dancing" },
+  { "id": 9, "name": "Piano" },
+  { "id": 10, "name": "Swimming" }
+]

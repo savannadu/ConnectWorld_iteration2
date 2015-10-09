@@ -1,4 +1,253 @@
 <!--Page Title-->
 <div id="navbar-template">
-    <div id="page-title"> Explore Buddy </div>
+    <div id="page-title"> Explore Buddy</div>
+</div>
+
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="Search for a buddy...">
+    <!-- Button trigger modal -->
+
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Filter
+    </button>
+    <button class="btn btn-default" type="button">Search</button>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="gridSystemModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <li><a href="#">Language</a></li>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            Akan <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu scrollable-menu" role="menu">
+                            <li><a href="#">Akan</a></li>
+                            <li><a href="#">Amharic</a></li>
+                            <li><a href="#">Arabic</a></li>
+                            <li><a href="#">Assamese</a></li>
+                            <li><a href="#">Awadhi</a></li>
+                            <li><a href="#">Azerbaijani</a></li>
+                            <li><a href="#">Balochi</a></li>
+                            <li><a href="#">Belarusian</a></li>
+                            <li><a href="#">Bengali</a></li>
+                            <li><a href="#">Bhojpuri</a></li>
+                            <li><a href="#">Burmese</a></li>
+                            <li><a href="#">Cantonese</a></li>
+                            <li><a href="#">Cebuano (Visayan)</a></li>
+                            <li><a href="#">Chewa</a></li>
+                            <li><a href="#">Chhattisgarhi</a></li>
+                            <li><a href="#">Chittagonian</a></li>
+                            <li><a href="#">Czech</a></li>
+                            <li><a href="#">Deccan</a></li>
+                            <li><a href="#">Dhundhari</a></li>
+                            <li><a href="#">Dutch</a></li>
+                            <li><a href="#">Eastern Min</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">French</a></li>
+                            <li><a href="#">Fula</a></li>
+                            <li><a href="#">hinese</a></li>
+                            <li><a href="#">German</a></li>
+                            <li><a href="#">Greek</a></li>
+                            <li><a href="#">Gujarati</a></li>
+                            <li><a href="#">eole</a></li>
+                            <li><a href="#">Hakka</a></li>
+                            <li><a href="#">Haryanvi</a></li>
+                            <li><a href="#">Hausa</a></li>
+                            <li><a href="#">Hiligaynon</a></li>
+                            <li><a href="#">Hindi</a></li>
+                            <li><a href="#">Hmong</a></li>
+                            <li><a href="#">Hunnanese</a></li>
+                            <li><a href="#">Hungarian</a></li>
+                            <li><a href="#">Igbo</a></li>
+                            <li><a href="#">Ilocano</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Japanese</a></li>
+                            <li><a href="#">Javanese</a></li>
+                            <li><a href="#">Jin</a></li>
+                            <li><a href="#">Kannada</a></li>
+                            <li><a href="#">Kazakh</a></li>
+                            <li><a href="#">Khmer</a></li>
+                            <li><a href="#">Kinyarwanda</a></li>
+                            <li><a href="#">Kirundi</a></li>
+                            <li><a href="#">Konkani</a></li>
+                            <li><a href="#">Korean</a></li>
+                            <li><a href="#">Kurdish</a></li>
+                            <li><a href="#">Madurese</a></li>
+                            <li><a href="#">Magahi</a></li>
+                            <li><a href="#">Maithili</a></li>
+                            <li><a href="#">Malagasy</a></li>
+                            <li><a href="#">Malay/Indonesian</a></li>
+                            <li><a href="#">Malayalam</a></li>
+                            <li><a href="#">Mandarin</a></li>
+                            <li><a href="#">Marathi</a></li>
+                            <li><a href="#">Marwari</a></li>
+                            <li><a href="#">Mossi</a></li>
+                            <li><a href="#">Nepali</a></li>
+                            <li><a href="#">Northern Min</a></li>
+                            <li><a href="#">Odia (Oriya)</a></li>
+                            <li><a href="#">Oromo</a></li>
+                            <li><a href="#">Pashto</a></li>
+                            <li><a href="#">Persian</a></li>
+                            <li><a href="#">Polish</a></li>
+                            <li><a href="#">Portuguese</a></li>
+                            <li><a href="#">Punjabi</a></li>
+                            <li><a href="#">Quechua</a></li>
+                            <li><a href="#">Romanian</a></li>
+                            <li><a href="#">Russian</a></li>
+                            <li><a href="#">Saraiki</a></li>
+                            <li><a href="#">Serbo-Croatian</a></li>
+                            <li><a href="#">Shanghainese</a></li>
+                            <li><a href="#">Shona</a></li>
+                            <li><a href="#">Sindhi</a></li>
+                            <li><a href="#">Sinhalese</a></li>
+                            <li><a href="#">Somali</a></li>
+                            <li><a href="#">Southern Min</a></li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Sundanese</a></li>
+                            <li><a href="#">Swedish</a></li>
+                            <li><a href="#">Sylheti</a></li>
+                            <li><a href="#">Tagalog</a></li>
+                            <li><a href="#">Tamil</a></li>
+                            <li><a href="#">Telugu</a></li>
+                            <li><a href="#">Thai</a></li>
+                            <li><a href="#">Turkish</a></li>
+                            <li><a href="#">Turkmen</a></li>
+                            <li><a href="#">Ukrainian</a></li>
+                            <li><a href="#">Urdu</a></li>
+                            <li><a href="#">Uyghur</a></li>
+                            <li><a href="#">Uzbek</a></li>
+                            <li><a href="#">Vietnamese</a></li>
+                            <li><a href="#">Xhosa</a></li>
+                            <li><a href="#">Yoruba</a></li>
+                            <li><a href="#">Zhuang</a></li>
+                            <li><a href="#">Zulu</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#">Interest</a></li>
+                    <li><a href="#">Gender</a></li>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="options" id="female" autocomplete="off" checked>female</label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="male" autocomplete="off">male</label>
+                    </div>
+                    <li><a href="#">Age group</a></li>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked>18-21</label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option2" autocomplete="off">22-25</label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option3" autocomplete="off">25-29</label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option4" autocomplete="off">30+</label>
+                    </div>
+                    <li><a href="#">Location</a></li>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save filter</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <img class="img-circle" style="width: 100%;height:100px;" src="./img/Female_buddy_icon.PNG" width="50"
+                     heigt="50">
+                <h5>Brenda, 20</h5>
+
+                <p>Singaporean</p>
+
+                <p>Hokkien, Japanese</p>
+            </div>
+            <div class="col-xs-4">
+                <img class="img-circle" style="width: 100%;height:100px;" src="./img/Male_buddy_icon.PNG" width="50"
+                     heigt="50">
+                <h5>Alan Leo, 32</h5>
+
+                <p>Malaysian</p>
+
+                <p>English, French</p>
+            </div>
+            <div class="col-xs-4">
+                <img class="img-circle" style="width: 100%;height:100px;" src="./img/Female_buddy_icon.PNG" width="50"
+                     heigt="50">
+                <h5>Hoa Mai, 23</h5>
+
+                <p>Vietnamese</p>
+
+                <p>vietnamese</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <img class="img-circle" style="width: 100%;height:100px;" src="./img/Female_buddy_icon.PNG" width="50"
+                     heigt="50">
+                <h5>Brenda, 20</h5>
+
+                <p>Singaporean</p>
+
+                <p>Hokkien, Japanese</p>
+            </div>
+            <div class="col-xs-4">
+                <img class="img-circle" style="width: 100%;height:100px;" src="./img/Male_buddy_icon.PNG" width="50"
+                     heigt="50">
+                <h5>Alan Leo, 32</h5>
+
+                <p>Malaysian</p>
+
+                <p>English, French</p>
+            </div>
+            <div class="col-xs-4">
+                <img class="img-circle" style="width: 100%;height:100px;" src="./img/Female_buddy_icon.PNG" width="50"
+                     heigt="50">
+                <h5>Hoa Mai, 23</h5>
+
+                <p>Vietnamese</p>
+
+                <p>vietnamese</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <img class="img-circle" style="width: 100%;height:100px;" src="./img/Female_buddy_icon.PNG" width="50"
+                     heigt="50">
+                <h5>Brenda, 20</h5>
+
+                <p>Singaporean</p>
+
+                <p>Hokkien, Japanese</p>
+            </div>
+            <div class="col-xs-4">
+                <img class="img-circle" style="width: 100%;height:100px;" src="./img/Male_buddy_icon.PNG" width="50"
+                     heigt="50">
+                <h5>Alan Leo, 32</h5>
+                <p>Malaysian</p>
+                <p>English, French</p>
+            </div>
+            <div class="col-xs-4">
+                <img class="img-circle" style="width: 100%;height:100px;" src="./img/Female_buddy_icon.PNG" width="50"
+                     heigt="50">
+                <h5>Hoa Mai, 23</h5>
+                <p>Vietnamese</p>
+                <p>vietnamese</p>
+            </div>
+        </div>
+    </div>
 </div>
