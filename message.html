@@ -1,45 +1,77 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <style>
     img{
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
     }
-    table.odd {
+    tr.even {
         background: #ffebba;
     }
     td.icon {
-        witdh: 30px;
-    }
-    td.buddyName {
-        width: 230px;
-        font-weight: bold
+        witdh: 10%;
+        height:10%;
     }
     i {
         color: darkorange;
     }
-
+    tr.spaceUnder > td
+    {
+        padding-bottom: 1em;
+    }
 </style>
+
 <!--Page Title-->
 <div id="navbar-template">
-    <div id="page-title"> Messages </div>
+    <div id="page-title"><a href="www.mypage.com" onclick="window.history.go(-1); return false;"> <i class=" fa fa-arrow-left" style="color: white"></i></a> Messages </div>
 </div>
-Test
 
 <!-- Content Here -->
-<div class="container">
-    <div id="messageChat"></div>
-</div>
+<div id="displayChatList"></div>
+
 
 <script>
     var chatList = [];
-    var chatList.push(["Buddy1","img/greyprofilepic.png","Hey, where are you?"]);
-    var chatList.push(["Sora","img/redprofilepic.png","I'm a Japanese Exchange Student.."]);
+    chatList.push(["Buddy1","img/greyprofilepic.png","Hey, where are you?"]);
+    chatList.push(["Sora","img/redprofilepic.png","I'm a Japanese Exchange Student.."]);
 
-    var messageChat = document.getElementById("chatDisplay");
 
-    function show () {
-        // Show our output
-        messageChat.innerHTML = "";
-        messageChat.innerHTML += titles.join(", <br>") + "<br/>";
+    show();
 
+    function show() {
+        var HTML = "<table border='1'>";
+        for(j=0;j<chatList.length;j++)
+        {
+            if (j&2==1){
+                HTML += "<tr class='spaceUnder' style='background: orange'>";
+            } else {
+                HTML += "<tr class='spaceUnder'>";
+            }
+            HTML += "<td class='icon' width='10%'>";
+            <!-- IMAGE -->
+            HTML += "<a href='profile1.html'><img src='" + chatList[j][1] + "'/></a>";
+            HTML += "</td>";
+
+
+            <!-- NAME -->
+            HTML += "<td><b>";
+            HTML += chatList[j][0];
+            HTML += "</b><br/>";
+
+            <!-- Content -->
+            HTML += chatList[j][2];
+            HTML += "</td>";
+
+            <!-- Navigate Chat-->
+            HTML += "<td width='10%'><a href='chat2.html'><i class='fa fa-chevron-right'></i></a></td>";
+
+            HTML += "</tr>";
+
+        }
+        HTML += "</table>";
+        document.getElementById("displayChatList").innerHTML = HTML;
     }
+
 </script>
+
+
