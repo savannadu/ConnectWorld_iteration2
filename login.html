@@ -43,23 +43,33 @@
             <br/>
             <br/>
             <br/>
+            <br/>
             <!--container to add content -->
             <div class="center-component">
-                <img style="width: 100%;height:100px;" src="./img/ConnectWorldLogo.PNG">
+                <img style="width: 100%;height:100px;" src="./img/logo.png">
                 <br/><br/>
                 <div class="loginError">{{errorMsg}}</div>
-                <input type="text" ng-model="username" class="form-control remove-border sign-in-button" placeholder="Username">
-                <input type="password" ng-model="password" class="form-control remove-border sign-in-button" placeholder="Password">
+                <input type="text" ng-model="username" class="form-control input-lg" placeholder="Username">
+                <input type="password" ng-model="password" class="form-control input-lg" placeholder="Password">
+                <br/>
                 <a ng-href="index.html#/exploreBuddy">
-                    <button style="display: block; width: 100%;background-color:#FE7300" type="button" class="btn btn-primary sign-in-button">Sign In</button>
+                    <button style="display: block; width: 100%;background-color:#FE7300" type="button"
+                            class="btn btn-primary sign-in-button">LOG IN
+                    </button>
                 </a>
             </div>
 
             <br/>
             <br/>
             <br/>
-            <center>Sign up for ConnectWorld</center>
-            <center>Forgot your password?</center>
+            <br/>
+            <br/>
+            <a href="signup.html">
+                <center>Sign up for ConnectWorld</center>
+            </a>
+            <a href="forgotpassword.html">
+                <center>Forgot your password?</center>
+            </a>
 
         </div>
 
