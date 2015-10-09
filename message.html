@@ -1,4 +1,43 @@
+<style>
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    table.odd {
+        background: #ffebba;
+    }
+    td.icon {
+        witdh: 30px;
+    }
+    td.buddyName {
+        width: 230px;
+        font-weight: bold
+    }
+    i {
+        color: darkorange;
+    }
+
+</style>
 <!--Page Title-->
 <div id="navbar-template">
-    <div id="page-title"> Message A Person </div>
+    <div id="page-title"> Messages </div>
 </div>
+
+<!-- Content Here -->
+<div class="container">
+    <div id="messageChat"></div>
+</div>
+
+<script>
+    var chatList = [];
+    var chatList.push(["Buddy1","img/greyprofilepic.png","Hey, where are you?"]);
+    var chatList.push(["Sora","img/redprofilepic.png","I'm a Japanese Exchange Student.."]);
+
+    var messageChat = document.getElementById("chatDisplay");
+
+    function show () {
+        // Show our output
+        messageChat.innerHTML = "";
+        messageChat.innerHTML += titles.join(", <br>") + "<br/>";
+    }
+</script>
