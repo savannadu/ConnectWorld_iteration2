@@ -188,10 +188,9 @@ html, body {
 .footer img {
     margin: 0 10px;
 }
-.layer2 {
+
+.layer {
     position: absolute;
-    left: 0px;
-    top: 0px;
     z-index: -1;
 }
 .layer2Hidden {
