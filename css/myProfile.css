@@ -24,6 +24,7 @@ table.gridtable th {
     padding: 8px;
     background-color: #dedede;
 }
+
 table.gridtable td {
     font-family: verdana,arial,sans-serif;
     font-size:12px;
