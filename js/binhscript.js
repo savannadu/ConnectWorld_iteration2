@@ -6,3 +6,7 @@ connectWorld.controller('exploreBuddyController', function () {
 
 });
 
+connectWorld.controller('createCommunityController', function () {
+
+});
+

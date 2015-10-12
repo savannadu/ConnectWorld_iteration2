@@ -9,6 +9,7 @@
     <!-- bootstrap and bootflat css -->
     <link rel="stylesheet" href="css/site.min.css">
     <link rel="stylesheet" href="css/generalTemplate.css">
+    <link rel="stylesheet" href="css/signup.css">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet" type="text/css"/>
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -37,11 +38,49 @@
 
 </head>
 
-<body style= "position: absolute;background-color: white;padding:0; margin:0">
+<body>
 
-<div style="padding:0">
+<!--Page Title-->
+<div id="navbar-template">
+
+    <div id="page-title">
+        <a ng-href="login.html" style="color: white;">
+            <i class="fa fa-arrow-circle-left"></i>
+            Sign Up
+        </a>
+    </div>
+</div>
+
+<br/>
+
+<div class="container-input"
+     style="position: absolute;background-color: white;padding:1em; margin:0; font-size: 18px; width: 100%;">
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-envelope"></i>
+        <input id="username" type="text" class="form-control input-lg" placeholder="Email"/>
+    </div>
+    </br>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-key"></i>
+        <input id="password" type="password" class="form-control input-lg" placeholder="Password"/>
+    </div>
+    </br>
+    <br/>
+    <br/>
+    <br/>
+    <a ng-href="signup2.html">
+        <button id="general-button" class="btn btn-primary sign-in-button"> SIGN UP</button>
+    </a>
+    </br>
+    </br>
 
 </div>
+
 
 <!-- Bootstrap's JS files.-->
 <script src="js/bootstrap.js"></script>

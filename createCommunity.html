@@ -1,4 +1,46 @@
+<link rel="stylesheet" href="css/signup.css">
+
 <!--Page Title-->
 <div id="navbar-template">
     <div id="page-title"> Create a Community </div>
+</div>
+
+<br/>
+<div class="container-input" style="position: absolute;background-color: white;padding:1em; margin:0; font-size: 18px">
+    <center>
+        <img style="max-height:20%; max-width: 80%;" src="./img/groupuser.png">
+    </center>
+    <br/>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-users"></i>
+        <input id="name" type="text" class="form-control input-lg" placeholder="Group name"/>
+    </div>
+    </br>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-map-marker"></i>
+        <input id="location" type="text" class="form-control input-lg" placeholder="Location"/>
+    </div>
+    </br>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-heart"></i>
+        <input id="interests" type="text" class="form-control input-lg" placeholder="Interests"/>
+    </div>
+    </br>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-quote-left"></i>
+        <tags-input ng-model="tags"></tags-input>
+    </div>
+    </br>
+
+    <a ng-href="login.html">
+        <button id="general-button" class="btn btn-primary sign-in-button"> SIGN UP</button>
+    </a>
+
+    </br>
+    </br>
+
 </div>

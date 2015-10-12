@@ -1,4 +1,4 @@
-var connectWorld= angular.module('connectWorld', ['ngRoute', 'firebase']);
+var connectWorld = angular.module('connectWorld', ['ngRoute', 'firebase', 'ngTagsInput']);
 
 connectWorld.config(['$routeProvider',
     function ($routeProvider) {

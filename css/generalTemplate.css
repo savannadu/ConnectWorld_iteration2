@@ -13,7 +13,7 @@
 }
 
 #navbar-template{
-    position: absolute;
+    position: relative;
     top:0;
     background-color: #fe7400;
     display: table;
@@ -64,4 +64,12 @@
 .dropdown-menu .divider {
     float: right;
     width: 100%;
+}
+
+#general-button {
+    display: block;
+    width: 100%;
+    background-color: #FE7300;
+    height: 45%;
+    font-size: 18px
 }
