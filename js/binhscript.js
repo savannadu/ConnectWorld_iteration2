@@ -10,3 +10,6 @@ connectWorld.controller('createCommunityController', function () {
 
 });
 
+connectWorld.controller('myCommunityController', function () {
+
+});

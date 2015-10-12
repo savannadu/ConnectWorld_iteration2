@@ -1,0 +1,23 @@
+.myCommunityTable {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.myCommunityTable tbody tr td {
+    border-bottom: outset 5px;
+    vertical-align: middle;
+    font-size: 18px;
+    font-family: inherit;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.community-content {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 18px;
+}

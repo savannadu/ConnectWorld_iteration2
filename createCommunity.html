@@ -2,15 +2,25 @@
 
 <!--Page Title-->
 <div id="navbar-template">
-    <div id="page-title"> Create a Community </div>
+    <div id="page-title">
+        <a ng-href="#/myCommunity" style="color: white;">
+            <i class="fa fa-arrow-circle-left"></i>
+        </a>
+        Create a Community
+    </div>
 </div>
 
 <br/>
-<div class="container-input" style="position: absolute;background-color: white;padding:1em; margin:0; font-size: 18px">
-    <center>
-        <img style="max-height:20%; max-width: 80%;" src="./img/groupuser.png">
-    </center>
+
+<div style="height: 45%; padding-left: 2.5em;">
+    <div style="z-index: auto;">
+        <img style="position: absolute; z-index: 5; max-width: 80%;" src="./img/groupuser.png"/>
+        <span style="position: absolute; z-index: 10; top:50%; font-size: 18px; font-style: italic; color: white; padding-left: 1em;">Click to upload your profile pic</span>
+    </div>
     <br/>
+</div>
+
+<div class="container-input" style="background-color: white;padding:1em; margin:0; font-size: 18px; padding-top: 80%;">
 
     <div class="left-inner-addon">
         <i class="fa fa-users"></i>
@@ -40,6 +50,6 @@
         <button id="general-button" class="btn btn-primary sign-in-button"> CREATE A COMMUNITY</button>
     </a>
 
-    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/>
 
 </div>
