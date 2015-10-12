@@ -1,0 +1,58 @@
+<style>
+    .inactiveLink {
+        pointer-events: none;
+        cursor: default;
+        color: white;
+    }
+
+    img{
+         width: 30px;
+         height: 30px;
+    }
+    table{
+        width: 280px;
+        border: 0px;;
+    }
+    table.odd {
+        background: #ffebba;
+    }
+    td.icon {
+        vertical-align: text-top;
+        witdh: 30px;
+    }
+
+    i {
+        color: darkorange;
+    }
+
+    .resizedTextbox {
+        width: 240px;
+        height: 20px
+    }
+
+    td.commentContent {
+        width: 280px;
+    }
+
+    div.convoBox {
+        min-height: 300px;
+        max-height: 350px;
+    }
+</style>
+
+<!--Page Title-->
+<div id="navbar-template">
+    <div id="page-title"><a href="#" onclick="window.history.go(-1); return false;"> <i class=" fa fa-arrow-left" style="color: white"></i></a> Chat with:  <a href="#" id="idDisplay" class="inactiveLink"></a>
+    </div>
+</div>
+TEST
+
+<script>
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        return results[1] || 0;
+    }
+
+    document.getElementById("idDisplay").innerHTML = $.urlParam('test');
+
+</script>

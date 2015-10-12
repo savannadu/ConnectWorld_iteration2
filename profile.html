@@ -1,4 +1,23 @@
+<style>
+    .inactiveLink {
+        pointer-events: none;
+        cursor: default;
+        color: white;
+    }
+</style>
 <!--Page Title-->
 <div id="navbar-template">
-    <div id="page-title"> Profile </div>
+    <div id="page-title"><a href="#" onclick="window.history.go(-1); return false;"> <i class=" fa fa-arrow-left" style="color: white"></i></a> Profile:  <a href="#" id="idDisplay" class="inactiveLink"></a>
+    </div>
 </div>
+ COPY CODES FROM PROFILE :)
+
+<script>
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        return results[1] || 0;
+    }
+
+    document.getElementById("idDisplay").innerHTML = $.urlParam('test');
+
+</script>

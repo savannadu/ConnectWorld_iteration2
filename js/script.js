@@ -58,8 +58,25 @@ connectWorld.config(['$routeProvider',
                 controller: 'messageController'
             }).
 
+
+            when('/profile', {
+                templateUrl: 'profile.html',
+                controller: 'messageController'
+            }).
+
+            when('/chat', {
+                templateUrl: 'chat.html',
+                controller: 'messageController'
+            }).
+
+
             when('/notification', {
                 templateUrl: 'notification.html',
+                controller: 'notificationController'
+            }).
+
+            when('/buddyrequest', {
+                templateUrl: 'buddyRequest.html',
                 controller: 'notificationController'
             }).
 

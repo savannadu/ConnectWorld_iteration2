@@ -1,6 +1,7 @@
 <!--Page Title-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="./js/stellaDB.js"></script>
 
 
 <style>
@@ -32,10 +33,6 @@
 
     <!-- Community update-->
     <script>
-        var commUpdates = [["Comm1","img/greyprofilepic.png","Someone Joined your Community","8.00am"],["Comm2","img/greyprofilepic.png","omeone added a new activity in XXX community", "Yesterday"]];
-        var newBuddiesList = [["Amy","img/greyprofilepic.png","8.10am"],["John","img/greyprofilepic.png","Yesterday"]];
-        var buddyRequest = [["Amy", "img/greyprofilepic.png"], ["John", "img/greyprofilepic.png"], ["Harry", "img/greyprofilepic.png"]];
-
         show();
 
         function show () {
@@ -43,9 +40,17 @@
 
             if (buddyRequest.length != 0) {
                 // Buddy Updates
-                HTML += "<tr><th colspan='4'>BUDDY REQUEST</th</tr>";
+                HTML += "<tr><th colspan='4'>BUDDY REQUEST</th></tr>";
 
                 for (x = 0; x < buddyRequest.length; x++) {
+                    if (x == 2) {
+                        HTML += "<tr>";
+                        HTML += "<td colspan='4' align = 'center'><a href='index.html#/buddyrequest'>See More (";
+                        HTML += buddyRequest.length-2
+                        HTML += ")</a></td></tr>";
+                        break;
+                    }
+
                     HTML += "<tr>";
 
                     <!-- IMAGE -->
@@ -81,7 +86,7 @@
 
                     <!-- IMAGE -->
                     HTML += "<td width='15%'>";
-                    HTML += "<a href='profile.html?id=" + j + "'><img src='" + newBuddiesList[j][1] + "'/></a>";
+                    HTML += "<a href='index.html#/profile/?test=" + newBuddiesList[j][0] + "'><img src='" + newBuddiesList[j][1] + "'/></a>";
                     HTML += "</td>";
 
                     <!-- Name -->
@@ -97,10 +102,12 @@
                     HTML += "</tr>";
                 }
             }
+
+
             if (commUpdates.length != 0)
             {
                 // Community
-                HTML += "<tr><th colspan='4'>COMMUNITY UPDATES</th</tr>";
+                HTML += "<tr><th colspan='4'>COMMUNITY UPDATES</th></tr>";
                 for (j = 0; j < commUpdates.length; j++){
                     HTML += "<tr>";
 
