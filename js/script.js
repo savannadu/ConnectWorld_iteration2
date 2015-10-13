@@ -80,6 +80,11 @@ connectWorld.config(['$routeProvider',
                 controller: 'notificationController'
             }).
 
+            when('/communityupdate', {
+                templateUrl: 'community.html',
+                controller: 'notificationController'
+            }).
+
             otherwise({
                 redirectTo: 'exploreBuddy'
             });

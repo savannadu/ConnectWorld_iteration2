@@ -1,6 +1,5 @@
-<!--Page Title-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
 <script src="./js/stellaDB.js"></script>
 
 
@@ -14,9 +13,10 @@
     }
 
     td, th {
-        font-size: 120%;
+        font-size: 110%;
         padding: 5px 0px;
     }
+    
 </style>
 <!-- File Header -->
 <div id="navbar-template">
@@ -26,7 +26,7 @@
 <div class="container-fluid">
     <!-- Buddy Request-->
     <!-- Buddy Updates-->
-    <!-- Community Updatest-->
+    <!-- Community Updates-->
     <div id="communityTab"></div>
 
 
@@ -55,21 +55,21 @@
 
                     <!-- IMAGE -->
                     HTML += "<td width='15%'>";
-                    HTML += "<a href='profile.html?id=" + x + "'><img src='" + buddyRequest[x][1] + "'/></a>";
+                    HTML += "<a href='index.html#/profile/?id=" + x + "'><img src='" + buddyRequest[x][1] + "'/></a>";
                     HTML += "</td>";
 
                     <!-- IMAGE -->
                     HTML += "<td>";
-                    HTML += "<a href='communityProfile.html?id=" + x + "'>" + buddyRequest[x][0] + "</a>";
+                    HTML += "<a href='index.html#/profile/?id=" + x + "'>" + buddyRequest[x][0] + "</a>";
                     HTML += "</td>";
 
                     <!-- User Action Required -->
                     HTML += "<td width='15%'>";
-                    HTML += "<span title='Accept Request'><a href='#' onclick='deleteNotification(x)'><i class='fa fa-check'></i></a></span>";
+                    HTML += "<span title='Accept Request'><a href='index.html#/notification' onclick='deleteNotification("+x+",true)'><i class='fa fa-check'></i></a></span>";
                     HTML += "</td>";
 
                     HTML += "<td width='15%'>";
-                    HTML += "<span title='Reject Request'><a href='#' onclick='deleteNotification(x)'><i class='fa fa-close'></i></a></span>";
+                    HTML += "<span title='Accept Request'><a href='index.html#/notification' onclick='deleteNotification("+x+",true)'><i class='fa fa-close'></i></a></span>";
                     HTML += "</td>";
 
                     HTML += "</tr>";
@@ -79,23 +79,23 @@
 
             if (newBuddiesList.length != 0) {
                 // Buddy Updates
-                HTML += "<tr><th colspan='4'>NEW BUDDIES</th</tr>";
+                HTML += "<tr><th colspan='4'>NEWEST BUDDIES</th</tr>";
 
                 for (j = 0; j < newBuddiesList.length; j++) {
                     HTML += "<tr>";
 
                     <!-- IMAGE -->
                     HTML += "<td width='15%'>";
-                    HTML += "<a href='index.html#/profile/?test=" + newBuddiesList[j][0] + "'><img src='" + newBuddiesList[j][1] + "'/></a>";
+                    HTML += "<a href='index.html#/profile/?id=" + j + "'><img src='" + newBuddiesList[j][1] + "'/></a>";
                     HTML += "</td>";
 
                     <!-- Name -->
-                    HTML += "<td colspan'2'>";
-                    HTML += "<a href='communityProfile.html?id=" + j + "'>" + newBuddiesList[j][0] + "</a>";
+                    HTML += "<td colspan'2' width='70%'>";
+                    HTML += "<a href='index.html#/profile/?id=" + j + "'>" + newBuddiesList[j][0] + "</a>";
                     HTML += "</td>";
 
                     <!-- Timing -->
-                    HTML += "<td align='right' width:'10%'>";
+                    HTML += "<td align='right'>";
                     HTML += newBuddiesList[j][2];
                     HTML += "</td>";
 
@@ -113,12 +113,12 @@
 
                     <!-- IMAGE -->
                     HTML += "<td width='15%'>";
-                    HTML += "<a href='profile.html?id="+j+"'><img src='" + commUpdates[j][1] + "'/></a>";
+                    HTML += "<a href='index.html#/communityupdate/?id="+j+"'><img src='" + commUpdates[j][1] + "'/></a>";
                     HTML += "</td>";
 
                     <!-- Name and Content -->
                     HTML += "<td colspan='3'>";
-                    HTML += "<a href='communityProfile.html?id="+j+"'>" + commUpdates[j][0] + "</a>";
+                    HTML += "<a href='index.html#/communityupdate/?id="+j+"'>" + commUpdates[j][0] + "</a>";
                     HTML += "<br/>";
                     HTML += commUpdates[j][2];
                     HTML += "</td>";
@@ -126,17 +126,11 @@
                 }
             }
 
-
             HTML += "</table>";
 
             document.getElementById("communityTab").innerHTML = HTML;
         }
 
-        function deleteNotification(i) {
-            buddyRequest.splice(i, 1);
-            alert(buddyRequest);
-            show();
-        }
 
     </script>
 </div>
