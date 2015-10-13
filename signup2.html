@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="connectWorld">
+<html lang="en" ng-app="connectWorld" ng-controller="signUpController2">
 <head>
     <meta charset="utf-8">
     <title>ConnectWorld</title>
@@ -59,17 +59,19 @@
 
 <div style="height: 45%; padding-left: 2.5em;">
     <div style="z-index: auto;">
-        <img style="position: absolute; z-index: 5; max-width: 80%;" src="./img/user.png"/>
+        <img style="position: absolute; z-index: 5; max-width: 80%;" src="./img/user.png" onclick="alert('This function is not implemented')"/>
         <span style="position: absolute; z-index: 10; top:50%; font-size: 18px; font-style: italic; color: white; padding-left: 1em;">Click to upload your profile pic</span>
     </div>
     <br/>
 </div>
 
-<div class="container-input" style="background-color: white;padding:1em; margin:0; font-size: 18px">
+<div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 1em; font-size: 18px">
+
+    <center><div class="loginError">{{errorMsg}}</div></center>
 
     <div class="left-inner-addon">
         <i class="fa fa-user"></i>
-        <input id="name" type="text" class="form-control input-lg" placeholder="Full name"/>
+        <input ng-model="fullname" type="text" class="form-control input-lg" placeholder="Full name"/>
     </div>
     <br/>
 
@@ -84,31 +86,31 @@
 
     <div class="left-inner-addon">
         <i class="fa fa-calendar"></i>
-        <input id="birthday" type="date" class="form-control input-lg" placeholder="Birthday"/>
+        <input ng-model="birthday" type="date" class="form-control input-lg" placeholder="Birthday"/>
     </div>
     <br/>
 
     <div class="left-inner-addon">
         <i class="fa fa-flag"></i>
-        <input id="nationality" type="text" class="form-control input-lg" placeholder="Nationality"/>
+        <input ng-model="nationality" type="text" class="form-control input-lg" placeholder="Nationality"/>
     </div>
     <br/>
 
     <div class="left-inner-addon">
         <i class="fa fa-map-marker"></i>
-        <input id="location" type="text" class="form-control input-lg" placeholder="Location"/>
+        <input ng-model="location" type="text" class="form-control input-lg" placeholder="Location"/>
     </div>
     <br/>
 
     <div class="left-inner-addon">
         <i class="fa fa-language"></i>
-        <input id="languageSpoken" type="text" class="form-control input-lg" placeholder="Language spoken"/>
+        <input ng-model="languageSpoken" type="text" class="form-control input-lg" placeholder="Language spoken"/>
     </div>
     <br/>
 
     <div class="left-inner-addon">
         <i class="fa fa-language"></i>
-        <input id="languageInterested" type="text" class="form-control input-lg" placeholder="Language interested in"/>
+        <input ng-model="languageInterested" type="text" class="form-control input-lg" placeholder="Language interested in"/>
     </div>
     <br/>
 
@@ -120,15 +122,16 @@
 
     <div class="left-inner-addon">
         <i class="fa fa-quote-left"></i>
-        <textarea rows="4" cols="50" id="about" class="form-control input-lg"
+        <textarea rows="4" cols="50" id="about" class="form-control input-lg" style="padding-left: 1.8em;"
                   placeholder="About yourself">            </textarea>
     </div>
     <br/>
     <br/>
 
-    <a ng-href="login.html">
-        <button id="general-button" class="btn btn-primary sign-in-button"> SIGN UP</button>
-    </a>
+
+    <button id="general-button" class="btn btn-primary sign-in-button" ng-click="signUp2()"> SIGN UP
+    </button>
+
     <br/><br/>
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="connectWorld">
+<html lang="en" ng-app="connectWorld" ng-controller="signUpController">
 <head>
     <meta charset="utf-8">
     <title>ConnectWorld</title>
@@ -62,23 +62,31 @@
     <br/>
     <br/>
 
+
+    <center><div class="loginError">{{errorMsg}}</div></center>
     <div class="left-inner-addon">
-        <i class="fa fa-envelope"></i>
-        <input id="username" type="text" class="form-control input-lg" placeholder="Email"/>
+        <i class="fa fa-user"></i>
+        <input ng-model="userName" type="text" class="form-control input-lg" placeholder="Username"/>
     </div>
-    </br>
+    <br/>
 
     <div class="left-inner-addon">
         <i class="fa fa-key"></i>
-        <input id="password" type="password" class="form-control input-lg" placeholder="Password"/>
+        <input ng-model="passWord" type="password" class="form-control input-lg" placeholder="Password"/>
     </div>
-    </br>
     <br/>
+
+
+    <div class="left-inner-addon">
+        <i class="fa fa-envelope"></i>
+        <input ng-model="email" type="text" class="form-control input-lg" placeholder="Email"/>
+    </div>
     <br/>
+
     <br/>
-    <a href="signup2.html">
-        <button id="general-button" class="btn btn-primary sign-in-button"> SIGN UP</button>
-    </a>
+
+    <button id="general-button" class="btn btn-primary sign-in-button" ng-click="signUp()"> SIGN UP</button>
+
     </br>
     </br>
 

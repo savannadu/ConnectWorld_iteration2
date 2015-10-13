@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="css/signup.css">
+
+<!--Page Title-->
+<div id="navbar-template">
+    <div id="page-title">
+        <a ng-href="#/japaneseCooks" style="color: white;">
+            <i class="fa fa-arrow-circle-left"></i>
+        </a>
+        Create a new Event
+    </div>
+</div>
+
+<br/>
+
+<div class="container-input" style="background-color: white;padding:1em; margin:0; font-size: 18px;">
+
+    <div class="left-inner-addon">
+        <i class="fa fa-heart" style="z-index: 100;"></i>
+        <tags-input ng-model="tags"></tags-input>
+    </div>
+    <br/>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-calendar"></i>
+        <input ng-model="eventday" type="date" class="form-control input-lg" placeholder="Event day"/>
+    </div>
+    <br/>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-quote-left"></i>
+        <textarea rows="4" cols="50" id="about" class="form-control input-lg" style="padding-left: 1.8em;"
+                  placeholder="About the event">            </textarea>
+    </div>
+    <br/>
+    <br/>
+
+    <a ng-href="#/japaneseCooks">
+        <button id="general-button" class="btn btn-primary sign-in-button"> CREATE A NEW EVENT </button>
+    </a>
+
+    <br/><br/><br/><br/>
+
+</div>

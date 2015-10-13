@@ -1,0 +1,357 @@
+<link rel="stylesheet" href="css/communityProfile.css">
+
+<!--Page Title-->
+<div id="navbar-template">
+
+    <div id="page-title">
+        <a ng-href="#/myCommunity" style="color: white;">
+            <i class="fa fa-arrow-circle-left"></i>
+        </a>
+        Japanese Cooks
+    </div>
+</div>
+
+<br/>
+
+
+
+<img style="position: absolute; z-index: 5; max-width: 80%; left:10%;" src="./img/japanesefood.jpg""/>
+<br/>
+
+
+<center>
+    <div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 12em; font-size: 18px" ng-controller="japaneseCooksController">
+
+        <div class="col-xs-4" style="padding: 0;">
+            <button id="groupinfo-button" class="btn btn-primary sign-in-button" style="padding-left:0; padding-right:0; background-color: #ffd493; width:90%;" ng-click="showGroupInfo()">
+                GROUP INFO
+            </button>
+        </div>
+        <div class="col-xs-4" style="padding: 0;">
+            <button id="member-button"class="btn btn-primary sign-in-button" style="padding-left:0; padding-right:0; background-color: #ffd493; width:90%;" ng-click="showMembers()">
+                MEMBERS (15)
+            </button>
+        </div>
+        <div class="col-xs-4" style="padding: 0;">
+            <button class="btn btn-primary sign-in-button" style="padding-left:0; padding-right:0; background-color: #ffd493; width:90%;" onclick='alert("This function is not implemented.")'>
+                LEAVE
+            </button>
+        </div>
+
+        <br/>
+        <div class="col-xs-6" style="padding: 0; margin-top: 0.5em;">
+            <button id="upcoming-button" class="btn btn-primary sign-in-button" style="padding-left:0; padding-right:0; background-color: #FEA900; width:90%;" ng-click="showUpcomingEvents()">
+                UPCOMING EVENTS
+            </button>
+        </div>
+
+        <div class="col-xs-6" style="padding: 0; margin-top: 0.5em;">
+            <button id="pastevents-button" class="btn btn-primary sign-in-button" style="padding-left:0; padding-right:0; background-color: #ffd493; width:90%;" ng-click="showPastEvents()">
+                PAST EVENTS
+            </button>
+        </div>
+
+        <div id="upcoming-events" style="border: 1px solid; margin-top: 3.5em; margin-bottom: 3.5em;">
+            <table class="myCommunityTable">
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.5em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/plus.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Create a new event
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 1em; text-align: left; padding-left: 0.5em;">
+                        <input type="checkbox" class="read-more-state" id="post-1" />
+                        <p class="read-more-wrap" style="margin-bottom: 0;">
+                            <span style="font-weight: bold; font-size: 20px;">Traditional Food Hunt </span>
+                            <br/>
+                            <br/><strong>Interests: </strong>Cooking, Food
+                            <br/><strong>Date: </strong>13/11/2015
+                            <span class="read-more-target">
+                        <br/><strong>Organizer: </strong>Maruko Tomosoke
+                        <br/><strong>Member: </strong>Gorou Arakaki, Aiko Hamada, Hikaru Ishibashi, Katsurou Ito, Kichiro Naito, Kokoro Muramoto, Makuro Tomosoke
+                        <br/><strong>Activity description: </strong>Appreciate Japanese culture and traditional food. You will participant in sushi making, sashimi slicing activities. All activities are carried out in Japanese.<br/>
+                        </span></p>
+                        <label for="post-1" class="read-more-trigger"></label>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="past-events" style="display:none; border: 1px solid; margin-top: 3.5em; margin-bottom: 3.5em;">
+            <table class="myCommunityTable">
+
+                <tr>
+                    <td style="padding-top: 1em; text-align: left; padding-left: 0.5em;">
+                        <span style="font-weight: bold; font-size: 20px;"> Movie night </span>
+                        <br/>
+                        <br/><strong>Interests: </strong>Movie, Songs
+                        <br/><strong>Date: </strong>13/11/2015
+                        <br/><strong>Organizer: </strong>Aiko Hamada
+                        <br/><strong>Member: </strong>Gorou Arakaki, Aiko Hamada, Hikaru Ishibashi, Katsurou Ito
+                        <br/><strong>Activity description: </strong>Review classic movie Attack of titans and role play according to the movie by teams.<br/>
+
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="members" style="display:none; border: 1px solid; margin-top: 3.5em; margin-bottom: 3.5em;">
+            <table class="myCommunityTable">
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Maruko Tomosoke
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Gorou Arakaki
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Aiko Hamada
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Hakura Ikeda
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Hikaru Ishibashi
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Katsurou Ito
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Kichiro Naito
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Kokoro Muramoto
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Sibusha Shibata
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Sakurai Sato
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Alan Tan
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Adam Chua
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Le Vu Dai
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Hosana Onggo
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Ivan Wongso
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="group-info" style="display:none; border: 1px solid; margin-top: 3.5em; margin-bottom: 3.5em;">
+            <table class="myCommunityTable">
+
+                <tr>
+                    <td style="padding-top: 1em; text-align: left; padding-left: 0.5em;">
+                        <span style="font-weight: bold; font-size: 20px;"> Movie night </span>
+                        <br/>
+                        <br/><strong>Name: </strong>Japanese Cooks
+                        <br/><strong>Location: </strong>Central, Singapore
+                        <br/><strong>Language: </strong>Japanese
+                        <br/><strong>Interest Tags: </strong>Cooking, Japanese food
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+</center>

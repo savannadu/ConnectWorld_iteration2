@@ -1,4 +1,4 @@
-var connectWorld = angular.module('connectWorld', ['ngRoute', 'firebase', 'ngTagsInput']);
+var connectWorld = angular.module('connectWorld', ['ngRoute', 'ngTagsInput']);
 
 connectWorld.config(['$routeProvider',
     function ($routeProvider) {
@@ -18,9 +18,14 @@ connectWorld.config(['$routeProvider',
                 controller: 'exploreCommunityController'
             }).
 
-            when('/communityProfile', {
-                templateUrl: 'communityProfile.html',
-                controller: 'communityProfileController'
+            when('/japaneseCooks', {
+                templateUrl: 'japaneseCooks.html',
+                controller: 'japaneseCooksController'
+            }).
+
+            when('/createEvent', {
+                templateUrl: 'createEvent.html',
+                controller: 'createEventController'
             }).
 
             when('/myProfile', {
@@ -68,45 +73,18 @@ connectWorld.config(['$routeProvider',
             });
 }]);
 
-//connectWorld.factory('MasterData', function($firebase) {
-//    var ref = new Firebase("https://luminous-heat-6155.firebaseio.com/Users");
-//    var sync = $firebase(ref);
-//    var usersData = sync.$asArray();
-//    
-//    var refGroups = new Firebase("https://luminous-heat-6155.firebaseio.com/Groups");
-//    var syncGroups = $firebase(refGroups);
-//    var groupsData = syncGroups.$asArray();
-//    
-//    var refEvents = new Firebase("https://luminous-heat-6155.firebaseio.com/EventsList");
-//    var syncEvents = $firebase(refEvents);
-//    var eventsData = syncEvents.$asArray();
-//    
-//    var loginUser = "";
-//    
-//  return {
-//    getUsersData: function() {
-//      return usersData;
-//    },
-//    getGroupsData: function() {
-//      return groupsData;
-//    },
-//    getEventsData: function() {
-//      return eventsData;
-//    },
-//    setLoginUser: function(user) {
-//      loginUser = user;
-//    },
-//    getLoginUser: function() {
-//      return loginUser;
-//    }
-//  };
-//});
 
-connectWorld.controller('loginController', function ($scope) {
-
+connectWorld.controller('loginController',
+    function ($scope, $location) {
+        $scope.login = function() {
+            if ($scope.username === 'timgoh' && $scope.password === '123456') {
+                window.location.href = 'index.html#/exploreBuddy';
+            } else {
+                $scope.errorMsg = "Ops! Incorrect username and/or password";
+            }
+        }
 });
 
 connectWorld.controller('logOutController', function ($scope) {
     //setTimeout(function(){ window.location = "index.html#/login"; }, 5000);
 });
-

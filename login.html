@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="connectWorld">
+<html lang="en" ng-app="connectWorld"  ng-controller="loginController">
 <head>
     <meta charset="utf-8">
     <title>ConnectWorld</title>
@@ -52,25 +52,25 @@
             <center><img style="max-height: 8em; " src="./img/logo.png"></center>
         </div>
 
-        <div class="loginError">{{errorMsg}}</div>
+        <center><div class="loginError">{{errorMsg}}</div></center>
 
         <div class="left-inner-addon">
-            <i class="fa fa-envelope"></i>
-            <input id="username" type="text" class="form-control input-lg" placeholder="Email"/>
+            <i class="fa fa-user"></i>
+            <input ng-model="username" type="text" class="form-control input-lg" placeholder="Username"/>
         </div>
         </br>
 
         <div class="left-inner-addon">
             <i class="fa fa-key"></i>
-            <input id="password" type="password" class="form-control input-lg" placeholder="Password"/>
+            <input ng-model="password" type="password" class="form-control input-lg" placeholder="Password"/>
         </div>
         </br>
 
         <br/>
-        <a ng-href="index.html#/exploreBuddy">
-            <button id="general-button" class="btn btn-primary sign-in-button">LOG IN
+
+            <button id="general-button" class="btn btn-primary sign-in-button" ng-click="login()">LOG IN
             </button>
-        </a>
+
             <br/>
             <br/>
             <br/>
