@@ -2,7 +2,6 @@
  * Created by Savanna on 7/10/2015.
  */
 connectWorld.controller('myProfileController', ['$scope', function ($scope) {
-    $scope.sk = 1;
     $scope.basicInfo =
     {
         "name": "Jimmy Goh",
@@ -38,27 +37,12 @@ connectWorld.controller('myProfileController', ['$scope', function ($scope) {
     //    document.getElementById(idDisplay).style.display = "none";
     //};
     //
-    //$scope.update = function (basicInfo, language, interestTags) {
-    //    $scope.basicInfo = angular.copy(basicInfo);
-    //    $scope.langugae = angular.copy(language);
-    //    $scope.master = angular.copy(interestTags);
-    //
-    //};
-    //
-    //$scope.reset = function (form) {
-    //    if (form) {
-    //        form.$setPristine();
-    //        form.$setUntouched();
-    //    }
-    //    $scope.basicInfo = angular.copy(basicInfo);
-    //    $scope.langugae = angular.copy(language);
-    //    $scope.master = angular.copy(interestTags);
-    //};
+
     //
     //$scope.reset();
 }]);
 
-connectWorld.controller('peopleProfileController', ['$scope', function ($scope) {
+connectWorld.controller('editMyProfileController', ['$scope', function ($scope) {
     $scope.basicInfo =
     {
         "name": "Jimmy Goh",
@@ -80,20 +64,6 @@ connectWorld.controller('peopleProfileController', ['$scope', function ($scope) 
         {"tag": "Animie"},
         {"tag": "Pokemon"}
     ];
-    $scope.edit = function () {
-        var x = document.getElementById("editProfile");
-        var text = "";
-        var i;
-        for (i = 0; i < x.length; i++) {
-            text += x.elements[i].value + "<br>";
-        }
-        document.getElementById("demo").innerHTML = text;
-    };
-    $scope.setVisibility = function (idHide, idDisplay) {
-        document.getElementById(idHide).style.display = "inline";
-        document.getElementById(idDisplay).style.display = "none";
-    };
-
     $scope.update = function (basicInfo, language, interestTags) {
         $scope.basicInfo = angular.copy(basicInfo);
         $scope.langugae = angular.copy(language);
@@ -111,7 +81,6 @@ connectWorld.controller('peopleProfileController', ['$scope', function ($scope) 
         $scope.master = angular.copy(interestTags);
     };
 
-    $scope.reset();
 }]);
 /*
 connectWorld.run(function (editableOptions) {

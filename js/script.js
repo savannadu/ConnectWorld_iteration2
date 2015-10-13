@@ -27,6 +27,10 @@ connectWorld.config(['$routeProvider',
                 templateUrl: 'myProfile.html',
                 controller: 'myProfileController'
             }).
+            when('/editMyProfile', {
+                templateUrl: 'editMyProfile.html',
+                controller: 'editMyProfileController'
+            }).
 
             when('/peopleProfile', {
                 templateUrl: 'myProfile.html',
