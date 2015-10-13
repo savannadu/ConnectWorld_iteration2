@@ -43,8 +43,9 @@
 }
 
 #page-title{
-    font-family: 'forte', sans-serif;
+    font-family: sans-serif, 'forte';
     color:white;
+    font-weight: bold;
 }
 
 #customized-dropdown-menu {
