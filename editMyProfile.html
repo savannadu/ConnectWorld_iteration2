@@ -3,9 +3,7 @@
 <!--meta name="viewport" content="initial-scale=1; maximum-scale=1; minimum-scale=1;"/>
 <!-- navbar-template -->
 <div id="navbar-template">
-    <div id="page-title"> My Profile</div>
-<<<<<<< HEAD
-=======
+    <div id="page-title">Edit My Profile</div>
 </div>
 
 <!-- bootstrap and bootflat css -->
@@ -39,42 +37,58 @@
 <div style="padding:0">
     <br/>
     <!--container to add content -->
-    <div class="container-fluid" ng-controller="myProfileController">
+    <div class="container-fluid" ng-controller="editMyProfileController">
         <div id="infoLayer">
             <div class="thumbnail">
                 <div class="avarta">
                     <img src="./img/buddyProfilePic.png" alt="Profile Picture">
-                    <div>
-                        <a class="edit" href="./index.html#/editMyProfile">Edit</a>
-                        <!--<input type=button name=type class="edit" value="Edit"-->
-                        <!--onclick="setVisibility('infoLayer', 'formLayer');">-->
-                    </div>
-                    <!--p  ng-click="editProfile($scope)">Edit</p-->
                 </div>
             </div>
             <p>
 
-            <div class="biContainer thumbnail">
-                <table class="gridtable">
-                    <th colspan="2">Basic Information</th>
-                    <tr>
-                        <td>Gender</td>
-                        <td>{{ basicInfo.gender}}</td>
-                    </tr>
-                    <tr>
-                        <td>Birthday</td>
-                        <td>{{basicInfo.birthday | date }}</td>
-                    </tr>
-                    <tr>
-                        <td>Nationality</td>
-                        <td>{{basicInfo.nationality}}</td>
-                    </tr>
-                    <tr>
-                        <td>Location</td>
-                        <td>{{basicInfo.location}}</td>
-                    </tr>
-                </table>
-            </div>
+            <form name="form" novalidate>
+                <p>
+
+                <div class="biContainer thumbnail">
+                    <table class="gridtable">
+                        <th colspan="2">Basic Information</th>
+                        <tr>
+                            <td>Gender</td>
+                            <td><input type="radio" ng-model="basicInfo.Gender" value="male" name="gender"/>Male
+                                <input type="radio" ng-model="user.gender" value="female" name="gender"/>Female
+                                <div ng-show="form.$submitted && form.gender.$touched">
+                                    <div ng-show="form.gender.$error.required">Please fill in your gender.</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Birthday</td>
+                            <td><input type="date" name="birthday" ng-model="basicInfo.birthday" required=""/>
+
+                                <div ng-show="form.$submitted || form.birthday.$touched">
+                                    <div ng-show="form.birthday.$error.required">Please fill in your birthday.</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nationality</td>
+                            <td>
+                                <input type="text" name="nationality" ng-model="basicInfo.nationality" required=""/>
+
+                                <div ng-show="form.$submitted || form.nationality.$touched">
+                                    <div ng-show="form.nationality.$error.required">Please fill in your nationality.
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td>
+                                <input type="text" name="location" ng-model="basicInfo.location" required=""/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </p>
 
             <p>
@@ -84,15 +98,19 @@
                     <th colspan="2">Language</th>
                     <tr>
                         <td>Proficient In</td>
-                        <td>{{ language.proficient}}</td>
+                        <td>
+                            <input type="text" name="proficient" ng-model="language.proficient" required=""/>
+                        </td>
                     </tr>
                     <tr>
                         <td>Interested In</td>
-                        <td>{{language.interested}}</td>
+                        <td>
+                            <input type="text" name="interested" ng-model="language.interested" required=""/>
+                        </td>
                     </tr>
                 </table>
             </div>
-
+            </p>
 
             <p>
 
@@ -102,9 +120,8 @@
 
                     <tr>
                         <td colspan="2" style="font-weight:normal">
-
-                    <span ng-repeat="interestTag in interestTags">{{interestTag.tag}}<span
-                            ng-if="!$last">, </span></span>
+                            <input type="text" name="interestTag" ng-repeat="interestTag in interestTags"
+                                   ng-model="interestTag.tag"/>
                         </td>
                     </tr>
 
@@ -119,14 +136,21 @@
                     <th colspan="2">About Myself</th>
                     <tr>
                         <td colspan="2" style="font-weight:normal" class="pre-scrollable">
-                            {{basicInfo.mySelf}}
+                            <input type="text" name="myself" ng-model="basicInfo.mySelf"/>
                         </td>
                     </tr>
 
                 </table>
+
             </div>
+
             </p>
+            <input type="button" ng-click="reset(form)" value="Reset"/>
+            <input type="submit" ng-click="update(BasicInfo,language,interestTags)" value="Save"/>
+            </form>
         </div>
+
+
     </div>
     <!--button style="display: block; width: 100%;background-color:#FE7300" type="button" class="btn btn-primary sign-in-button" ng-click="login()">Sign In</button-->
 
@@ -134,5 +158,4 @@
     <br/>
     <br/>
 
->>>>>>> refs/remotes/origin/duxue_branch
 </div>

@@ -1,36 +1,6 @@
-<!--Page Title-->
-<!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">-->
-<!--meta name="viewport" content="initial-scale=1; maximum-scale=1; minimum-scale=1;"/>
-<!-- navbar-template -->
 <div id="navbar-template">
-    <div id="page-title"> My Profile</div>
-<<<<<<< HEAD
-=======
+    <div id="page-title">Profile</div>
 </div>
-
-<!-- bootstrap and bootflat css -->
-<!--<link rel="stylesheet" href="css/site.min.css">-->
-<!--<link rel="stylesheet" href="css/generalTemplate.css">-->
-<link rel="stylesheet" href="css/myProfile.css">
-<link href="css/custom.css" rel="stylesheet">
-<link href="css/animate.css" rel="stylesheet" type="text/css"/>
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet"/>
-<link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-<!--angular-->
-<!--<script src="js/angular.min.js"></script>-->
-<!--<script src="js/angular-route.js"></script>-->
-
-<!-- jQuery scroll to panel -->
-<script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
-<script src="js/jquery.scrollstop.js" type="text/javascript"></script>
-<script src="js/jquery.easing.min.js" type="text/javascript"></script>
-<script src="js/jquery.scrollsnap.js" type="text/javascript"></script>
 
 <!--custom script-->
 <script src="js/savannascript.js"></script>
@@ -44,10 +14,11 @@
             <div class="thumbnail">
                 <div class="avarta">
                     <img src="./img/buddyProfilePic.png" alt="Profile Picture">
+
                     <div>
-                        <a class="edit" href="./index.html#/editMyProfile">Edit</a>
-                        <!--<input type=button name=type class="edit" value="Edit"-->
-                        <!--onclick="setVisibility('infoLayer', 'formLayer');">-->
+                        <!--a class="edit" href="./editMyProfile.html">Edit</a-->
+                        <input type=button name=type class="edit" value="Edit"
+                               onclick="setVisibility('infoLayer', 'formLayer');">
                     </div>
                     <!--p  ng-click="editProfile($scope)">Edit</p-->
                 </div>
@@ -103,7 +74,7 @@
                     <tr>
                         <td colspan="2" style="font-weight:normal">
 
-                    <span ng-repeat="interestTag in interestTags">{{interestTag.tag}}<span
+                    <span> ng-repeat="interestTag in interestTags">{{interestTag.tag}}<span
                             ng-if="!$last">, </span></span>
                         </td>
                     </tr>
@@ -134,5 +105,4 @@
     <br/>
     <br/>
 
->>>>>>> refs/remotes/origin/duxue_branch
 </div>
