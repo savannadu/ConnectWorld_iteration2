@@ -4,8 +4,7 @@
 connectWorld.controller('myProfileController', ['$scope', function ($scope) {
     $scope.basicInfo =
     {
-        "name": "Jimmy Goh",
-        "profilePic": "../img/buddyProfilePic.png",
+        "fullname": "Jimmy Goh",
         "gender": "Male",
         "birthday": new Date('1989', '10', '10'),
         "nationality": "Singaporean",
@@ -17,36 +16,27 @@ connectWorld.controller('myProfileController', ['$scope', function ($scope) {
         "proficient": "English, Mandarine",
         "interested": "Japanese, French"
     };
-    $scope.interestTags = [
-        {"tag": "Cooking"},
-        {"tag": "Travel"},
-        {"tag": "Animie"},
-        {"tag": "Pokemon"}
+    $scope.tags = [
+        {"text": "Cooking"},
+        {"text": "Travel"},
+        {"text": "Anime"},
+        {"text": "Pokemon"}
     ];
-    //$scope.edit = function() {
-    //    var x = document.getElementById("editProfile");
-    //    var text = "";
-    //    var i;
-    //    for (i = 0; i < x.length ;i++) {
-    //        text += x.elements[i].value + "<br>";
-    //    }
-    //    document.getElementById("demo").innerHTML = text;
-    //};
-    //$scope.setVisibility=function(idHide,idDisplay) {
-    //    document.getElementById(idHide).style.display = "inline";
-    //    document.getElementById(idDisplay).style.display = "none";
-    //};
-    //
 
-    //
-    //$scope.reset();
+    $scope.update = function (basicInfo, language, interestTags) {
+        $scope.basicInfo = angular.copy(basicInfo);
+        $scope.langugae = angular.copy(language);
+        $scope.master = angular.copy(interestTags);
+
+    };
+
 }]);
 
 connectWorld.controller('editMyProfileController', ['$scope', function ($scope) {
+
     $scope.basicInfo =
     {
-        "name": "Jimmy Goh",
-        "profilePic": "../img/buddyProfilePic.png",
+        "fullname": "Jimmy Goh",
         "gender": "Male",
         "birthday": new Date('1989', '10', '10'),
         "nationality": "Singaporean",
@@ -58,11 +48,11 @@ connectWorld.controller('editMyProfileController', ['$scope', function ($scope) 
         "proficient": "English, Mandarine",
         "interested": "Japanese, French"
     };
-    $scope.interestTags = [
-        {"tag": "Cooking"},
-        {"tag": "Travel"},
-        {"tag": "Animie"},
-        {"tag": "Pokemon"}
+    $scope.tags = [
+        {"text": "Cooking"},
+        {"text": "Travel"},
+        {"text": "Animie"},
+        {"text": "Pokemon"}
     ];
     $scope.update = function (basicInfo, language, interestTags) {
         $scope.basicInfo = angular.copy(basicInfo);
@@ -71,19 +61,5 @@ connectWorld.controller('editMyProfileController', ['$scope', function ($scope) 
 
     };
 
-    $scope.reset = function (form) {
-        if (form) {
-            form.$setPristine();
-            form.$setUntouched();
-        }
-        $scope.basicInfo = angular.copy(basicInfo);
-        $scope.langugae = angular.copy(language);
-        $scope.master = angular.copy(interestTags);
-    };
-
 }]);
-/*
-connectWorld.run(function (editableOptions) {
-    editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
-});
-*/
+

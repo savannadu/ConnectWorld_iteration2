@@ -1,155 +1,119 @@
+<link rel="stylesheet" href="css/myProfile.css">
 <!--Page Title-->
-<!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">-->
-<!--meta name="viewport" content="initial-scale=1; maximum-scale=1; minimum-scale=1;"/>
-<!-- navbar-template -->
 <div id="navbar-template">
-    <div id="page-title">Edit My Profile</div>
+    <div id="page-title">
+        Timmy Goh Zy
+    </div>
 </div>
 
-<!-- bootstrap and bootflat css -->
-<!--<link rel="stylesheet" href="css/site.min.css">-->
-<!--<link rel="stylesheet" href="css/generalTemplate.css">-->
-<link rel="stylesheet" href="css/myProfile.css">
-<link href="css/custom.css" rel="stylesheet">
-<link href="css/animate.css" rel="stylesheet" type="text/css"/>
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet"/>
-<link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+<br/>
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-<!--angular-->
-<!--<script src="js/angular.min.js"></script>-->
-<!--<script src="js/angular-route.js"></script>-->
-
-<!-- jQuery scroll to panel -->
-<script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
-<script src="js/jquery.scrollstop.js" type="text/javascript"></script>
-<script src="js/jquery.easing.min.js" type="text/javascript"></script>
-<script src="js/jquery.scrollsnap.js" type="text/javascript"></script>
-
-<!--custom script-->
-<script src="js/savannascript.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
-
-<div style="padding:0">
+<div style="height: 45%; padding-left: 2.5em;">
+    <div style="z-index: auto;">
+        <img style="position: absolute; z-index: 5; max-width: 80%;" src="./img/timmygoh.jpg" onclick="alert('This function is not implemented')"/>
+        <span style="position: absolute; z-index: 10; top:11%; right: 3%;">
+            <a ng-href="#/myProfile">
+                <button class="btn btn-primary sign-in-button" style="background-color: #FEA900; width:100%;" onclick="alert('This function is not implemented. Profile will not be updated.')">
+                    DONE
+                </button>
+            </a>
+        </span>
+        <span style="position: absolute; z-index: 10; top:50%; font-size: 18px; font-style: italic; color: white; padding-left: 1em;">Click to upload your profile pic</span>
+    </div>
     <br/>
+</div>
+
+<center>
     <!--container to add content -->
-    <div class="container-fluid" ng-controller="editMyProfileController">
-        <div id="infoLayer">
-            <div class="thumbnail">
-                <div class="avarta">
-                    <img src="./img/buddyProfilePic.png" alt="Profile Picture">
-                </div>
-            </div>
-            <p>
+    <div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 15em; font-size: 18px" ng-controller="myProfileController">
+        <div id="basic-info" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Basic Information
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <div class="row">
+                            <span class="category-display-edit">Gender: </span>
+                            <span class="details-display-edit"> {{basicInfo.gender}} </span>
+                        </div>
 
-            <form name="form" novalidate>
-                <p>
+                        <div class="row">
+                            <span class="category-display-edit">Birthday: </span>
+                            <span class="details-display">
+                                <input ng-model="basicInfo.birthday" type="date" class="edit-input" style="line-height: normal"/>
+                            </span>
+                        </div>
 
-                <div class="biContainer thumbnail">
-                    <table class="gridtable">
-                        <th colspan="2">Basic Information</th>
-                        <tr>
-                            <td>Gender</td>
-                            <td><input type="radio" ng-model="basicInfo.Gender" value="male" name="gender"/>Male
-                                <input type="radio" ng-model="user.gender" value="female" name="gender"/>Female
-                                <div ng-show="form.$submitted && form.gender.$touched">
-                                    <div ng-show="form.gender.$error.required">Please fill in your gender.</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Birthday</td>
-                            <td><input type="date" name="birthday" ng-model="basicInfo.birthday" required=""/>
+                        <div class="row">
+                            <span class="category-display-edit">Nationality: </span>
+                            <span class="details-display">
+                                <input ng-model="basicInfo.nationality" type="text" class="edit-input"/>
+                            </span>
+                        </div>
 
-                                <div ng-show="form.$submitted || form.birthday.$touched">
-                                    <div ng-show="form.birthday.$error.required">Please fill in your birthday.</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Nationality</td>
-                            <td>
-                                <input type="text" name="nationality" ng-model="basicInfo.nationality" required=""/>
-
-                                <div ng-show="form.$submitted || form.nationality.$touched">
-                                    <div ng-show="form.nationality.$error.required">Please fill in your nationality.
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Location</td>
-                            <td>
-                                <input type="text" name="location" ng-model="basicInfo.location" required=""/>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </p>
-
-            <p>
-
-            <div class="biContainer thumbnail">
-                <table class="gridtable centered">
-                    <th colspan="2">Language</th>
-                    <tr>
-                        <td>Proficient In</td>
-                        <td>
-                            <input type="text" name="proficient" ng-model="language.proficient" required=""/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Interested In</td>
-                        <td>
-                            <input type="text" name="interested" ng-model="language.interested" required=""/>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            </p>
-
-            <p>
-
-            <div class="biContainer thumbnail">
-                <table class="gridtable centered">
-                    <th colspan="2">Interest Tags</th>
-
-                    <tr>
-                        <td colspan="2" style="font-weight:normal">
-                            <input type="text" name="interestTag" ng-repeat="interestTag in interestTags"
-                                   ng-model="interestTag.tag"/>
-                        </td>
-                    </tr>
-
-                </table>
-            </div>
-            </p>
-
-            <p>
-
-            <div class="biContainer thumbnail">
-                <table class="gridtable centered">
-                    <th colspan="2">About Myself</th>
-                    <tr>
-                        <td colspan="2" style="font-weight:normal" class="pre-scrollable">
-                            <input type="text" name="myself" ng-model="basicInfo.mySelf"/>
-                        </td>
-                    </tr>
-
-                </table>
-
-            </div>
-
-            </p>
-            <input type="button" ng-click="reset(form)" value="Reset"/>
-            <input type="submit" ng-click="update(BasicInfo,language,interestTags)" value="Save"/>
-            </form>
+                        <div class="row">
+                            <span class="category-display-edit">Location: </span>
+                            <span class="details-display">
+                                <input ng-model="basicInfo.location" type="text" class="edit-input"/>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
 
+        <div id="language" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Language
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <div class="row">
+                            <span class="category-display-edit">Proficient: </span>
+                            <span class="details-display">
+                                <input ng-model="language.proficient" type="text" class="edit-input"/>
+                            </span>
+                        </div>
+
+                        <div class="row">
+                            <span class="category-display-edit">Interested : </span>
+                            <span class="details-display">
+                                <input ng-model="language.interested" type="text" class="edit-input"/>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="interest-tags" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Interest Tags
+                </td></tr>
+                <tr>
+                    <td>
+                        <tags-input ng-model="tags">
+                        </tags-input>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="about" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    About Myself
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <textarea rows="8" cols="50" ng-model="basicInfo.mySelf" class="form-control input-lg" style="padding-left: 1.8em;"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
     </div>
     <!--button style="display: block; width: 100%;background-color:#FE7300" type="button" class="btn btn-primary sign-in-button" ng-click="login()">Sign In</button-->
@@ -158,4 +122,4 @@
     <br/>
     <br/>
 
-</div>
+</center>

@@ -1,106 +1,92 @@
+<link rel="stylesheet" href="css/myProfile.css">
+
 <!--Page Title-->
 <div id="navbar-template">
-    <div id="page-title"> My Profile</div>
+    <div id="page-title"> Timmy Goh Zy </div>
 </div>
 
-<script src="js/savannascript.js"></script>
+<br/>
 
-<div style="padding:0">
+<div style="height: 45%; padding-left: 2.5em;">
+    <div style="z-index: auto;">
+        <img style="position: absolute; z-index: 5; max-width: 80%;" src="./img/timmygoh.jpg"/>
+        <span style="position: absolute; z-index: 10; top:11%; right: 3%;">
+            <a ng-href="#/editMyProfile">
+                <button class="btn btn-primary sign-in-button" style="background-color: #FEA900; width:100%;">
+                    EDIT
+                </button>
+            </a>
+        </span>
+    </div>
     <br/>
+</div>
+
+<center>
     <!--container to add content -->
-    <div class="container-fluid" ng-controller="myProfileController">
-        <div id="infoLayer">
-            <div class="thumbnail">
-                <div class="avarta">
-                    <img src="./img/buddyProfilePic.png" alt="Profile Picture">
-                    <div>
-                        <a class="edit" href="./index.html#/editMyProfile">Edit</a>
-                        <!--<input type=button name=type class="edit" value="Edit"-->
-                        <!--onclick="setVisibility('infoLayer', 'formLayer');">-->
-                    </div>
-                    <!--p  ng-click="editProfile($scope)">Edit</p-->
-                </div>
-            </div>
-            <p>
+    <div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 15em; font-size: 18px" ng-controller="myProfileController">
+        <div id="basic-info" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Basic Information
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <span class="category-display">Gender: </span> <span class="details-display"> {{ basicInfo.gender}} </span>
+                        <br/><span class="category-display">Birthday: </span> <span class="details-display"> {{basicInfo.birthday | date }} </span>
+                        <br/><span class="category-display">Nationality: </span> <span class="details-display"> {{basicInfo.nationality}} </span>
+                        <br/><span class="category-display">Location: </span> <span class="details-display"> {{basicInfo.location}} </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-            <div class="biContainer thumbnail">
-                <table class="gridtable">
-                    <th colspan="2">Basic Information</th>
-                    <tr>
-                        <td>Gender</td>
-                        <td>{{ basicInfo.gender}}</td>
-                    </tr>
-                    <tr>
-                        <td>Birthday</td>
-                        <td>{{basicInfo.birthday | date }}</td>
-                    </tr>
-                    <tr>
-                        <td>Nationality</td>
-                        <td>{{basicInfo.nationality}}</td>
-                    </tr>
-                    <tr>
-                        <td>Location</td>
-                        <td>{{basicInfo.location}}</td>
-                    </tr>
-                </table>
-            </div>
-            </p>
+        <div id="language" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Language
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <span class="category-display">Proficient in: </span> <span class="details-display">{{ language.proficient}} </span>
+                        <br/><span class="category-display">Interested in: </span> <span class="details-display">{{language.interested}} </span>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-            <p>
+        <div id="interest-tags" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Interest Tags
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;padding-left:1em;">
+                        <span class="interest-tag" ng-repeat="interestTag in tags">{{interestTag.text}}</span>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-            <div class="biContainer thumbnail">
-                <table class="gridtable centered">
-                    <th colspan="2">Language</th>
-                    <tr>
-                        <td>Proficient In</td>
-                        <td>{{ language.proficient}}</td>
-                    </tr>
-                    <tr>
-                        <td>Interested In</td>
-                        <td>{{language.interested}}</td>
-                    </tr>
-                </table>
-            </div>
-
-
-            <p>
-
-            <div class="biContainer thumbnail">
-                <table class="gridtable centered">
-                    <th colspan="2">Interest Tags</th>
-
-                    <tr>
-                        <td colspan="2" style="font-weight:normal">
-
-                    <span ng-repeat="interestTag in interestTags">{{interestTag.tag}}<span
-                            ng-if="!$last">, </span></span>
-                        </td>
-                    </tr>
-
-                </table>
-            </div>
-            </p>
-
-            <p>
-
-            <div class="biContainer thumbnail">
-                <table class="gridtable centered">
-                    <th colspan="2">About Myself</th>
-                    <tr>
-                        <td colspan="2" style="font-weight:normal" class="pre-scrollable">
-                            {{basicInfo.mySelf}}
-                        </td>
-                    </tr>
-
-                </table>
-            </div>
-            </p>
+        <div id="about" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    About Myself
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;padding-left:1em;">
+                        <span style="text-align: justify;">{{basicInfo.mySelf}}</span>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
-    <!--button style="display: block; width: 100%;background-color:#FE7300" type="button" class="btn btn-primary sign-in-button" ng-click="login()">Sign In</button-->
+
 
     <br/>
     <br/>
     <br/>
 
-</div>
+</center>
