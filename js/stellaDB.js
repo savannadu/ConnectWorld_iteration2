@@ -1,26 +1,40 @@
+// User Profiles
+var userProfiles = [
+  ["Tinna", "18", "Female", ["English", "Japanese"], "img/greyprofilepic.png"],
+  ["Ted", "28", "Male", ["English", "French"], "img/greyprofilepic.png"],
+  ["Makuro", "23", "Male", ["English", "Japanese"], "img/greyprofilepic.png"],
+  ["Louise", "20", "Male", ["Japanese", "Korean"], "img/greyprofilepic.png"],
+  ["Stella", "20", "Female", ["English", "Chinese"], "img/greyprofilepic.png"],
+  ["John", "40", "Male", ["Malay", "Chinese"], "img/greyprofilepic.png"],
+  ["Leo", "25", "Male", ["English", "Chinese", "Cantonese"], "img/greyprofilepic.png"],
+  ["Shane", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"]
+];
+
 
 // NOTIFICATION
+var buddyRequest;
 
 if (sessionStorage.getItem("buddyRequest")) {
     // Restore the contents of the text field
-    var buddyRequest = JSON.parse(sessionStorage.getItem("buddyRequest"));
+    buddyRequest = JSON.parse(sessionStorage.getItem("buddyRequest"));
 } else {
-    var buddyRequest = [
-        ["Amy", "img/greyprofilepic.png"],
-        ["John", "img/greyprofilepic.png"],
-        ["Harry", "img/greyprofilepic.png"],
-        ["Amanda", "img/greyprofilepic.png"],
-        ["Leo", "img/greyprofilepic.png"]
+    buddyRequest = [
+        ["Tinna", 0],
+        ["John", 5],
+        ["Ted", 1],
+        ["Makuro", 3],
+        ["Leo", 6]
     ];
 }
 
+var newBuddiesList;
+
 if (sessionStorage.getItem("newBuddiesList")) {
     // Restore the contents of the text field
-    var newBuddiesList = JSON.parse(sessionStorage.getItem("newBuddiesList"));
+    newBuddiesList = JSON.parse(sessionStorage.getItem("newBuddiesList"));
 } else {
-    var newBuddiesList = [
-        ["Shane", "img/greyprofilepic.png", "2 Days Ago"],
-        ["May", "img/greyprofilepic.png", "Yesterday"]
+    newBuddiesList = [
+        ["Shane has accepted your request", "2 Days Ago", 7]
     ];
 }
 
@@ -38,8 +52,11 @@ var commentSora  = [
 ];
 var commentBuddy = [
     [0,"Hi XXX are you coming to the event later on tonight?"],
-    [1,"Hi Timmy, yeah, but I'm not familiar with the location"]
+    [1,"Hi Timmy, yeah, but I'm not familiar with the location"],
+    [0,"No worries, let's meet at City Hall MRT @ 5 later then!"],
+    [1,"&#30906;&#20449;&#12375;&#12390;"]
 ];
+// Converter http://mylanguages.org/converter.php
 
 var commentDB = [
     ["XiaoMing","img/greyprofilepic.png",commentBuddy],
@@ -53,17 +70,16 @@ var commentDB = [
 
 function deleteNotification(i, request) {
     var name = buddyRequest[i][0];
-    var image = buddyRequest[i][1];
     buddyRequest.splice(i, 1);
-    sessionStorage.setItem('buddyRequest',  JSON.stringify(buddyRequest));
+    //sessionStorage.setItem('buddyRequest',  JSON.stringify(buddyRequest));
 
     if (request){
         alert(name + "'s Buddy Request Accepted" );
         if (newBuddiesList.length==3){
             newBuddiesList.shift();
         }
-        newBuddiesList.push([name, image, "Today"]);
-        sessionStorage.setItem('newBuddiesList',  JSON.stringify(newBuddiesList));
+        newBuddiesList.push([name, "Today", i]);
+        //sessionStorage.setItem('newBuddiesList',  JSON.stringify(newBuddiesList));
 
     } else {
         alert(name + "'s Buddy Request Rejected");

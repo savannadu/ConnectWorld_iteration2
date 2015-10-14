@@ -13,7 +13,9 @@
     td, th {
         font-size: 120%;
         padding: 5px 0px;
+        padding: 5px 5px 5px 5px;
     }
+
 </style>
 
 <!--Page Title-->
@@ -37,17 +39,18 @@
         }
         // Buddy Requests
         for (x = 0; x < buddyRequest.length; x++) {
+            var buddy = userProfiles[buddyRequest[x][1]];
             HTML += "<tr>";
 
             <!-- IMAGE -->
             HTML += "<td width='15%'>";
 
-            HTML += "<a href=''index.html#/profile/?id=" + x + "'><img src='" + buddyRequest[x][1] + "'/></a>";
+            HTML += "<a href=''index.html#/profile/?id=" + x + "'><img src='" + buddy[4] + "'/></a>";
             HTML += "</td>";
 
             <!-- IMAGE -->
             HTML += "<td>";
-            HTML += "<a href='index.html#/profile/?id=" + x + "'>" + buddyRequest[x][0] + "</a>";
+            HTML += "<a href='index.html#/profile/?id=" + x + "'>" + buddy[0] + "</a>";
             HTML += "</td>";
 
             <!-- User Action Required -->
