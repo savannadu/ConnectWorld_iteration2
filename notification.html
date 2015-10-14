@@ -76,13 +76,12 @@
                     HTML += "</td>";
 
                     HTML += "<td width='10%'>";
-                    HTML += "<span title='Accept Request'><a href='index.html#/notification' onclick='deleteNotification("+x+",true)'><i class='fa fa-close'></i></a></span>";
+                    HTML += "<span title='Accept Request'><a href='index.html#/notification' onclick='deleteNotification("+x+",false)'><i class='fa fa-close'></i></a></span>";
                     HTML += "</td>";
 
                     HTML += "</tr>";
                 }
             }
-            alert(newBuddiesList);
             if (newBuddiesList.length != 0) {
                 // Buddy Updates
                 HTML += "<tr><th colspan='4'>NEWEST BUDDIES</th></tr>";

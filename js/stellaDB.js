@@ -71,7 +71,7 @@ var commentDB = [
 function deleteNotification(i, request) {
     var name = buddyRequest[i][0];
     buddyRequest.splice(i, 1);
-    //sessionStorage.setItem('buddyRequest',  JSON.stringify(buddyRequest));
+    sessionStorage.setItem('buddyRequest',  JSON.stringify(buddyRequest));
 
     if (request){
         alert(name + "'s Buddy Request Accepted" );
@@ -79,7 +79,7 @@ function deleteNotification(i, request) {
             newBuddiesList.shift();
         }
         newBuddiesList.push([name, "Today", i]);
-        //sessionStorage.setItem('newBuddiesList',  JSON.stringify(newBuddiesList));
+        sessionStorage.setItem('newBuddiesList',  JSON.stringify(newBuddiesList));
 
     } else {
         alert(name + "'s Buddy Request Rejected");
