@@ -1,0 +1,163 @@
+<script src="./js/stellaDB.js"></script>
+<link rel="stylesheet" href="./css/font-awesome.min.css"/>
+
+<style>
+    img{
+        width: 3em;
+        height: 3em;
+    }
+    div.commentLog {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 5;
+    }
+    div.inputComment {
+        margin-bottom: 10px;
+        width:100%;
+        position: absolute;
+        z-index: 10;
+        bottom: -0.7em;
+    }
+    tr.odd {
+        background: #ffebba;
+    }
+
+    td.icon {
+        vertical-align: text-top;
+        witdh: 30px;
+    }
+
+    .resizedTextbox {
+        width: 99%;
+        height: 10%;
+    }
+
+    .inactiveLink {
+        pointer-events: none;
+        cursor: default;
+        color: white;
+    }
+
+    td, th {
+        font-size: 18px;
+        padding: 5px 5px 5px 5px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+
+</style>
+
+<!--Page Title-->
+<div id="navbar-template">
+    <div id="page-title">
+        <a href="#" onclick="window.history.go(-1); return false;">
+            <i class=" fa fa-arrow-circle-left" style="color: white"></i>
+        </a>
+        <a href="#" id="idDisplay" class="inactiveLink"></a>
+    </div>
+</div>
+
+<div style="height: 530px; padding:0; position: relative; margin: 0;">
+    <div class="container-fluid" style="padding:0; position: relative; height: 100%;">
+        <div id="displayComment" class='commentLog'></div>
+        <div class="inputComment">
+            <table width="100%">
+                <tr>
+                    <td style="padding-bottom: 0; line-height: 28px;">
+                        <form id="myForm">
+                            <input id="comment" name="userInput" type="text" placeholder="Comment here" class="resizedTextbox" autocomplete="off" value=""/>
+                        </form>
+                    </td>
+                    <td style="padding-bottom: 0; width:5%">
+                        <!-- need but type or else info deleted -->
+                        <button type="button" onclick="insertComment()" style="font-size: 22px; line-height: 28px;">
+                            <i class="fa fa-send"></i>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var buddyID;
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        return results[1] || 0;
+    }
+
+    buddyid = $.urlParam('id');
+
+    show();
+    var chatHistory;
+    function show () {
+        var HTML = "<table width='100%'>";
+        chatHistory = commentDB[buddyid][2];
+        if (chatHistory.length <= 0){
+            HTML += "<tr><td>No Chat History</td></tr>";
+        }
+
+        // Buddy Requests
+        for (x = 0; x < chatHistory.length; x++) {
+            var buddyLog = chatHistory[x];
+            if (buddyLog[0] % 2 == 1){
+                HTML += "<tr class='odd'>";
+                <!-- IMAGE for chat buddy-->
+                HTML += "<td width='15%' valign='top'>";
+                HTML += "<img src='" + userProfiles[commentDB[buddyid][1]][4] + "'/>";
+                HTML += "</td>";
+
+                <!-- Comment Box -->
+                HTML += "<td>";
+                HTML += buddyLog[1];
+                HTML += "</td>";
+
+                HTML += "<td></td>";
+
+            } else {
+                HTML += "<tr>";
+                HTML += "<td></td>";
+
+                <!-- Comment Box -->
+                HTML += "<td>";
+                HTML += buddyLog[1];
+                HTML += "</td>";
+
+                <!-- IMAGE for me-->
+                HTML += "<td width='15%' valign='top'>";
+                HTML += "<img src='" + userProfiles[commentDB[buddyid][0]][4] + "'/>";
+                HTML += "</td>"
+            }
+
+            HTML += "</tr>";
+        }
+
+        HTML += "</table>";
+
+        document.getElementById("displayComment").innerHTML = HTML;
+    }
+
+
+    function insertComment () {
+        chatHistory.push([0,document.getElementById("comment").value]);
+        document.getElementById("myForm").reset();
+        show();
+    }
+
+    <!-- Disable Enter button -->
+    function stopRKey(evt) {
+        var evt = (evt) ? evt : ((event) ? event : null);
+        var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+        if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+    }
+
+    document.onkeypress = stopRKey;
+
+
+    var buddyName = userProfiles[commentDB[buddyid][1]][0];
+    document.getElementById("idDisplay").innerHTML = buddyName;
+</script>

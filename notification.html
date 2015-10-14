@@ -1,43 +1,133 @@
-<!--Page Title-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+<script src="./js/stellaDB.js"></script>
 
 <style>
-    img {
-        width: 30px;
-        height: 30px;
+    img{
+        width: 60px;
+        height: 60px;
     }
 
     th {
         background: beige;
     }
 
-    tr.spaceUnder > td {
-        padding-bottom: 1em;
+    td, th {
+        font-size: 18px;
+        padding: 5px 5px 5px 5px;
     }
+
+    h6 {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
 </style>
 <!-- File Header -->
 <div id="navbar-template">
     <div id="page-title"> Notification </div>
 </div>
 
-<div class="container-fluid">
-    <!-- Buddy Request-->
-    <div id="communityTab"></div>
-
+<div style="height: 530px; padding:0; position: relative; margin: 0;">
+    <div class="container-fluid" style="padding:0; position: relative; height: 100%;">
+        <!-- Buddy Request-->
+        <!-- Buddy Updates-->
+        <!-- Community Updates-->
+        <div id="communityTab"></div>
+    </div>
+</div>
 
     <!-- Community update-->
     <script>
-        var commUpdates = [["img/greyprofilepic.png", "Comm1", "Someone Joined your Community", "8.00am"], ["img/greyprofilepic.png", "Comm2", "omeone added a new activity in XXX community", "Yesterday"]];
-        document.getElementById("communityTab").innerHTML = commUpdates;
+        show();
 
-        function clearAndShow() {
-            // Show our output
-            messageCommunity.innerHTML = "";
-            messageCommunity.innerHTML += titles.join(", <br>") + "<br/>";
+        function show () {
+            var HTML = "<table width='100%'>";
+
+            if (buddyRequest.length != 0) {
+                // Buddy Updates
+                HTML += "<tr><th colspan='4'>BUDDY REQUEST</th></tr>";
+                for (x = 0; x < buddyRequest.length; x++) {
+                    var buddyReqFound = userProfiles[buddyRequest[x][1]];
+                    if (x == 2) {
+                        HTML += "<tr>";
+                        HTML += "<td colspan='4' align = 'center'><a href='index.html#/buddyrequest'>See More (";
+                        HTML += buddyRequest.length-2;
+                        HTML += ")</a></td></tr>";
+                        break;
+                    }
+
+                    HTML += "<tr>";
+
+                    <!-- IMAGE -->
+                    HTML += "<td width='15%'>";
+                    HTML += "<img src='" + buddyReqFound[4] + "'/>";
+                    HTML += "</td>";
+
+                    <!-- Name -->
+                    HTML += "<td>";
+                    HTML += buddyReqFound[0];
+                    HTML += "</td>";
+
+                    <!-- User Action Required -->
+                    HTML += "<td width='10%'>";
+                    HTML += "<span title='Accept Request'><a href='index.html#/notification' onclick='deleteNotification("+x+",true)'><i class='fa fa-check'></i></a></span>";
+                    HTML += "</td>";
+
+                    HTML += "<td width='10%'>";
+                    HTML += "<span title='Accept Request'><a href='index.html#/notification' onclick='deleteNotification("+x+",false)'><i class='fa fa-close'></i></a></span>";
+                    HTML += "</td>";
+
+                    HTML += "</tr>";
+                }
+            }
+            if (newBuddiesList.length != 0) {
+                // Buddy Updates
+                HTML += "<tr><th colspan='4'>NEWEST BUDDIES</th></tr>";
+                for (j = 0; j < newBuddiesList.length; j++) {
+                    var buddyNewFound = userProfiles[newBuddiesList[0][2]];
+                    HTML += "<tr>";
+                    <!-- IMAGE -->
+                    HTML += "<td width='15%'>";
+                    HTML += "<img src='" + buddyNewFound[4] + "'/>";
+                    HTML += "</td>";
+
+                    <!-- Name -->
+                    HTML += "<td>";
+                    HTML += newBuddiesList[j][0];
+                    HTML += "</td>";
+
+                    <!-- Timing -->
+                    HTML += "<td colspan='2' align='left'><h6>";
+                    HTML += newBuddiesList[j][1];
+                    HTML += "</h6></td>";
+
+                    HTML += "</tr>";
+                }
+            }
+
+
+            if (commUpdates.length != 0)
+            {
+                // Community
+                HTML += "<tr><th colspan='4'>COMMUNITY UPDATES</th></tr>";
+                for (j = 0; j < commUpdates.length; j++){
+                    HTML += "<tr>";
+
+                    <!-- IMAGE -->
+                    HTML += "<td width='15%'>";
+                    HTML += "<img src='" + commUpdates[j][1] + "'/>";
+                    HTML += "</td>";
+
+                    <!-- Name and Content -->
+                    HTML += "<td colspan='3'>";
+                    HTML += "<h5>" + commUpdates[j][0] + "</h5>";
+                    HTML += commUpdates[j][2];
+                    HTML += "</td>";
+                    HTML += "</tr>";
+                }
+            }
+
+            HTML += "</table>";
+
+            document.getElementById("communityTab").innerHTML = HTML;
         }
-
     </script>
-</div>
-

@@ -1,49 +1,81 @@
-<style>
-    img {
-        width: 30px;
-        height: 30px;
-    }
+<script src="./js/stellaDB.js"></script>
 
-    table.odd {
+<style>
+    img{
+        width: 3em;
+        height: 3em;
+    }
+    tr.even {
         background: #ffebba;
     }
-
     td.icon {
-        witdh: 30px;
+        padding-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
-
-    td.buddyName {
-        width: 230px;
-        font-weight: bold
+    tr {
+        border-bottom: outset 1px;
     }
-
-    i {
-        color: darkorange;
+    tr.spaceUnder > td
+    {
+        padding-bottom: 1em;
     }
-
+    td {
+        font-size: 18px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
 </style>
+
 <!--Page Title-->
 <div id="navbar-template">
-    <div id="page-title"> Messages</div>
+    <div id="page-title">Messages </div>
 </div>
-
 <!-- Content Here -->
-<div class="container">
-    <div id="messageChat"></div>
-</div>
+<div id="displayChatList"></div>
 
 <script>
-    var chatList = [];
-    var chatList
-    .push(["Buddy1", "img/greyprofilepic.png", "Hey, where are you?"]);
-    var chatList
-    .push(["Sora", "img/redprofilepic.png", "I'm a Japanese Exchange Student.."]);
-
-    var messageChat = document.getElementById("chatDisplay");
+    show();
 
     function show() {
-        // Show our output
-        messageChat.innerHTML = "";
-        messageChat.innerHTML += titles.join(", <br>") + "<br/>";
+        var HTML = "<table width='100%'>";
+        for(j=0;j<commentDB.length;j++)
+        {
+            var getChat = commentDB[j];
+            if (j&2==1){
+                HTML += "<tr class='spaceUnder' >";
+            } else {
+                HTML += "<tr class='spaceUnder'>";
+            }
+            HTML += "<td class='icon'>";
+            <!-- IMAGE -->
+            HTML += "<img src='" + userProfiles[getChat[1]][4] + "'/>";
+            HTML += "</td>";
+
+
+            <!-- NAME -->
+            HTML += "<td width='85%'><b>";
+            HTML += userProfiles[getChat[1]][0];
+            HTML += "</b><br/>";
+
+            <!-- Content -->
+            var message = getChat[2][getChat[2].length-1][1];
+            if (message.length > 60) {
+                HTML += message.substr(0, 65) + "...";
+            } else {
+                HTML += message;
+            }
+            HTML += "</td>";
+
+            <!-- Navigate Chat-->
+            HTML += "<td width='10%'><a href='index.html#/chat/?id="+j+"'><i class='fa fa-chevron-right' style='color: darkorange;'></i></a></td>";
+
+            HTML += "</tr>";
+
+        }
+        HTML += "</table>";
+        document.getElementById("displayChatList").innerHTML = HTML;
     }
+
 </script>
+

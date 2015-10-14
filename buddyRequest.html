@@ -1,0 +1,73 @@
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/stellaDB.js"></script>
+
+<style>
+    img{
+        width: 60px;
+        height: 60px;
+    }
+    th {
+        background: beige;
+    }
+
+    td, th {
+        font-size: 120%;
+        padding: 5px 0px;
+        padding: 5px 5px 5px 5px;
+    }
+
+</style>
+
+<!--Page Title-->
+<div id="navbar-template">
+    <div id="page-title"><a href="#" onclick="window.history.go(-1); return false;"> <i class=" fa fa-arrow-left" style="color: white"></i></a> BUDDY REQUEST</a>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <!-- Buddy Request-->
+    <div id="buddyRequestTab"></div>
+</div>
+
+<script>
+    show();
+
+    function show () {
+        var HTML = "<table width='100%'>";
+        if (buddyRequest.length <= 0){
+            HTML += "<tr><td>No Buddy Request</td></tr>";
+        }
+        // Buddy Requests
+        for (x = 0; x < buddyRequest.length; x++) {
+            var buddy = userProfiles[buddyRequest[x][1]];
+            HTML += "<tr>";
+
+            <!-- IMAGE -->
+            HTML += "<td width='15%'>";
+
+            HTML += "<a href=''index.html#/profile/?id=" + x + "'><img src='" + buddy[4] + "'/></a>";
+            HTML += "</td>";
+
+            <!-- IMAGE -->
+            HTML += "<td>";
+            HTML += "<a href='index.html#/profile/?id=" + x + "'>" + buddy[0] + "</a>";
+            HTML += "</td>";
+
+            <!-- User Action Required -->
+            HTML += "<td width='15%'>";
+            HTML += "<span title='Accept Request'><a href='index.html#/buddyrequest' onclick='deleteNotification("+x+",true)'><i class='fa fa-check'></i></a></span>";
+            HTML += "</td>";
+
+            HTML += "<td width='15%'>";
+            HTML += "<span title='Reject Request'><a href='index.html#/buddyrequest' onclick='deleteNotification("+x+",false)'><i class='fa fa-close'></i></a></span>";
+            HTML += "</td>";
+
+            HTML += "</tr>";
+        }
+
+        HTML += "</table>";
+
+        document.getElementById("buddyRequestTab").innerHTML = HTML;
+    }
+
+</script>

@@ -7,7 +7,7 @@
 }
 
 .myCommunityTable tbody tr td {
-    border-bottom: outset 3px;
+    border-bottom: outset 1px;
     vertical-align: middle;
     font-size: 18px;
     font-family: inherit;

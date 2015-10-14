@@ -8,11 +8,6 @@ connectWorld.config(['$routeProvider',
                 controller: 'exploreBuddyController'
             }).
 
-            when('/profile', {
-                templateUrl: 'profile.html',
-                controller: 'profileController'
-            }).
-
             when('/exploreCommunity', {
                 templateUrl: 'exploreCommunity.html',
                 controller: 'exploreCommunityController'
@@ -35,11 +30,6 @@ connectWorld.config(['$routeProvider',
             when('/editMyProfile', {
                 templateUrl: 'editMyProfile.html',
                 controller: 'editMyProfileController'
-            }).
-
-            when('/peopleProfile', {
-                templateUrl: 'myProfile.html',
-                controller: 'peopleProfileController'
             }).
 
             when('/myBuddy', {
@@ -72,8 +62,19 @@ connectWorld.config(['$routeProvider',
                 controller: 'messageController'
             }).
 
+            when('/chat', {
+                templateUrl: 'chat.html',
+                controller: 'messageController'
+            }).
+
+
             when('/notification', {
                 templateUrl: 'notification.html',
+                controller: 'notificationController'
+            }).
+
+            when('/buddyrequest', {
+                templateUrl: 'buddyRequest.html',
                 controller: 'notificationController'
             }).
 

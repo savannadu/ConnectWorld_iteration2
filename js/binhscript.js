@@ -18,6 +18,18 @@ connectWorld.controller('forgotPasswordController', function ($scope) {
 
 });
 
+connectWorld.controller('messageController', function ($scope) {
+
+});
+
+connectWorld.controller('notificationController', function ($scope) {
+
+});
+
+connectWorld.controller('myBuddyController', function ($scope) {
+
+});
+
 connectWorld.controller('japaneseCooksController', function ($scope) {
     $scope.showUpcomingEvents = function () {
         document.getElementById('upcoming-events').style.display = "block";
