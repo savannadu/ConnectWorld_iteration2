@@ -5,8 +5,8 @@
 
 <style>
     img{
-         width: 30px;
-         height: 30px;
+         width: 50px;
+         height: 50px;
     }
 
     div.commentLog {
@@ -65,13 +65,12 @@
         <div class="inputComment">
             <table width="100%">
                 <tr>
-                    <td><form><input id="comment" type="text" placeholder="Comment here" class="resizedTextbox" autocomplete="off"/></td>
+                    <td><form id="myForm"><input id="comment" name="userInput" type="text" placeholder="Comment here" class="resizedTextbox" autocomplete="off" value=""/></form></td>
                     <td width="5%">
                         <!-- need but type or else info deleted -->
                         <button type="button" onclick="insertComment()">
                             <i class="fa fa-send"></i>
                         </button>
-                        </form>
                     </td>
                 </tr>
             </table>
@@ -88,12 +87,12 @@
     }
 
     buddyid = $.urlParam('id');
-//    alert(commentDB[buddyid][1]);
-    show();
 
+    show();
+    var chatHistory;
     function show () {
         var HTML = "<table width='100%'>";
-        var chatHistory = commentDB[buddyid][2];
+        chatHistory = commentDB[buddyid][2];
         if (chatHistory.length <= 0){
             HTML += "<tr><td>No Chat History</td></tr>";
         }
@@ -104,23 +103,31 @@
             if (buddyLog[0] % 2 == 1){
                 HTML += "<tr class='odd'>";
                 <!-- IMAGE for chat buddy-->
-                HTML += "<td width='15%'>";
+                HTML += "<td width='15%' valign='top'>";
                 HTML += "<a href=''index.html#/profile/?id=" + x + "'><img src='" + userProfiles[commentDB[buddyid][1]][4] + "'/></a>";
                 HTML += "</td>";
+
+                <!-- Comment Box -->
+                HTML += "<td>";
+                HTML += "<a href='index.html#/profile/?id=" + x + "'>" + buddyLog[1] + "</a>";
+                HTML += "</td>";
+
+                HTML += "<td></td>";
+
             } else {
                 HTML += "<tr>";
+                HTML += "<td></td>";
+
+                <!-- Comment Box -->
+                HTML += "<td>";
+                HTML += "<a href='index.html#/profile/?id=" + x + "'>" + buddyLog[1] + "</a>";
+                HTML += "</td>";
+
                 <!-- IMAGE for me-->
-                HTML += "<td width='15%'>";
+                HTML += "<td width='15%' valign='top'>";
                 HTML += "<a href=''index.html#/profile/?id=" + x + "'><img src='" + userProfiles[commentDB[buddyid][0]][4] + "'/></a>";
                 HTML += "</td>"
             }
-
-
-            <!-- Comment Box -->
-            HTML += "<td>";
-            HTML += "<a href='index.html#/profile/?id=" + x + "'>" + buddyLog[1] + "</a>";
-            HTML += "</td>";
-
 
             HTML += "</tr>";
         }
@@ -131,9 +138,9 @@
     }
 
 
-    function insertComment() {
+    function insertComment () {
         chatHistory.push([0,document.getElementById("comment").value]);
-        alert(chatHistory);
+        document.getElementById("myForm").reset();
         show();
     }
 

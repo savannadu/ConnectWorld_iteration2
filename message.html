@@ -51,13 +51,13 @@
             }
             HTML += "<td class='icon'>";
             <!-- IMAGE -->
-            HTML += "<a href='index.html#/profile/?id="+j+"'><img src='" + getChat[1] + "'/></a>";
+            HTML += "<a href='index.html#/profile/?id="+j+"'><img src='" + userProfiles[getChat[1]][4] + "'/></a>";
             HTML += "</td>";
 
 
             <!-- NAME -->
             HTML += "<td width='85%'><b>";
-            HTML += getChat[0];
+            HTML += userProfiles[getChat[1]][0];
             HTML += "</b><br/>";
 
             <!-- Content -->
