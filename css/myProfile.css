@@ -1,0 +1,42 @@
+.category-display {
+    font-weight: bold;
+    float: left;
+    padding-left: 1em;
+}
+
+.category-display-edit {
+    font-weight: bold;
+    float: left;
+    padding: 0.5em;
+    padding-left: 0.9em;
+}
+
+.details-display {
+    float: right;
+    padding-right: 1em;
+}
+
+.details-display-edit {
+    float: right;
+    padding: 0.5em;
+    padding-right: 2em;
+}
+
+.interest-tag {
+    margin: 2px;
+    padding: 0 5px;
+    display: inline-block;
+    float: left;
+    font: 18px 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    height: 26px;
+    line-height: 25px;
+    border: 1px solid #acacac;
+    border-radius: 3px;
+    background: linear-gradient(to bottom,#f0f9ff 0,#cbebff 47%,#a1dbff 100%);
+}
+
+.edit-input {
+    max-width: 80%;
+    float: right;
+    margin: 0.15em;
+}

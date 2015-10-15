@@ -1,4 +1,5 @@
 <script src="./js/stellaDB.js"></script>
+<link rel="stylesheet" href="css/myProfile.css">
 
 <style>
     .inactiveLink {
@@ -12,7 +13,82 @@
     <div id="page-title"><a href="#" onclick="window.history.go(-1); return false;"> <i class=" fa fa-arrow-left" style="color: white"></i></a> Profile: <a href="#" id="idDisplay" class="inactiveLink"></a>
     </div>
 </div>
- COPY CODES FROM PROFILE :)
+
+<div style="height: 45%; padding-left: 4em;">
+    <div id = "imageDisplay" style="z-index: auto;">
+    </div>
+</div>
+
+
+<center>
+    <!--container to add content -->
+    <div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 12em; font-size: 18px" ng-controller="myProfileController">
+        <div id="basic-info" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Basic Information
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <span class="category-display">Gender: </span> <span class="details-display">  <div id="genderDisplay"></div>  </span>
+                        <br/><span class="category-display">Birthday: </span> <span class="details-display"> <div id="dobDisplay"></div> </span>
+                        <br/><span class="category-display">Nationality: </span> <span class="details-display"> <div id="nationalityDisplay"></div> </span>
+                        <br/><span class="category-display">Location: </span> <span class="details-display"> <div id="locDisplay"></div> </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="language" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Language
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <span class="category-display">Proficient in: </span> <span class="details-display"> <div id="langDisplay"></div> </span>
+                        <br/><span class="category-display">Interested in: </span> <span class="details-display"><div id="intDisplay"></div> </span>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="interest-tags" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Interest Tags
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;padding-left:1em;">
+                        <span class="interest-tag" ng-repeat="interestTag in tags">{{interestTag.text}}</span>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="about" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    About Myself
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;padding-left:1em;">
+                        <span style="text-align: justify;"><div id="introDisplay"></div></span>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <br/>
+    <br/>
+    <br/>
+
+</center>
 
 <script>
     var buddyID;
@@ -21,7 +97,28 @@
         return results[1] || 0;
     }
     buddyid = $.urlParam('id');
-    var buddyName = buddyRequest[buddyid][0];
+    var buddyInfo = userProfiles[buddyid];
+    var buddyName = buddyInfo[0];
+    var buddyGender = buddyInfo[2];
+    var buddyLanguages = buddyInfo[3];
+    var buddyDOB = buddyInfo[5];
+    var buddyNationality = buddyInfo[6];
+    var buddyLocation = buddyInfo[7];
+    var buddyInterest = buddyInfo[8];
+    var buddyIntro = buddyInfo[9];
+
+    var image = buddyInfo[4];
     document.getElementById("idDisplay").innerHTML = buddyName;
+    document.getElementById("genderDisplay").innerHTML = buddyGender;
+    document.getElementById("langDisplay").innerHTML = buddyLanguages;
+    document.getElementById("dobDisplay").innerHTML = buddyDOB;
+    document.getElementById("nationalityDisplay").innerHTML = buddyNationality;
+    document.getElementById("locDisplay").innerHTML = buddyLocation;
+    document.getElementById("intDisplay").innerHTML = buddyInterest;
+    document.getElementById("introDisplay").innerHTML = buddyIntro;
+    document.getElementById("imageDisplay").innerHTML = "<img style='position: absolute; z-index: 5; max-width: 70%;' src=' " +  image + " ' class='inactiveLink'>/>";
+
+
+
 
 </script>

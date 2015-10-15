@@ -1,15 +1,16 @@
 // User Profiles
+var year = 2015;
 var userProfiles = [
-  ["Tinna", "18", "Female", ["English", "Japanese"], "img/greyprofilepic.png"],
-  ["Ted", "28", "Male", ["English", "French"], "img/greyprofilepic.png"],
-  ["Makuro", "23", "Male", ["English", "Japanese"], "img/greyprofilepic.png"],
-  ["Louise", "20", "Male", ["Japanese", "Korean"], "img/greyprofilepic.png"],
-  ["Stella", "20", "Female", ["English", "Chinese"], "img/greyprofilepic.png"],
-  ["John", "40", "Male", ["Malay", "Chinese"], "img/greyprofilepic.png"],
-  ["Leo", "25", "Male", ["English", "Chinese", "Cantonese"], "img/greyprofilepic.png"],
-  ["Shane", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"],
-  ["Sora", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"],
-  ["Timmy", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"]
+  ["Tinna", "18", "Female", ["English", "Japanese"], "img/greyprofilepic.png", "01/01/1997", "Singapore", "Singapore", ["drama","cafehopping"], "Interested to find someone who can cafehop with"],
+  ["Ted", "28", "Male", ["English", "French"], "img/greyprofilepic.png", "01/01/1987", "Singapore", "Singapore", ["drama","cafehopping"], "Interested to find someone who can cafehop with"],
+  ["Makuro Tomosoke", "23", "Male", ["English", "Japanese"], "img/greyprofilepic.png", "01/01/1992", "Singapore", "Singapore", ["drama","cafehopping"], "Interested to find someone who can cafehop with"],
+  ["Louise", "20", "Male", ["Japanese", "Korean"], "img/greyprofilepic.png", "01/01/1995", "Singapore", "Singapore", ["drama","cafehopping"], "Interested to find someone who can cafehop with"],
+  ["Stella", "20", "Female", ["English", "Chinese"], "img/greyprofilepic.png", "01/01/1995", "Singapore", "Singapore", ["drama","cafehopping"], "Interested to find someone who can cafehop with"],
+  ["John", "40", "Male", ["Malay", "Chinese"], "img/greyprofilepic.png", "01/01/1975", "Singapore", "Singapore", ["drama","cafehopping"], "Interested to find someone who can cafehop with"],
+  ["Leo", "25", "Male", ["English", "Chinese", "Cantonese"], "img/greyprofilepic.png", "01/01/1997", "Singapore", "Singapore", ["drama","cafehopping"], "Interested to find someone who can cafehop with"],
+  ["Shane", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png", "01/01/1990", "Singapore", "Singapore", ["drama","cafehopping"], "Interested to find someone who can cafehop with"],
+  ["Sora", "25", "Male", ["Hokkien","Japanese"], "img/greyprofilepic.png", "01/01/1990", "Singapore", "Singapore", ["drama","cafehopping"], "Interested to find someone who can cafehop with"],
+  ["Timmy", "25", "Male", ["Cantonese", "Hokkien"], "img/greyprofilepic.png", "01/01/1990", "Singapore", "Singapore", ["drama","cafehopping"], "Interested to find someone who can cafehop with"]
 ];
 
 
@@ -22,8 +23,8 @@ if (sessionStorage.getItem("buddyRequest")) {
 } else {
     buddyRequest = [
         ["Tinna", 0],
-        ["John", 5],
         ["Ted", 1],
+        ["John", 5],
         ["Makuro", 3],
         ["Leo", 6]
     ];
@@ -38,6 +39,7 @@ if (sessionStorage.getItem("newBuddiesList")) {
     newBuddiesList = [
         ["Shane has accepted your request", "2 Days Ago", 7]
     ];
+    // Insert smthing ["message", "Timing", userProfile id];]
 }
 
 
