@@ -85,7 +85,7 @@ function deleteNotification(i, request) {
         if (newBuddiesList.length==3){
             newBuddiesList.shift();
         }
-        newBuddiesList.push([name, "Today", i]);
+        newBuddiesList.push([name+" is now your buddy", "Today", i]);
         sessionStorage.setItem('newBuddiesList',  JSON.stringify(newBuddiesList));
 
     } else {
