@@ -37,7 +37,9 @@ if (sessionStorage.getItem("newBuddiesList")) {
     newBuddiesList = JSON.parse(sessionStorage.getItem("newBuddiesList"));
 } else {
     newBuddiesList = [
-        ["Shane has accepted your request", "2 Days Ago", 7]
+        ["Shane has accepted your request", "2 Days Ago", 7],
+        ["Timmy is now your buddy", "Yesterday", 9]
+
     ];
     // Insert smthing ["message", "Timing", userProfile id];]
 }

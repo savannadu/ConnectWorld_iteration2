@@ -39,7 +39,8 @@
         }
         // Buddy Requests
         for (x = 0; x < buddyRequest.length; x++) {
-            var buddy = userProfiles[buddyRequest[x][1]];
+            var buddyId = buddyRequest[x][1];
+            var buddy = userProfiles[buddyId];
             HTML += "<tr>";
 
             <!-- IMAGE -->
@@ -55,11 +56,11 @@
 
             <!-- User Action Required -->
             HTML += "<td width='15%'>";
-            HTML += "<span title='Accept Request'><a href='index.html#/buddyrequest' onclick='deleteNotification("+x+",true)'><i class='fa fa-check'></i></a></span>";
+            HTML += "<span title='Accept Request'><a href='index.html#/buddyrequest' onclick='deleteNotification("+buddyId+",true)'><i class='fa fa-check'></i></a></span>";
             HTML += "</td>";
 
             HTML += "<td width='15%'>";
-            HTML += "<span title='Reject Request'><a href='index.html#/buddyrequest' onclick='deleteNotification("+x+",false)'><i class='fa fa-close'></i></a></span>";
+            HTML += "<span title='Reject Request'><a href='index.html#/buddyrequest' onclick='deleteNotification("+buddyId+",false)'><i class='fa fa-close'></i></a></span>";
             HTML += "</td>";
 
             HTML += "</tr>";
