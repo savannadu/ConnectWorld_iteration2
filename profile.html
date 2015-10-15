@@ -7,6 +7,10 @@
         cursor: default;
         color: white;
     }
+    img {
+        height: 250px;
+        width: 250px;
+    }
 </style>
 <!--Page Title-->
 <div id="navbar-template">
@@ -14,16 +18,21 @@
     </div>
 </div>
 
-<div style="height: 45%; padding-left: 4em;">
-    <div id = "imageDisplay" style="z-index: auto;">
+<div style="height: 45%; padding-left: 4em; margin-top:1em">
+    <div id = "imageDisplay" style="z-index: auto;"></div>
+    <div style="display: inline-block; margin-top:18em; alignment: center">
+        <button class="btn btn-primary sign-in-button" style="background-color: #FF9339" onclick='alert("This function is not implemented.")'> CHAT</button>
+        <button class="btn btn-primary sign-in-button" style="background-color: #9B4600" onclick='alert("This function is not implemented.")'> UNBUDDY </button>
+        <button class="btn btn-primary sign-in-button" style="background-color: #9B4600" onclick='alert("This function is not implemented.")'> REPORT</button>
     </div>
 </div>
 
 
 <center>
     <!--container to add content -->
-    <div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 12em; font-size: 18px" ng-controller="myProfileController">
+    <div class="container-input" style="background-color: white; padding-top: 0em; padding-left: 1em; padding-right: 1em; margin:0; margin-top: 0px; font-size: 18px" ng-controller="myProfileController">
         <div id="basic-info" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+
             <table style="width: 100%">
                 <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
                     Basic Information

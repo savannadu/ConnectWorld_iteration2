@@ -75,6 +75,11 @@ connectWorld.config(['$routeProvider',
                 controller: 'notificationController'
             }).
 
+            when('/communityfeed', {
+                templateUrl: 'communityFeed.html',
+                controller: 'notificationController'
+            }).
+
             when('/buddyrequest', {
                 templateUrl: 'buddyRequest.html',
                 controller: 'notificationController'

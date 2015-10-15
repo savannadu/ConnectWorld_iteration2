@@ -17,6 +17,9 @@
         padding: 5px 5px 5px 5px;
     }
 
+    tr a {
+        color: darkorange;
+    }
     h6 {
         font-size: 13px;
         margin-bottom: 0;
@@ -48,8 +51,8 @@
                 // Buddy Updates
                 HTML += "<tr><th colspan='4'>BUDDY REQUEST</th></tr>";
                 for (x = 0; x < buddyRequest.length; x++) {
-                    var buddyId = buddyRequest[x][1];
-                    var buddyReqFound = userProfiles[buddyId];
+                    var buddyRequest1Id = buddyRequest[x][1];
+                    var buddyReqFound = userProfiles[buddyRequest1Id];
                     if (x == 2) {
                         HTML += "<tr>";
                         HTML += "<td colspan='4' align = 'center'><a href='index.html#/buddyrequest'>See More (";
@@ -62,32 +65,34 @@
 
                     <!-- IMAGE -->
                     HTML += "<td width='15%'>";
-                    HTML += "<a href='index.html#/profile/?id=" + buddyId + "'><img src='" + buddyReqFound[4] + "'/></a>";
+                    HTML += "<a href='index.html#/profile/?id=" + buddyRequest1Id + "'><img src='" + buddyReqFound[4] + "'/></a>";
                     HTML += "</td>";
 
                     <!-- Name -->
                     HTML += "<td>";
-                    HTML += "<a href='index.html#/profile/?id=" + buddyId + "'>" +  buddyReqFound[0] + "</a><br>";
+                    HTML += "<a href='index.html#/profile/?id=" + buddyRequest1Id + "'>" +  buddyReqFound[0] + "</a><br>";
                     HTML +=  "Proficient in: " + buddyReqFound[3];
                     HTML += "</td>";
 
                     <!-- User Action Required -->
                     HTML += "<td width='10%'>";
-                    HTML += "<span title='Accept Request'><a href='index.html#/notification' onclick='deleteNotification("+buddyId+",true)'><i class='fa fa-check'></i></a></span>";
+                    HTML += "<span title='Accept Request'><a href='index.html#/notification' onclick='deleteNotification("+x+","+buddyRequest1Id+",true)'><i class='fa fa-check'></i></a></span>";
                     HTML += "</td>";
 
                     HTML += "<td width='10%'>";
-                    HTML += "<span title='Accept Request'><a href='index.html#/notification' onclick='deleteNotification("+buddyId+",false)'><i class='fa fa-close'></i></a></span>";
+                    HTML += "<span title='Reject Request'><a href='index.html#/notification' onclick='deleteNotification("+x+","+buddyRequest1Id+",false)'><i class='fa fa-close'></i></a></span>";
                     HTML += "</td>";
 
                     HTML += "</tr>";
                 }
             }
+
+            HTML += "<tr><th colspan='4'>NEWEST BUDDIES</th></tr>";
+
             if (newBuddiesList.length != 0) {
                 // Buddy Updates
-                HTML += "<tr><th colspan='4'>NEWEST BUDDIES</th></tr>";
                 for (j = 0; j < newBuddiesList.length; j++) {
-                    var buddyId2 = newBuddiesList[j][2];
+                    var buddyId2 = newBuddiesList[j][1];
                     var buddyNewFound = userProfiles[buddyId2];
                     HTML += "<tr>";
                     <!-- IMAGE -->
@@ -96,41 +101,54 @@
                     HTML += "</td>";
 
                     <!-- Name -->
-                    HTML += "<td>";
+                    HTML += "<td colspan='3'>";
                     HTML += "<a href='index.html#/profile/?id=" + buddyId2 + "'>" + newBuddiesList[j][0] + "</a></br>";
                     HTML +=  "Proficient in: " + buddyNewFound[3];
                     HTML += "</td>";
 
-                    <!-- Timing -->
-                    HTML += "<td colspan='2' align='left'><h6>";
-                    HTML += newBuddiesList[j][1];
-                    HTML += "</h6></td>";
 
                     HTML += "</tr>";
                 }
+            } else {
+                HTML += "<tr><td colspan='4'>You have no buddies at the moment</td></tr>";
             }
 
+            HTML += "<tr><th colspan='4'>COMMUNITY NEWS FEED</th></tr>";
 
             if (commUpdates.length != 0)
             {
                 // Community
-                HTML += "<tr><th colspan='4'>COMMUNITY UPDATES</th></tr>";
                 for (j = 0; j < commUpdates.length; j++){
+                    var communityInfo = commList[commUpdates[j][0]];
+                    var commImage = communityInfo[1];
+                    var commName = communityInfo[0];
+//                    HTML += "<tr><td>"+commImage + " and " + commName +"</td></tr>";
+                    if (j == 3) {
+                        HTML += "<tr>";
+                        HTML += "<td colspan='4' align = 'center'><a href='index.html#/communityfeed'>See More (";
+                        HTML += commUpdates.length-2;
+                        HTML += ")</a></td></tr>";
+                        break;
+                    }
                     HTML += "<tr>";
-
                     <!-- IMAGE -->
                     HTML += "<td width='15%'>";
-                    HTML += "<a href='index.html#/communityupdate/?id="+j+"'><img src='" + commUpdates[j][1] + "'/></a>";
+                    //HTML += "<a href='"+commUpdates[j][1]+"'</a>>";
+                    HTML +="<img src='" + commImage + "'/>";
                     HTML += "</td>";
 
                     <!-- Name and Content -->
                     HTML += "<td colspan='3'>";
-                    HTML += "<a href='index.html#/communityupdate/?id="+j+"'><h6>" + commUpdates[j][0] + "</h6></a>";
-                    HTML += commUpdates[j][1];
+                    // HTML += "<a href='"+commUpdates[j][1]+"'>";
+                    HTML += "<h6>" + commName + "</h6></a>";
+                    HTML += commUpdates[j][2];
                     HTML += "</td>";
                     HTML += "</tr>";
                 }
+            } else {
+                HTML += "<tr><td colspan='4'>You are not in any communities at the moment</td></tr>";
             }
+
 
             HTML += "</table>";
 

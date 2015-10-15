@@ -22,8 +22,9 @@
         z-index: 10;
         bottom: -0.7em;
     }
-    tr.odd {
-        background: #ffebba;
+    tr.odd a{
+        /*background: #ffebba;*/
+        color: darkorange;
     }
 
     td.icon {
@@ -104,12 +105,12 @@
                 HTML += "<tr class='odd'>";
                 <!-- IMAGE for chat buddy-->
                 HTML += "<td width='15%' valign='top'>";
-                HTML += "<a href=''index.html#/profile/?id=" + x + "'><img src='" + userProfiles[commentDB[buddyid][1]][4] + "'/></a>";
+                HTML += "<a href='index.html#/profile/?id=" + buddyid + "'><img src='" + userProfiles[commentDB[buddyid][1]][4] + "'/></a>";
                 HTML += "</td>";
 
                 <!-- Comment Box -->
                 HTML += "<td>";
-                HTML += "<a href='index.html#/profile/?id=" + x + "'>" + buddyLog[1] + "</a>";
+                HTML += "<a href='index.html#/profile/?id=" + buddyid + "'>" + buddyLog[1] + "</a>";
                 HTML += "</td>";
 
                 HTML += "<td></td>";
@@ -120,12 +121,12 @@
 
                 <!-- Comment Box -->
                 HTML += "<td>";
-                HTML += "<a href='index.html#/profile/?id=" + x + "'>" + buddyLog[1] + "</a>";
+                HTML += buddyLog[1];
                 HTML += "</td>";
 
                 <!-- IMAGE for me-->
                 HTML += "<td width='15%' valign='top'>";
-                HTML += "<a href=''index.html#/profile/?id=" + x + "'><img src='" + userProfiles[commentDB[buddyid][0]][4] + "'/></a>";
+                HTML += "<img src='" + userProfiles[commentDB[buddyid][0]][4] + "'/></a>";
                 HTML += "</td>"
             }
 

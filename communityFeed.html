@@ -1,0 +1,69 @@
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/stellaDB.js"></script>
+
+<style>
+    img{
+        width: 60px;
+        height: 60px;
+    }
+    th {
+        background: beige;
+    }
+
+    td, th {
+        font-size: 120%;
+        padding: 5px 0px;
+        padding: 5px 5px 5px 5px;
+    }
+    h6 {
+        font-weight: bold;
+        color: darkorange;
+    }
+
+
+</style>
+
+<!--Page Title-->
+<div id="navbar-template">
+    <div id="page-title"><a href="#" onclick="window.history.go(-1); return false;"> <i class=" fa fa-arrow-left" style="color: white"></i></a> COMMUNITY NEWS FEED
+    </div>
+</div>
+
+<div class="container-fluid">
+    <!-- Buddy Request-->
+    <div id="CommunityFeed"></div>
+</div>
+
+<script>
+    show();
+
+    function show () {
+        var HTML = "<table width='100%'>";
+        // Community
+        for (j = 0; j < commUpdates.length; j++){
+            var communityInfo = commList[commUpdates[j][0]];
+            var commImage = communityInfo[1];
+            var commName = communityInfo[0];
+
+            HTML += "<tr>";
+            <!-- IMAGE -->
+            HTML += "<td width='15%'>";
+            //HTML += "<a href='"+commUpdates[j][1]+"'</a>>";
+            HTML +="<img src='" + commImage + "'/>";
+            HTML += "</td>";
+
+            <!-- Name and Content -->
+            HTML += "<td colspan='3'>";
+            // HTML += "<a href='"+commUpdates[j][1]+"'>";
+            HTML += "<h6>" + commName + "</h6></a>";
+            HTML += commUpdates[j][2];
+            HTML += "</td>";
+            HTML += "</tr>";
+        }
+
+        HTML += "</table>";
+
+        document.getElementById("CommunityFeed").innerHTML = HTML;
+    }
+
+</script>

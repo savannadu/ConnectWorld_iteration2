@@ -17,15 +17,14 @@ var userProfiles = [
 // NOTIFICATION
 var buddyRequest;
 
-if (sessionStorage.getItem("buddyRequest")) {
+if (sessionStorage.getItem("buddyRequestDB")) {
     // Restore the contents of the text field
-    buddyRequest = JSON.parse(sessionStorage.getItem("buddyRequest"));
+    buddyRequest = JSON.parse(sessionStorage.getItem("buddyRequestDB"));
 } else {
     buddyRequest = [
+        ["John", 5],
         ["Tinna", 0],
         ["Ted", 1],
-        ["John", 5],
-        ["Makuro", 3],
         ["Leo", 6]
     ];
 }
@@ -37,23 +36,55 @@ if (sessionStorage.getItem("newBuddiesList")) {
     newBuddiesList = JSON.parse(sessionStorage.getItem("newBuddiesList"));
 } else {
     newBuddiesList = [
-        ["Shane has accepted your request", "2 Days Ago", 7],
-        ["Timmy is now your buddy", "Yesterday", 9]
+        ["Makuro has accepted your request", 2],
+        ["Louise", 3]
 
     ];
     // Insert smthing ["message", "Timing", userProfile id];]
 }
 
 
+
+
+// Event Name, Event stuffs...
+var Events = [
+  ["YamySushi","add on here"],
+  ["TastTampopo","add on here"]
+];
+var EventList = [
+    [0,1]
+];
+// Group Info,  Members List, event list
+var commList = [
+    ["K-Drama Craze", "img/greyprofilepic.png", "Group Info", " Members List", ""],
+    ["Japanese Cooks", "img/japanesefood.jpg", "Group Info", " Members List", 0]
+];
+
+// comm list, hyperlink, notes
 var commUpdates = [
-    ["Comm1", "img/greyprofilepic.png", "Someone Joined your Community"],
-    ["Comm2", "img/greyprofilepic.png", "Someone added a new activity in XXX community"]
+    [0, "#", "Event Update: <a href=\"index.html#/profile?id=3\">@Louise</a> has joined @Love911MovieSession"],
+    [0, "#", "New event <a href=\"\">@movieMarathonTonight</a> was added to your community"],
+    [0, "index.html#/japaneseCooks", "<a href=\"index.html#/profile?id=4\">@stella</a> has joined your community"],
+    [1, "index.html#/japaneseCooks", "Japanese Cooks has an upcoming event <a href=\"index.html#/japaneseCooks\">@YammySushi Tonight</a>"],
+    [1, "index.html#/japaneseCooks", "New event  <a href=\"index.html#/japaneseCooks\">@TasttTampopo</a> was added in Japanese Cooks"],
+    [0, "#", "Event Update: <a href=\"index.html#/profile?id=4\">@stella</a> has joined @Love911MovieSession"]
 ];
 
 
 
 
 // CHAT
+/*
+To create session to Store an empty array into commentDB
+        Example 9 is the user, 0 is the person they click "Chat with"
+        var addChat = [9, 0,Array.new(0)],  <------ EDIT
+        commentDB.push(addChat);
+
+        var chatName = "comment" + commentDB[buddyid][0]+ commentDB[buddyid][1];
+        sessionStorage.setItem('chatName',  JSON.stringify(commentDB[commentDB.length-1][2]));
+
+*/
+
  //0 means user, 1 means friend
 var commentSora;
 if (sessionStorage.getItem("comment98")) {
@@ -94,17 +125,17 @@ var commentDB = [
 // Functions
 // For buddy request and notification
 
-function deleteNotification(i, request) {
-    var name = buddyRequest[i][0];
-    buddyRequest.splice(i, 1);
-    sessionStorage.setItem('buddyRequest',  JSON.stringify(buddyRequest));
+function deleteNotification(x, i, request) {
+    var name = userProfiles[i][0];
+    buddyRequest.splice(x, 1);
+    sessionStorage.setItem('buddyRequestDB',  JSON.stringify(buddyRequest));
 
     if (request){
         alert(name + "'s Buddy Request Accepted" );
         if (newBuddiesList.length==3){
             newBuddiesList.shift();
         }
-        newBuddiesList.push([name+" is now your buddy", "Today", i]);
+        newBuddiesList.push([name, i]);
         sessionStorage.setItem('newBuddiesList',  JSON.stringify(newBuddiesList));
 
     } else {
