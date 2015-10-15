@@ -48,14 +48,15 @@
             }
             HTML += "<td class='icon'>";
             <!-- IMAGE -->
-            HTML += "<a href='index.html#/profile/?id="+j+"'><img src='" + userProfiles[getChat[1]][4] + "'/></a>";
+            HTML += "<a href='index.html#/profile/?id="+getChat[1]+"'><img src='" + userProfiles[getChat[1]][4] + "'/></a>";
             HTML += "</td>";
 
 
             <!-- NAME -->
             HTML += "<td width='85%'><b>";
+            HTML += "<a href='index.html#/profile/?id="+getChat[1]+"'>";
             HTML += userProfiles[getChat[1]][0];
-            HTML += "</b><br/>";
+            HTML += "</a></b><br/>";
 
             <!-- Content -->
             var message = getChat[2][getChat[2].length-1][1];

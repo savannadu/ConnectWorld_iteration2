@@ -50,19 +50,38 @@ var commUpdates = [
     ["Comm2", "img/greyprofilepic.png", "Someone added a new activity in XXX community"]
 ];
 
+
+
+
 // CHAT
  //0 means user, 1 means friend
-var commentSora  = [
-    [1,"Hi Timmy, I love cafehopping too! But im not familiar with the roads in Singapore hoping to make a friend to hang out with</br> I can help you with Jap and probably you bring me around Singapore? </br> Hope to hear from you soon."],
-    [0,"Hi Sora, wow! You're from Japan! What are you doing here in Singapore?"]
-];
-var commentTinna = [
-    [0,"Hi Tinna, are you coming to the event later on tonight?"],
-    [1,"Hi Timmy, yeah, but I'm not familiar with the location"],
-    [0,"No worries, let's meet at City Hall MRT @ 5 later then!"],
-    [1,"&#30906;&#20449;&#12375;&#12390;"]
-];
+var commentSora;
+if (sessionStorage.getItem("comment98")) {
+    // Restore the contents of the text field
+    commentSora = JSON.parse(sessionStorage.getItem("comment98"));
+} else {
+    commentSora = [
+        [1, "Hi Timmy, I love cafehopping too! But im not familiar with the roads in Singapore hoping to make a friend to hang out with</br> I can help you with Jap and probably you bring me around Singapore? </br> Hope to hear from you soon."],
+        [0, "Hi Sora, wow! You're from Japan! What are you doing here in Singapore?"]
+    ];
+}
+
+
+
+var commentTinna;
+if (sessionStorage.getItem("comment90")) {
+    commentTinna = JSON.parse(sessionStorage.getItem("comment90"));
+
+} else {
+    commentTinna = [
+        [0,"Hi Tinna, are you coming to the event later on tonight?"],
+        [1,"Hi Timmy, yeah, but I'm not familiar with the location"],
+        [0,"No worries, let's meet at City Hall MRT @ 5 later then!"],
+        [1,"&#30906;&#20449;&#12375;&#12390;"]
+    ];
+}
 // Converter http://mylanguages.org/converter.php
+
 
 // id chat with id, which chat array
 var commentDB = [

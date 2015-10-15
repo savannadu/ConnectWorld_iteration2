@@ -140,6 +140,8 @@
 
     function insertComment () {
         chatHistory.push([0,document.getElementById("comment").value]);
+        var chatName = "comment" + commentDB[buddyid][0]+ commentDB[buddyid][1];
+        sessionStorage.setItem(chatName,  JSON.stringify(chatHistory));
         document.getElementById("myForm").reset();
         show();
     }
