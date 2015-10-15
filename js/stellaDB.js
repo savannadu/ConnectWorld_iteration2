@@ -71,7 +71,13 @@ var commUpdates = [
 ];
 
 
-
+var addFakeChat = [
+    "Hi nice to meet you",
+    ":)",
+    "sure",
+    "Glad to know you",
+    "Chat with you soon"
+]
 
 // CHAT
 /*

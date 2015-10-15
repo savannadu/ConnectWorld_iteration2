@@ -145,8 +145,17 @@
         sessionStorage.setItem(chatName,  JSON.stringify(chatHistory));
         document.getElementById("myForm").reset();
         show();
+        setTimeout(insertFakeData, 3000);
     }
 
+    var fakeCounter = 0;
+    function insertFakeData(){
+        chatHistory.push([1, addFakeChat[fakeCounter]]);
+        fakeCounter += 1;
+        var chatName = "comment" + commentDB[buddyid][0]+ commentDB[buddyid][1];
+        sessionStorage.setItem(chatName,  JSON.stringify(chatHistory));
+        show();
+    }
     <!-- Disable Enter button -->
     function stopRKey(evt) {
         var evt = (evt) ? evt : ((event) ? event : null);
