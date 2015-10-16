@@ -98,19 +98,25 @@
 
     <div class="left-inner-addon">
         <i class="fa fa-map-marker"></i>
-        <input ng-model="location" type="text" class="form-control input-lg" placeholder="Location"/>
+        <select id="location" class="form-control input-lg" placeholder="Location">
+            <option> Central Singapore </option>
+            <option> East Singapore </option>
+            <option> North Singapore </option>
+            <option> North-East Singapore </option>
+            <option> West Singapore </option>
+        </select>
     </div>
     <br/>
 
     <div class="left-inner-addon">
         <i class="fa fa-language"></i>
-        <input ng-model="languageSpoken" type="text" class="form-control input-lg" placeholder="Language spoken"/>
+        <input ng-model="languageSpoken" type="text" class="form-control input-lg" placeholder="Languages fluent in"/>
     </div>
     <br/>
 
     <div class="left-inner-addon">
         <i class="fa fa-language"></i>
-        <input ng-model="languageInterested" type="text" class="form-control input-lg" placeholder="Language interested in"/>
+        <input ng-model="languageInterested" type="text" class="form-control input-lg" placeholder="Languages interested in"/>
     </div>
     <br/>
 
@@ -123,7 +129,8 @@
     <div class="left-inner-addon">
         <i class="fa fa-quote-left"></i>
         <textarea rows="4" cols="50" id="about" class="form-control input-lg" style="padding-left: 1.8em;"
-                  placeholder="About yourself">            </textarea>
+                  placeholder="About yourself">I am pursuing a Master degree programme in Business Administration at Japan Tokyo University. I would like to improve my Japanese so that I will be able to integrate and adapt into the Japanese community as soon as possible.
+        </textarea>
     </div>
     <br/>
     <br/>

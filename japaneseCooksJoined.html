@@ -26,13 +26,13 @@
         </div>
         <div class="col-xs-4" style="padding: 0;">
             <button id="member-button"class="btn btn-primary sign-in-button" style="padding-left:0; padding-right:0; background-color: #ffd493; width:90%;" ng-click="showMembers()">
-                MEMBERS (15)
+                MEMBERS (16)
             </button>
         </div>
         <div class="col-xs-4" style="padding: 0;">
-            <a ng-href="#/japaneseCooksJoined">
-                <button class="btn btn-primary sign-in-button" style="padding-left:0; padding-right:0; background-color: #ffd493; width:90%;" onclick='alert("You are now a member of Japanese Cooks group")'>
-                    JOIN
+            <a ng-href="#/japaneseCooks">
+                <button class="btn btn-primary sign-in-button" style="padding-left:0; padding-right:0; background-color: #ffd493; width:90%;" onclick='alert("You have just selected to leave Japanese Cooks group")'>
+                    LEAVE
                 </button>
             </a>
         </div>
@@ -53,10 +53,32 @@
         <div id="upcoming-events" style="border: 1px solid; margin-top: 3.5em; margin-bottom: 3.5em;">
             <table class="myCommunityTable">
                 <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.5em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/plus.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Create a new event
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
                     <td style="padding-top: 1em; text-align: left; padding-left: 0.5em;">
                         <input type="checkbox" class="read-more-state" id="post-1" />
                         <p class="read-more-wrap" style="margin-bottom: 0;">
-                            <span style="font-weight: bold; font-size: 20px;">Traditional Food Hunt </span>
+                            <span style="font-weight: bold; font-size: 20px; display: block">
+                                Traditional Food Hunt
+                                <button class="btn" style="display: inline-block;padding-left:15px;background-color: #009898;" id="jointevent"
+                                        ng-click="joinEvent()"> Join </button>
+
+                                <button class="btn" style="background-color: #3914AF;padding-left:15px;display: none" id="cancelJoining"
+                                        ng-click="leaveEvent()"> Cancel </button>
+                            </span>
                             <br/>
                             <br/><strong>Interests: </strong>Cooking, Food
                             <br/><strong>Date: </strong>13/11/2015
@@ -73,7 +95,11 @@
                     <td style="padding-top: 1em; text-align: left; padding-left: 0.5em;">
                         <input type="checkbox" class="read-more-state" id="post-2" />
                         <p class="read-more-wrap" style="margin-bottom: 0;">
-                            <span style="font-weight: bold; font-size: 20px;"> Yummy Sushi </span>
+                            <span style="font-weight: bold; font-size: 20px; display: inline-block;">
+                                Yummy Sushi
+                                <button class="btn" style="display: inline-block;padding-left:15px;background-color: #009898;"
+                                        onclick="alert('This fucntion is not implemented')"> Join </button>
+                            </span>
                             <br/>
                             <br/><strong>Interests: </strong>Food, Cooking, Book
                             <br/><strong>Date: </strong>17/10/2015
@@ -125,13 +151,13 @@
                     <td style="padding-top: 0.2em; padding-bottom: 0.2em">
                         <div class="col-xs-4">
                             <a ng-href="#/createEvent">
-                                <img src="img/makuro.jpg" style="max-width: 100%;vertical-align: middle; "/>
+                                <img src="img/user.png" style="max-width: 100%;vertical-align: middle; "/>
                             </a>
                         </div>
 
                         <div class="col-xs-8" class="community-content">
                             <br/>
-                            Makuro Tomosoke
+                            Maruko Tomosoke
                         </div>
                     </td>
                 </tr>

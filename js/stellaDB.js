@@ -1,15 +1,15 @@
 // User Profiles
 var userProfiles = [
-    ["Makuro Tomosoke", "23", "Male", ["English", "Japanese"], "img/greyprofilepic.png"],
-    ["Tinna Bisset", "18", "Female", ["English", "French"], "img/greyprofilepic.png"],
-    ["Ted Hughes", "28", "Male", ["Japanese", "French"], "img/greyprofilepic.png"],
-    ["Louise Hay", "20", "Male", ["Japanese", "Korean"], "img/greyprofilepic.png"],
+    ["Makuro Tomosoke", "23", "Male", ["English", "Japanese"], "img/makuro.jpg"],
+    ["Tinna Bisset", "18", "Female", ["English", "French"], "img/redprofilepic.png"],
+    ["Ted Hughes", "28", "Male", ["Japanese", "French"], "img/blueprofilepic.png"],
+    ["Louise Hay", "20", "Male", ["Japanese", "Korean"], "img/greenprofilepic.png"],
     ["Stella Wong", "20", "Female", ["English", "Chinese"], "img/greyprofilepic.png"],
-    ["John Tay", "40", "Male", ["Malay", "Chinese"], "img/greyprofilepic.png"],
-    ["Leo Dicaprio", "25", "Male", ["English", "Chinese", "Cantonese"], "img/greyprofilepic.png"],
-    ["Shane Haper", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"],
+    ["John Tay", "40", "Male", ["Malay", "Chinese"], "img/redprofilepic.png"],
+    ["Leo Dicaprio", "25", "Male", ["English", "Chinese", "Cantonese"], "img/blueprofilepic.png"],
+    ["Shane Haper", "25", "Male", ["English", "Hokkien"], "img/greenprofilepic.png"],
     ["Sora Kazuma", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"],
-    ["Timmy Goh Zy", "26", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"]
+    ["Timmy Goh Zy", "26", "Male", ["English", "Hokkien"], "img/timmygoh.jpg"]
 ];
 
 
@@ -42,16 +42,16 @@ if (sessionStorage.getItem("newBuddiesList")) {
 
 
 var commUpdates = [
-    ["K-Drama Craze", "img/greyprofilepic.png", "Stella has just joined your community"],
-    ["Japanese Cooks", "img/greyprofilepic.png", "Upcoming event: YummySushi is happening tonight"],
-    ["Japanese Cooks", "img/greyprofilepic.png", "New event: TastTampopo is created by Stella"],
-    ["Japanese Cooks", "img/greyprofilepic.png", "Tinna join your event Love 911 Movie Session"],
+    ["K-Drama Craze", "img/koreandrama.JPG", "Stella has just joined your community"],
+    ["Japanese Cooks", "img/japanesefood.jpg", "Upcoming event: YummySushi is happening tonight"],
+    ["Japanese Cooks", "img/japanesefood.jpg", "New event: TastTampopo is created by Stella"],
+    ["Japanese Cooks", "img/japanesefood.jpg", "Tinna join your event Love 911 Movie Session"],
 ];
 
 // CHAT
  //0 means user, 1 means friend
 var commentSora  = [
-    [1,"Hi Timmy, I love cafehopping too! But im not familiar with the roads in Singapore hoping to make a friend to hang out with</br> I can help you with Jap and probably you bring me around Singapore? </br> Hope to hear from you soon."],
+    [1,"Hi Timmy, I am Sora, I am hoping to make a friend who speak Mandarin. I love anime and cooking too! </br> I can help you with Jap and probably you can bring me around Singapore? </br> Hope to hear from you soon."],
     [0,"Hi Sora, wow! You're from Japan! What are you doing here in Singapore?"]
 ];
 var commentTinna = [

@@ -18,9 +18,19 @@ connectWorld.config(['$routeProvider',
                 controller: 'exploreCommunityController'
             }).
 
+            when('/exploreCommunitySearchResult', {
+                templateUrl: 'exploreCommunitySearchResult.html',
+                controller: 'exploreCommunitySearchResultController'
+            }).
+
             when('/japaneseCooks', {
                 templateUrl: 'japaneseCooks.html',
                 controller: 'japaneseCooksController'
+            }).
+
+            when('/japaneseCooksJoined', {
+                templateUrl: 'japaneseCooksJoined.html',
+                controller: 'japaneseCooksJoinedController'
             }).
 
             when('/createEvent', {
@@ -97,7 +107,7 @@ connectWorld.config(['$routeProvider',
 connectWorld.controller('loginController',
     function ($scope, $location) {
         $scope.login = function() {
-            if ($scope.username === 'timgoh' && $scope.password === '123456') {
+            if ($scope.email === 'timgoh@hotmail.com' && $scope.password === '123456') {
                 window.location.href = 'index.html#/exploreBuddy';
             } else {
                 $scope.errorMsg = "Ops! Incorrect username and/or password";

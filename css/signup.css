@@ -10,4 +10,5 @@
 
 .left-inner-addon input, .left-inner-addon select {
     padding-left: 35px;
+    z-index: 500;
 }

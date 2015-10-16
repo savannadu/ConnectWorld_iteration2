@@ -4,23 +4,24 @@
 connectWorld.controller('myProfileController', ['$scope', function ($scope) {
     $scope.basicInfo =
     {
-        "fullname": "Jimmy Goh",
+        "fullname": "Timmy Goh Zy",
         "gender": "Male",
-        "birthday": new Date('1989', '10', '10'),
+        "birthday": new Date('1989', '9', '10'),
         "nationality": "Singaporean",
-        "location": "North East, Singapore",
+        "location": "North-East Singapore",
         "mySelf": "I am pursuing a Master degree programme in Business Administration at Japan Tokyo University. I would like to improve my Japanese so that I will be able to integrate and adapt into the Japanese community as soon as possible."
     };
     $scope.language =
     {
-        "proficient": "English, Mandarin",
+        "proficient": "English, Mandarin, Korean",
         "interested": "Japanese, French"
     };
     $scope.tags = [
         {"text": "Cooking"},
-        {"text": "Travel"},
+        {"text": "Food"},
         {"text": "Anime"},
-        {"text": "Pokemon"}
+        {"text": "Korean Drama"},
+        {"text": "Movie"}
     ];
 
     $scope.update = function (basicInfo, language, interestTags) {
@@ -36,24 +37,26 @@ connectWorld.controller('editMyProfileController', ['$scope', function ($scope) 
 
     $scope.basicInfo =
     {
-        "fullname": "Jimmy Goh",
+        "fullname": "Timmy Goh Zy",
         "gender": "Male",
-        "birthday": new Date('1989', '10', '10'),
+        "birthday": new Date('1989', '9', '10'),
         "nationality": "Singaporean",
-        "location": "North East, Singapore",
+        "location": "North-East Singapore",
         "mySelf": "I am pursuing a Master degree programme in Business Administration at Japan Tokyo University. I would like to improve my Japanese so that I will be able to integrate and adapt into the Japanese community as soon as possible."
     };
     $scope.language =
     {
-        "proficient": "English, Mandarin",
+        "proficient": "English, Mandarin, Korean",
         "interested": "Japanese, French"
     };
     $scope.tags = [
         {"text": "Cooking"},
-        {"text": "Travel"},
-        {"text": "Animie"},
-        {"text": "Pokemon"}
+        {"text": "Food"},
+        {"text": "Anime"},
+        {"text": "Korean Drama"},
+        {"text": "Movie"}
     ];
+
     $scope.update = function (basicInfo, language, interestTags) {
         $scope.basicInfo = angular.copy(basicInfo);
         $scope.langugae = angular.copy(language);
