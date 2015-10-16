@@ -33,3 +33,12 @@
     border: 1px solid #ddd;
     border-radius: .25em;
 }
+
+#groupinfo-button, #member-button, #join-button, #upcoming-button, #pastevents-button {
+    padding-left:0;
+    padding-right:0;
+    background-color: white;
+    width:90%;
+    color: #fe7400;
+    border: solid 1px #fe7400;
+}

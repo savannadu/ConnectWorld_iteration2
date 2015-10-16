@@ -54,7 +54,7 @@
 
 
             <!-- NAME -->
-            HTML += "<td width='85%'><b>";
+            HTML += "<td width='95%'><a style='color:black;' href='index.html#/chat/?id="+j+"'><b>";
             HTML += userProfiles[getChat[1]][0];
             HTML += "</b><br/>";
 
@@ -68,12 +68,12 @@
             HTML += "</td>";
 
             <!-- Navigate Chat-->
-            HTML += "<td width='10%'><a href='index.html#/chat/?id="+j+"'><i class='fa fa-chevron-right' style='color: darkorange;'></i></a></td>";
+            HTML += "</a>";
 
             HTML += "</tr>";
 
         }
-        HTML += "</table>";
+        HTML += "</table><br/><br/><br/><br/>";
         document.getElementById("displayChatList").innerHTML = HTML;
     }
 

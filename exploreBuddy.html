@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/explore.css">
+<link rel="stylesheet" href="css/explore.css" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <!--Page Title-->
 <div id="navbar-template">
@@ -34,11 +34,11 @@
                     <strong>Gender</strong>
                     <br/>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='gender' checked=isMale id="male-checkbox">
+                        <input type="checkbox" name='gender' id="male-checkbox">
                         <label for="male-checkbox" style="font-weight: normal;"><span></span> Male </label>
                     </span>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='gender' checked=isFemale id="female-checkbox">
+                        <input type="checkbox" name='gender' id="female-checkbox">
                         <label for="female-checkbox" style="font-weight: normal"><span></span> Female </label>
                     </span>
 
@@ -47,15 +47,15 @@
                     <strong>Age group</strong>
                     <br/>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isMale id="below20">
+                        <input type="checkbox" name='agegroup' id="below20">
                         <label for="below20" style="font-weight: normal;"><span></span> < 20 </label>
                     </span>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="20to30">
+                        <input type="checkbox" name='agegroup' id="20to30">
                         <label for="20to30" style="font-weight: normal;"><span></span> 20 - 30 </label>
                     </span>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="above30">
+                        <input type="checkbox" name='agegroup' id="above30">
                         <label for="above30" style="font-weight: normal;"><span></span> > 30 </label>
                     </span>
                     <br/>
@@ -63,23 +63,23 @@
                     <strong>Location</strong>
                     <br/>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isMale id="central">
+                        <input type="checkbox" name='agegroup' id="central">
                         <label for="central" style="font-weight: normal;"><span></span> Central </label>
                     </span>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="East">
+                        <input type="checkbox" name='agegroup' id="East">
                         <label for="East" style="font-weight: normal;"><span></span> East </label>
                     </span>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="North">
+                        <input type="checkbox" name='agegroup' id="North">
                         <label for="North" style="font-weight: normal;"><span></span> North </label>
                     </span><br/>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="North-East">
+                        <input type="checkbox" name='agegroup' id="North-East">
                         <label for="North-East" style="font-weight: normal;"><span></span> North-East </label>
                     </span>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="West">
+                        <input type="checkbox" name='agegroup' id="West">
                         <label for="North" style="font-weight: normal;"><span></span> West </label>
                     </span>
                     <br/>
@@ -99,79 +99,58 @@
 </div>
 
 <div class="container-fluid" style="width:95%; margin-left: auto; margin-right: auto;">
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/brendan.jpg"/>
-            <span class="upper-layer">
-                <h5 style="margin-top: 5px;">Brendan, 20</h5>
-            </span>
-        </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <a ng-href="#/brandonProfile">
+            <img class="display-img" src="./img/brendan.jpg"/>
+            <span style="font-size: 16px; color: purple">Brendan, 20</span>
+        </a>
         <span class = "additional-details">
-            <strong>Singaporean</strong><br/>
-            Hokkien, Japanese
+            <strong>French</strong><br/>
+            French, Japanese
         </span>
     </div>
 
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/alan.jpg"/>
-            <span class="upper-layer">
-                <h5 style="margin-top: 5px;">Alan, 32</h5>
-            </span>
-        </div>
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/alan.jpg"/>
+        <span style="font-size: 16px; color: purple">Alan, 30</span>
         <span class = "additional-details">
-            <strong>Malaysian</strong><br/>
+            <strong>Malaysia</strong><br/>
             English, French
         </span>
     </div>
 
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/hoamai.jpg"/>
-            <span class="upper-layer">
-                <h5 style="margin-top: 5px;">Hoa mai, 23 </h5>
-            </span>
-        </div>
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/hoamai.jpg"/>
+        <span style="font-size: 16px; color: purple">Hoa mai, 23 </span>
         <span class = "additional-details">
             <strong>Vietnamese</strong><br/>
             Vietnamese, English
         </span>
     </div>
 
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/huimin.jpg"/>
-            <span class="upper-layer">
-                <h5 style="margin-top: 5px;">Huimin, 19</h5>
-            </span>
-        </div>
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/huimin.jpg"/>
+        <span style="font-size: 16px; color: purple">Huimin, 19</span>
         <span class = "additional-details">
             <strong>Chinese</strong><br/>
             Mandarin, French
         </span>
     </div>
 
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/cleopatra.jpg"/>
-            <span class="upper-layer">
-                <h5 style="margin-top: 5px;">Cleopatr, 21</h5>
-            </span>
-        </div>
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/cleopatra.jpg"/>
+        <span style="font-size: 16px; color: purple">Cleopatra, 21</span>
         <span class = "additional-details">
             <strong>French</strong><br/>
             English, French
         </span>
     </div>
 
-    <div class="col-xs-4" style="padding: 0.3em;">
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
         <a ng-href="#/makuroProfile">
-            <div class="layer-overall">
-                <img class="display-img" src="./img/makuro.jpg"/>
-                <span class="upper-layer">
-                    <h5 style="margin-top: 5px;">Makuro, 23</h5>
-                </span>
-            </div>
+            <img class="display-img" src="./img/makuro.jpg"/>
+            <span style="font-size: 16px; color: purple">Makuro, 23</span>
         </a>
         <span class = "additional-details">
             <strong>Japanese</strong><br/>
@@ -179,78 +158,56 @@
         </span>
     </div>
 
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/caleb.jpg"/>
-            <span class="upper-layer">
-                <h5 style="margin-top: 5px;">Caleb, 24</h5>
-            </span>
-        </div>
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <a ng-href="#/calebProfile">
+            <img class="display-img" src="./img/caleb.jpg"/>
+            <span style="font-size: 16px; color: purple">Caleb, 28</span>
+        </a>
         <span class = "additional-details">
             <strong>Philippines</strong><br/>
             Tagalog, Japanese
         </span>
     </div>
 
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/alex.JPG"/>
-            <span class="upper-layer">
-                <h5 style="margin-top: 5px;">Alex Lim, 21</h5>
-            </span>
-        </div>
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/alex.JPG"/>
+        <span style="font-size: 16px; color: purple">Alex, 21</span>
         <span class = "additional-details">
             <strong>Singporean</strong><br/>
             Korean, Italian
         </span>
     </div>
 
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/naomi.jpg"/>
-            <span class="upper-layer">
-                <h5 style="margin-top: 5px;">Naomi, 26</h5>
-            </span>
-        </div>
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/naomi.jpg"/>
+        <span style="font-size: 16px; color: purple">Naomi, 26</span>
         <span class = "additional-details">
             <strong>Japanese</strong><br/>
             Japanese, Korean
         </span>
     </div>
 
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/ishan.jpg"/>
-            <span class="upper-layer">
-                <h5 style="margin-top: 5px;">Ishan, 31</h5>
-            </span>
-        </div>
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/ishan.jpg"/>
+        <span style="font-size: 16px; color: purple">Ishan, 31</span>
         <span class = "additional-details">
             <strong>Indian</strong><br/>
              Hindu, English
         </span>
     </div>
 
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/alice.jpg"/>
-            <span class="upper-layer">
-                <h5 style="margin-top: 5px;">Alice, 25</h5>
-            </span>
-        </div>
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/alice.jpg"/>
+        <span style="font-size: 16px; color: purple">Alice, 25</span>
         <span class = "additional-details">
             <strong>Singaporean</strong><br/>
              Korean, English
         </span>
     </div>
 
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/chantelle.jpg"/>
-            <span class="upper-layer">
-                <h5 style="margin-top: 5px;">Chantelle</h5>
-            </span>
-        </div>
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/chantelle.jpg"/>
+        <span style="font-size: 16px; color: purple">Chantelle</span>
         <span class = "additional-details">
             <strong>Singaporean</strong><br/>
              English, Portugese

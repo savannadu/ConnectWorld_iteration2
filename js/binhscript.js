@@ -6,6 +6,19 @@ connectWorld.controller('exploreBuddyController', function ($scope) {
 
 });
 
+connectWorld.controller('kDramaCrazeController', function ($scope) {
+    $scope.joinEvent = function () {
+        document.getElementById('jointevent').style.display = "none";
+        document.getElementById('cancelJoining').style.display = "inline-block";
+        window.alert("You have join the event");
+    }
+    $scope.leaveEvent= function () {
+        document.getElementById('jointevent').style.display = "inline-block";
+        document.getElementById('cancelJoining').style.display = "none";
+        window.alert("You have cancel joining the event");
+    }
+});
+
 connectWorld.controller('japaneseCooksJoinedController', function ($scope) {
     $scope.joinEvent = function () {
         document.getElementById('jointevent').style.display = "none";
@@ -58,7 +71,7 @@ connectWorld.controller('makuroProfileController', function ($scope) {
         "gender": "Male",
         "birthday": new Date('1992', '01', '18'),
         "nationality": "Japanese",
-        "location": "Central, Singapore",
+        "location": "Central Singapore",
         "mySelf": "I am an exchange student from Japan studying accountancy in SMU. I would like to learn Mandarin to help me order local food in food court seamlessly."
     };
     $scope.language =
@@ -71,6 +84,48 @@ connectWorld.controller('makuroProfileController', function ($scope) {
         {"text": "Food"},
         {"text": "Anime"},
         {"text": "Korean Drama"}
+    ];
+
+});
+
+connectWorld.controller('brandonProfileController', function ($scope) {
+   $scope.basicInfo =
+    {
+        "fullname": "Brendan Brown",
+        "gender": "Male",
+        "birthday": new Date('1995', '08', '18'),
+        "nationality": "French",
+        "location": "East Singapore",
+        "mySelf": "I love fashion."
+    };
+    $scope.language =
+    {
+        "proficient": "Japanese, French",
+        "interested": "Mandarin"
+    };
+    $scope.tags = [
+        {"text": "Fashion"},
+    ];
+
+});
+
+connectWorld.controller('calebProfileController', function ($scope) {
+    $scope.basicInfo =
+    {
+        "fullname": "Caleb Castro",
+        "gender": "Male",
+        "birthday": new Date('1987', '08', '18'),
+        "nationality": "Phillipines",
+        "location": "East Singapore",
+        "mySelf": "I am an working adult aged 28 who is proficient in Japanese and I really need to practice English as I just found a job in Singapore. I need help to adapt Singapore living environment. Thank you."
+    };
+    $scope.language =
+    {
+        "proficient": "Japanese, Tagalog",
+        "interested": "Mandarin"
+    };
+    $scope.tags = [
+        {"text": "Fashion"},
     ];
 
 });
@@ -110,9 +165,13 @@ connectWorld.controller('japaneseCooksController', function ($scope) {
         document.getElementById('members').style.display = "none";
         document.getElementById('group-info').style.display = "none";
         document.getElementById('upcoming-button').style.background = "#FEA900";
-        document.getElementById('pastevents-button').style.background = "#ffd493";
-        document.getElementById('groupinfo-button').style.background = "#ffd493";
-        document.getElementById('member-button').style.background = "#ffd493";
+        document.getElementById('upcoming-button').style.color = "white";
+        document.getElementById('pastevents-button').style.background = "white";
+        document.getElementById('pastevents-button').style.color= "#FEA900";
+        document.getElementById('groupinfo-button').style.background = "white";
+        document.getElementById('groupinfo-button').style.color = "#FEA900";
+        document.getElementById('member-button').style.background = "white";
+        document.getElementById('member-button').style.color = "#FEA900";
     }
 
     $scope.showPastEvents = function () {
@@ -120,10 +179,14 @@ connectWorld.controller('japaneseCooksController', function ($scope) {
         document.getElementById('past-events').style.display = "block";
         document.getElementById('members').style.display = "none";
         document.getElementById('group-info').style.display = "none";
-        document.getElementById('upcoming-button').style.background = "#ffd493";
+        document.getElementById('upcoming-button').style.background = "white";
+        document.getElementById('upcoming-button').style.color = "#FEA900";
         document.getElementById('pastevents-button').style.background = "#FEA900";
-        document.getElementById('groupinfo-button').style.background = "#ffd493";
-        document.getElementById('member-button').style.background = "#ffd493";
+        document.getElementById('pastevents-button').style.color = "white";
+        document.getElementById('groupinfo-button').style.background = "white";
+        document.getElementById('groupinfo-button').style.color= "#FEA900";
+        document.getElementById('member-button').style.background = "white";
+        document.getElementById('member-button').style.color = "#FEA900";
     }
 
     $scope.showGroupInfo = function () {
@@ -131,10 +194,14 @@ connectWorld.controller('japaneseCooksController', function ($scope) {
         document.getElementById('past-events').style.display = "none";
         document.getElementById('members').style.display = "none";
         document.getElementById('group-info').style.display = "block";
-        document.getElementById('upcoming-button').style.background = "#ffd493";
-        document.getElementById('pastevents-button').style.background = "#ffd493";
+        document.getElementById('upcoming-button').style.background = "white";
+        document.getElementById('upcoming-button').style.color = "#FEA900";
+        document.getElementById('pastevents-button').style.background = "white";
+        document.getElementById('pastevents-button').style.color= "#FEA900";
         document.getElementById('groupinfo-button').style.background = "#FEA900";
-        document.getElementById('member-button').style.background = "#ffd493";
+        document.getElementById('groupinfo-button').style.color = "white";
+        document.getElementById('member-button').style.background = "white";
+        document.getElementById('member-button').style.color = "#FEA900";
     }
 
     $scope.showMembers = function () {
@@ -142,14 +209,26 @@ connectWorld.controller('japaneseCooksController', function ($scope) {
         document.getElementById('past-events').style.display = "none";
         document.getElementById('members').style.display = "block";
         document.getElementById('group-info').style.display = "none";
-        document.getElementById('upcoming-button').style.background = "#ffd493";
-        document.getElementById('pastevents-button').style.background = "#ffd493";
-        document.getElementById('groupinfo-button').style.background = "#ffd493";
+        document.getElementById('upcoming-button').style.background = "white";
+        document.getElementById('upcoming-button').style.color = "#FEA900";
+        document.getElementById('pastevents-button').style.background = "white";
+        document.getElementById('pastevents-button').style.color= "#FEA900";
+        document.getElementById('groupinfo-button').style.background = "white";
+        document.getElementById('groupinfo-button').style.color = "#FEA900";
         document.getElementById('member-button').style.background = "#FEA900";
+        document.getElementById('member-button').style.color = "white";
     }
 });
 
 connectWorld.controller('createEventController', function ($scope) {
+
+});
+
+connectWorld.controller('kDramaCrazeEventCreatingController', function ($scope) {
+
+});
+
+connectWorld.controller('kDramaCrazeCreateEventController', function ($scope) {
 
 });
 
@@ -179,10 +258,49 @@ connectWorld.controller('signUpController2',
                 if ($scope.fullname.split(' ').length < 2) {
                     $scope.errorMsg = "Your full name should have at least 2 words";
                 } else {
-                    window.location.href = 'login.html';
+                    window.location.href = 'index.html#/exploreBuddy';
                     window.alert("Congratulation! You have successfully signup for an account");
                 }
             }
         }
+
+});
+
+connectWorld.controller('navigationBarBottom', function ($scope) {
+    $scope.explore = function () {
+        document.getElementById('footer-navbar-icons1').style.color = "#FF8C00";
+        document.getElementById('footer-navbar-icons2').style.color = "white";
+        document.getElementById('footer-navbar-icons3').style.color = "white";
+        document.getElementById('footer-navbar-icons4').style.color = "white";
+        document.getElementById('footer-navbar-icons5').style.color = "white";
+    }
+    $scope.community = function () {
+        document.getElementById('footer-navbar-icons1').style.color = "white";
+        document.getElementById('footer-navbar-icons2').style.color = "#FF8C00";
+        document.getElementById('footer-navbar-icons3').style.color = "white";
+        document.getElementById('footer-navbar-icons4').style.color = "white";
+        document.getElementById('footer-navbar-icons5').style.color = "white";
+    }
+    $scope.message = function () {
+        document.getElementById('footer-navbar-icons1').style.color = "white";
+        document.getElementById('footer-navbar-icons2').style.color = "white";
+        document.getElementById('footer-navbar-icons3').style.color = "#FF8C00";
+        document.getElementById('footer-navbar-icons4').style.color = "white";
+        document.getElementById('footer-navbar-icons5').style.color = "white";
+    }
+    $scope.notification = function () {
+        document.getElementById('footer-navbar-icons1').style.color = "white";
+        document.getElementById('footer-navbar-icons2').style.color = "white";
+        document.getElementById('footer-navbar-icons3').style.color = "white";
+        document.getElementById('footer-navbar-icons4').style.color = "#FF8C00";
+        document.getElementById('footer-navbar-icons5').style.color = "white";
+    }
+    $scope.more = function () {
+        document.getElementById('footer-navbar-icons1').style.color = "white";
+        document.getElementById('footer-navbar-icons2').style.color = "white";
+        document.getElementById('footer-navbar-icons3').style.color = "white";
+        document.getElementById('footer-navbar-icons4').style.color = "white";
+        document.getElementById('footer-navbar-icons5').style.color = "#FF8C00";
+    }
 
 });

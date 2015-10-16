@@ -8,6 +8,7 @@
 
 <!-- Seach bar-->
 <div class="container-input" style="width:90%; margin-left: auto; margin-right: auto;">
+
     <div class="left-inner-addon" data-toggle="modal" data-target="#myModal">
         <i class="fa fa-search" style="z-index: 50;position: absolute; padding-top: 1em; padding-left: 1em;"></i>
         <input ng-model="searchString" type="text" class="form-control input-lg" placeholder="    Click to enter your search criteria" disabled/>
@@ -33,20 +34,20 @@
                     <strong>Group Size </strong>
                     <br/>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isMale id="below20">
+                        <input type="checkbox" name='agegroup' id="below20">
                         <label for="below20" style="font-weight: normal;"><span></span> 0 - 10 </label>
                     </span>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="20to30">
+                        <input type="checkbox" name='agegroup' id="20to30">
                         <label for="20to30" style="font-weight: normal;"><span></span> 10 - 30 </label>
                     </span>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="above30">
+                        <input type="checkbox" name='agegroup' id="above30">
                         <label for="above30" style="font-weight: normal;"><span></span> 30 -50  </label>
                     </span>
 
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="above50">
+                        <input type="checkbox" name='agegroup' id="above50">
                         <label for="above50" style="font-weight: normal;"><span></span> > 50  </label>
                     </span>
                     <br/>
@@ -54,23 +55,23 @@
                     <strong>Location</strong>
                     <br/>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isMale id="central">
+                        <input type="checkbox" name='agegroup' id="central">
                         <label for="central" style="font-weight: normal;"><span></span> Central </label>
                     </span>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="East">
+                        <input type="checkbox" name='agegroup' id="East">
                         <label for="East" style="font-weight: normal;"><span></span> East </label>
                     </span>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="North">
+                        <input type="checkbox" name='agegroup' id="North">
                         <label for="North" style="font-weight: normal;"><span></span> North </label>
                     </span><br/>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="North-East">
+                        <input type="checkbox" name='agegroup' id="North-East">
                         <label for="North-East" style="font-weight: normal;"><span></span> North-East </label>
                     </span>
                     <span style="padding-right: 10px;">
-                        <input type="checkbox" name='agegroup' checked=isFemale id="West">
+                        <input type="checkbox" name='agegroup' id="West">
                         <label for="North" style="font-weight: normal;"><span></span> West </label>
                     </span>
                     <br/>
@@ -90,32 +91,61 @@
 <br/>
 
 <div class="container-fluid" style="width:95%; margin-left: auto; margin-right: auto;">
-    <div class="col-xs-4" style="padding: 0.3em;">
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
         <a ng-href="#/japaneseCooks">
-            <div class="layer-overall">
-                <img  class="display-img" src="./img/japanesefood.jpg"/>
-                <span class="upper-layer">
-                    <h5 style="margin: 7px;">Japanese Cook, 15</h5>
-                </span>
-            </div>
-            <span class = "additional-details">
-                <strong>Japanese</strong><br/>
-                Central Singapore
-            </span>
+            <img class="display-img" src="./img/japanesefood.jpg"/>
+            <span style="font-size: 12px; color: purple">Japanese Cooks, 15</span>
         </a>
-    </div>
-
-    <div class="col-xs-4" style="padding: 0.3em;">
-        <div class="layer-overall">
-            <img onclick='alert("This function is not fully implemented. Please click on Japanese Cook picture instead")' class="display-img" src="./img/anime.JPG"/>
-            <span class="upper-layer">
-                <h5 style="margin: 7px;">Anime, 36</h5>
-            </span>
-        </div>
         <span class = "additional-details">
             <strong>Japanese</strong><br/>
-            West Singapore
+            Cooking, Japanese
         </span>
     </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Japanese Cook picture instead")' class="display-img" src="./img/anime.JPG"/>
+        <span style="font-size: 16px; color: purple">Anime, 36</span>
+        <span class = "additional-details">
+            <strong>Japanese</strong><br/>
+            Manga, Anime
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Japanese Cook picture instead")' class="display-img" src="./img/cosplay.JPG"/>
+        <span style="font-size: 16px; color: purple">Cosplay, 20</span>
+        <span class = "additional-details">
+            <strong>Japanese</strong><br/>
+            Anime, Fashion
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Japanese Cook picture instead")' class="display-img" src="./img/jpop.JPG"/>
+        <span style="font-size: 16px; color: purple">J-pop, 21</span>
+        <span class = "additional-details">
+            <strong>Japanese</strong><br/>
+            Music, Dance
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Japanese Cook picture instead")' class="display-img" src="./img/jdrama.JPG"/>
+        <span style="font-size: 16px; color: purple">J-Drama, 12</span>
+        <span class = "additional-details">
+            <strong>Japanese</strong><br/>
+            Movie, Drama
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Japanese Cook picture instead")' class="display-img" src="./img/frenchfood.JPG"/>
+        <span style="font-size: 16px; color: purple">French Food</span>
+        <span class = "additional-details">
+            <strong>French</strong><br/>
+            Baguette, food
+        </span>
+    </div>
+
 
 </div>

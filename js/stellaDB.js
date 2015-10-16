@@ -1,8 +1,8 @@
 // User Profiles
 var userProfiles = [
     ["Makuro Tomosoke", "23", "Male", ["English", "Japanese"], "img/makuro.jpg"],
-    ["Tinna Bisset", "18", "Female", ["English", "French"], "img/redprofilepic.png"],
-    ["Ted Hughes", "28", "Male", ["Japanese", "French"], "img/blueprofilepic.png"],
+    ["Brendan Brown", "20", "Male", ["Japanese", "French"], "img/brendan.jpg"],
+    ["Caleb Castro", "28", "Male", ["Tagalog", "Japanese"], "img/caleb.jpg"],
     ["Louise Hay", "20", "Male", ["Japanese", "Korean"], "img/greenprofilepic.png"],
     ["Stella Wong", "20", "Female", ["English", "Chinese"], "img/greyprofilepic.png"],
     ["John Tay", "40", "Male", ["Malay", "Chinese"], "img/redprofilepic.png"],
@@ -21,10 +21,10 @@ if (sessionStorage.getItem("buddyRequest")) {
     buddyRequest = JSON.parse(sessionStorage.getItem("buddyRequest"));
 } else {
     buddyRequest = [
+        ["Caleb Castro", 2],
+        ["Brendan Brown", 1],
         ["Sora Kazuma", 8],
         ["John Tay", 5],
-        ["Ted Hughes", 2],
-        ["Tinna Bisset", 1],
         ["Leo Dicaprio", 6]
     ];
 }

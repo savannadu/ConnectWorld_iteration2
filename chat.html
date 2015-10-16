@@ -15,9 +15,9 @@
     div.inputComment {
         margin-bottom: 10px;
         width:100%;
-        position: absolute;
         z-index: 10;
-        bottom: -0.7em;
+        bottom: 55px;;
+        position: fixed;
     }
     tr.odd {
         background: #ffebba;
@@ -136,7 +136,7 @@
             HTML += "</tr>";
         }
 
-        HTML += "</table>";
+        HTML += "</table><br/><br/><br/><br/>";
 
         document.getElementById("displayComment").innerHTML = HTML;
     }

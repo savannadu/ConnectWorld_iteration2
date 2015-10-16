@@ -6,7 +6,6 @@
 }
 
 .display-img {
-    position: absolute;
     z-index:10;
     width: 100%;
 }
@@ -24,7 +23,5 @@
 }
 
 .additional-details {
-    font-size: 12px;
-    display: table-cell;
-    text-align: center;
+    font-size: 11px;
 }

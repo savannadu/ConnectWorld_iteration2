@@ -28,6 +28,21 @@ connectWorld.config(['$routeProvider',
                 controller: 'japaneseCooksController'
             }).
 
+            when('/kDramaCraze', {
+                templateUrl: 'kDramaCraze.html',
+                controller: 'kDramaCrazeController'
+            }).
+
+            when('/kDramaCrazeCreateEvent', {
+                templateUrl: 'kDramaCrazeCreateEvent.html',
+                controller: 'kDramaCrazeCreateEventController'
+            }).
+
+            when('/kDramaCrazeEventCreating', {
+                templateUrl: 'kDramaCrazeEventCreating.html',
+                controller: 'kDramaCrazeEventCreatingController'
+            }).
+
             when('/japaneseCooksJoined', {
                 templateUrl: 'japaneseCooksJoined.html',
                 controller: 'japaneseCooksJoinedController'
@@ -46,6 +61,16 @@ connectWorld.config(['$routeProvider',
             when('/makuroProfile', {
                 templateUrl: 'makuroProfile.html',
                 controller: 'makuroProfileController'
+            }).
+
+            when('/brandonProfile', {
+                templateUrl: 'brandonProfile.html',
+                controller: 'brandonProfileController'
+            }).
+
+            when('/calebProfile', {
+                templateUrl: 'calebProfile.html',
+                controller: 'calebProfileController'
             }).
 
             when('/editMyProfile', {
@@ -110,7 +135,7 @@ connectWorld.controller('loginController',
             if ($scope.email === 'timgoh@hotmail.com' && $scope.password === '123456') {
                 window.location.href = 'index.html#/exploreBuddy';
             } else {
-                $scope.errorMsg = "Ops! Incorrect username and/or password";
+                $scope.errorMsg = "Ops! Incorrect email and/or password";
             }
         }
 });
