@@ -8,6 +8,11 @@ connectWorld.config(['$routeProvider',
                 controller: 'exploreBuddyController'
             }).
 
+            when('/exploreBuddySearchResult', {
+                templateUrl: 'exploreBuddySearchResult.html',
+                controller: 'exploreBuddySearchResultController'
+            }).
+
             when('/exploreCommunity', {
                 templateUrl: 'exploreCommunity.html',
                 controller: 'exploreCommunityController'
@@ -27,6 +32,12 @@ connectWorld.config(['$routeProvider',
                 templateUrl: 'myProfile.html',
                 controller: 'myProfileController'
             }).
+
+            when('/makuroProfile', {
+                templateUrl: 'makuroProfile.html',
+                controller: 'makuroProfileController'
+            }).
+
             when('/editMyProfile', {
                 templateUrl: 'editMyProfile.html',
                 controller: 'editMyProfileController'

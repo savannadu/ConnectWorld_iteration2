@@ -6,6 +6,52 @@ connectWorld.controller('exploreBuddyController', function () {
 
 });
 
+connectWorld.controller('exploreBuddySearchResultController', function ($scope) {
+    $scope.tags = [
+        {"text": "Japanese"},
+        {"text": "Food"},
+        {"text": "Cooking"},
+        {"text": "Male"},
+        {"text": "20-30"},
+        {"text": "Central"}
+    ];
+});
+
+connectWorld.controller('makuroProfileController', function ($scope) {
+    $scope.buddyUp = function () {
+        document.getElementById('buddy').style.display = "none";
+        document.getElementById('unbuddy').style.display = "block";
+        window.alert("Buddy request sent to Makuro. Makuro has just accepted your request");
+    }
+    $scope.unBuddy= function () {
+        document.getElementById('buddy').style.display = "block";
+        document.getElementById('unbuddy').style.display = "none";
+        window.alert("You have unbuddy Makuro");
+    }
+
+    $scope.basicInfo =
+    {
+        "fullname": "Makuro Tomosoke",
+        "gender": "Male",
+        "birthday": new Date('1992', '01', '18'),
+        "nationality": "Japanese",
+        "location": "Central, Singapore",
+        "mySelf": "I am an exchange student from Japan studying accountancy in SMU. I would like to learn Mandarin to help me order local food in food court seamlessly."
+    };
+    $scope.language =
+    {
+        "proficient": "Japanese, English",
+        "interested": "Mandarin, Korean"
+    };
+    $scope.tags = [
+        {"text": "Cooking"},
+        {"text": "Food"},
+        {"text": "Anime"},
+        {"text": "Korean Drama"}
+    ];
+
+});
+
 connectWorld.controller('exploreCommunityController', function () {
 
 });

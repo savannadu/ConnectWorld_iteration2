@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="css/explore.css">
+
+<!--Page Title-->
+<div id="navbar-template">
+    <div id="page-title"> Explore Buddy</div>
+</div>
+<br/>
+
+<!-- Seach bar-->
+<div class="container-input" style="width:90%; margin-left: auto; margin-right: auto;" ng-controller="exploreBuddySearchResultController">
+    <em> Please enter your search for a buddy</em>
+    <div class="left-inner-addon">
+        <i class="fa fa-search" style="z-index: 50;position: absolute; padding-top: 1em; padding-left: 1em;"></i>
+        <tags-input ng-model="tags" > </tags-input>
+    </div>
+
+</div>
+
+<div class="container-fluid" style="width:95%; margin-left: auto; margin-right: auto;">
+    <div class="col-xs-4" style="padding: 0.3em;">
+        <a ng-href="#/makuroProfile">
+            <div class="layer-overall">
+                <img class="display-img" src="./img/makuro.jpg"/>
+                <span class="upper-layer">
+                    <h5 style="margin-top: 5px;">Makuro, 22</h5>
+                </span>
+            </div>
+        </a>
+        <span class = "additional-details">
+            <strong>Japanese</strong><br/>
+            Japanese, English
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em;">
+        <div class="layer-overall">
+            <img class="display-img" src="./img/brendan.jpg"/>
+            <span class="upper-layer">
+                <h5 style="margin-top: 5px;">Brendan, 20</h5>
+            </span>
+        </div>
+        <span class = "additional-details">
+            <strong>Singaporean</strong><br/>
+            Hokkien, Japanese
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em;">
+        <div class="layer-overall">
+            <img class="display-img" src="./img/caleb.jpg"/>
+            <span class="upper-layer">
+                <h5 style="margin-top: 5px;">Caleb, 24</h5>
+            </span>
+        </div>
+        <span class = "additional-details">
+            <strong>Philippines</strong><br/>
+            Tagalog, Japanese
+        </span>
+    </div>
+</div>

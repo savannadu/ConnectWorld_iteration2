@@ -1,15 +1,15 @@
 // User Profiles
 var userProfiles = [
-  ["Tinna", "18", "Female", ["English", "Japanese"], "img/greyprofilepic.png"],
-  ["Ted", "28", "Male", ["English", "French"], "img/greyprofilepic.png"],
-  ["Makuro", "23", "Male", ["English", "Japanese"], "img/greyprofilepic.png"],
-  ["Louise", "20", "Male", ["Japanese", "Korean"], "img/greyprofilepic.png"],
-  ["Stella", "20", "Female", ["English", "Chinese"], "img/greyprofilepic.png"],
-  ["John", "40", "Male", ["Malay", "Chinese"], "img/greyprofilepic.png"],
-  ["Leo", "25", "Male", ["English", "Chinese", "Cantonese"], "img/greyprofilepic.png"],
-  ["Shane", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"],
-  ["Sora", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"],
-  ["Timmy", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"]
+    ["Makuro Tomosoke", "23", "Male", ["English", "Japanese"], "img/greyprofilepic.png"],
+    ["Tinna Bisset", "18", "Female", ["English", "French"], "img/greyprofilepic.png"],
+    ["Ted Hughes", "28", "Male", ["Japanese", "French"], "img/greyprofilepic.png"],
+    ["Louise Hay", "20", "Male", ["Japanese", "Korean"], "img/greyprofilepic.png"],
+    ["Stella Wong", "20", "Female", ["English", "Chinese"], "img/greyprofilepic.png"],
+    ["John Tay", "40", "Male", ["Malay", "Chinese"], "img/greyprofilepic.png"],
+    ["Leo Dicaprio", "25", "Male", ["English", "Chinese", "Cantonese"], "img/greyprofilepic.png"],
+    ["Shane Haper", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"],
+    ["Sora Kazuma", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"],
+    ["Timmy Goh Zy", "26", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"]
 ];
 
 
@@ -21,11 +21,11 @@ if (sessionStorage.getItem("buddyRequest")) {
     buddyRequest = JSON.parse(sessionStorage.getItem("buddyRequest"));
 } else {
     buddyRequest = [
-        ["Tinna", 0],
-        ["John", 5],
-        ["Ted", 1],
-        ["Makuro", 3],
-        ["Leo", 6]
+        ["Sora Kazuma", 8],
+        ["John Tay", 5],
+        ["Ted Hughes", 2],
+        ["Tinna Bisset", 1],
+        ["Leo Dicaprio", 6]
     ];
 }
 
@@ -36,14 +36,16 @@ if (sessionStorage.getItem("newBuddiesList")) {
     newBuddiesList = JSON.parse(sessionStorage.getItem("newBuddiesList"));
 } else {
     newBuddiesList = [
-        ["Shane has accepted your request", "2 Days Ago", 7]
+        ["Makuro has accepted your request", "Today", 0],
     ];
 }
 
 
 var commUpdates = [
-    ["Comm1", "img/greyprofilepic.png", "Someone Joined your Community"],
-    ["Comm2", "img/greyprofilepic.png", "Someone added a new activity in XXX community"]
+    ["K-Drama Craze", "img/greyprofilepic.png", "Stella has just joined your community"],
+    ["Japanese Cooks", "img/greyprofilepic.png", "Upcoming event: YummySushi is happening tonight"],
+    ["Japanese Cooks", "img/greyprofilepic.png", "New event: TastTampopo is created by Stella"],
+    ["Japanese Cooks", "img/greyprofilepic.png", "Tinna join your event Love 911 Movie Session"],
 ];
 
 // CHAT
@@ -53,9 +55,9 @@ var commentSora  = [
     [0,"Hi Sora, wow! You're from Japan! What are you doing here in Singapore?"]
 ];
 var commentTinna = [
-    [0,"Hi Tinna, are you coming to the event later on tonight?"],
-    [1,"Hi Timmy, yeah, but I'm not familiar with the location"],
-    [0,"No worries, let's meet at City Hall MRT @ 5 later then!"],
+    [0,"Hi Makuro, I am Timmy. I am looking for a buddy to learn Japanese as I'll be going to study in Japan this January"],
+    [1,"Hi Timmy, oh just nice I am looking for a person to teach me English and bring me around Singapore"],
+    [0,"Are you free this weekend, let's go to eat at Lau Pa Sat"],
     [1,"&#30906;&#20449;&#12375;&#12390;"]
 ];
 // Converter http://mylanguages.org/converter.php

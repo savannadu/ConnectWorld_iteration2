@@ -13,7 +13,7 @@ connectWorld.controller('myProfileController', ['$scope', function ($scope) {
     };
     $scope.language =
     {
-        "proficient": "English, Mandarine",
+        "proficient": "English, Mandarin",
         "interested": "Japanese, French"
     };
     $scope.tags = [
@@ -45,7 +45,7 @@ connectWorld.controller('editMyProfileController', ['$scope', function ($scope) 
     };
     $scope.language =
     {
-        "proficient": "English, Mandarine",
+        "proficient": "English, Mandarin",
         "interested": "Japanese, French"
     };
     $scope.tags = [

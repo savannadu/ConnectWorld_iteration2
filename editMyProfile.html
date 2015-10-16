@@ -89,13 +89,13 @@
         </div>
 
         <div id="interest-tags" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
-            <table style="width: 100%">
+            <table>
                 <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
                     Interest Tags
                 </td></tr>
                 <tr>
-                    <td>
-                        <tags-input ng-model="tags">
+                    <td style="text-align: left; padding: 1em;">
+                        <tags-input ng-model="tags" >
                         </tags-input>
                     </td>
                 </tr>
@@ -103,12 +103,12 @@
         </div>
 
         <div id="about" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
-            <table style="width: 100%">
+            <table style="width: 100%;">
                 <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
                     About Myself
                 </td></tr>
                 <tr>
-                    <td style="text-align: left;">
+                    <td style="text-align: left; padding: 1em;">
                         <textarea rows="8" cols="50" ng-model="basicInfo.mySelf" class="form-control input-lg" style="padding-left: 1.8em;"></textarea>
                     </td>
                 </tr>

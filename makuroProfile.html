@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="css/myProfile.css">
+
+<!--Page Title-->
+<div id="navbar-template">
+    <div id="page-title">
+        <a href="#" onclick="window.history.go(-1); return false;">
+            <i class=" fa fa-arrow-circle-left" style="color: white"></i>
+        </a>
+        Makuro Tomosoke
+    </div>
+
+</div>
+
+<br/>
+
+<div style="height: 45%; padding-left: 4em;">
+    <div style="z-index: auto;">
+        <img style="position: absolute; z-index: 5; max-width: 70%;" src="./img/makuro.jpg"/>
+        <span style="position: absolute; z-index: 10; top:11%; right: 3%;">
+            <button class="btn" style="display: block;background-color: #009898; width:100%;" id="buddy"
+                    ng-click="buddyUp(); alert('Request sent to Makuro. Makuro has just accepted your buddy request.')">
+                    BUDDY UP
+            </button>
+
+            <button class="btn" style="background-color: #3914AF; width:100%;display: none" id="unbuddy"
+                    ng-click="unBuddy(); alert('You have just unbuddy Makuro')">
+                    UNBUDDY
+            </button>
+
+            <a ng-href="#/chat?id=0">
+                <button class="btn btn-primary sign-in-button" style="background-color: #FEA900; width:100%;">
+                    CHAT
+                </button>
+            </a>
+        </span>
+    </div>
+    <br/>
+</div>
+
+<center>
+    <!--container to add content -->
+    <div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 12em; font-size: 18px" ng-controller="makuroProfileController">
+        <div id="basic-info" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Basic Information
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <span class="category-display">Gender: </span> <span class="details-display"> {{ basicInfo.gender}} </span>
+                        <br/><span class="category-display">Birthday: </span> <span class="details-display"> {{basicInfo.birthday | date }} </span>
+                        <br/><span class="category-display">Nationality: </span> <span class="details-display"> {{basicInfo.nationality}} </span>
+                        <br/><span class="category-display">Location: </span> <span class="details-display"> {{basicInfo.location}} </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="language" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Language
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <span class="category-display">Proficient in: </span> <span class="details-display">{{ language.proficient}} </span>
+                        <br/><span class="category-display">Interested in: </span> <span class="details-display">{{language.interested}} </span>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="interest-tags" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Interest Tags
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;padding-left:1em;">
+                        <span class="interest-tag" ng-repeat="interestTag in tags">{{interestTag.text}}</span>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="about" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    About Myself
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;padding-left:1em;">
+                        <span style="text-align: justify;">{{basicInfo.mySelf}}</span>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <br/>
+    <br/>
+    <br/>
+
+</center>
