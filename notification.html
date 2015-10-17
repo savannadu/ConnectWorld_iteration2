@@ -59,7 +59,7 @@
 
                     <!-- IMAGE -->
                     HTML += "<td width='15%'>";
-                    HTML += "<img src='" + buddyReqFound[4] + "'/>";
+                    HTML += "<a href='"+buddyReqFound[5]+   "'><img src='" + buddyReqFound[4] + "'/></a>";
                     HTML += "</td>";
 
                     <!-- Name -->
@@ -83,11 +83,11 @@
                 // Buddy Updates
                 HTML += "<tr><th colspan='4'>NEWEST BUDDIES</th></tr>";
                 for (j = 0; j < newBuddiesList.length; j++) {
-                    var buddyNewFound = userProfiles[newBuddiesList[0][2]];
+                    var buddyNewFound = userProfiles[newBuddiesList[j][2]];
                     HTML += "<tr>";
                     <!-- IMAGE -->
                     HTML += "<td width='15%'>";
-                    HTML += "<img src='" + buddyNewFound[4] + "'/>";
+                    HTML += "<a href='"+ buddyNewFound[5] +"'><img src='" + buddyNewFound[4] + "'/></a>";
                     HTML += "</td>";
 
                     <!-- Name -->
@@ -126,7 +126,7 @@
                 }
             }
 
-            HTML += "</table>";
+            HTML += "</table><br/><br/><br/>";
 
             document.getElementById("communityTab").innerHTML = HTML;
         }

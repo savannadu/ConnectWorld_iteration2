@@ -1,15 +1,15 @@
 // User Profiles
 var userProfiles = [
-    ["Makuro Tomosoke", "23", "Male", ["English", "Japanese"], "img/makuro.jpg"],
-    ["Brendan Brown", "20", "Male", ["Japanese", "French"], "img/brendan.jpg"],
-    ["Caleb Castro", "28", "Male", ["Tagalog", "Japanese"], "img/caleb.jpg"],
-    ["Louise Hay", "20", "Male", ["Japanese", "Korean"], "img/greenprofilepic.png"],
-    ["Stella Wong", "20", "Female", ["English", "Chinese"], "img/greyprofilepic.png"],
-    ["John Tay", "40", "Male", ["Malay", "Chinese"], "img/redprofilepic.png"],
-    ["Leo Dicaprio", "25", "Male", ["English", "Chinese", "Cantonese"], "img/blueprofilepic.png"],
-    ["Shane Haper", "25", "Male", ["English", "Hokkien"], "img/greenprofilepic.png"],
-    ["Sora Kazuma", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png"],
-    ["Timmy Goh Zy", "26", "Male", ["English", "Hokkien"], "img/timmygoh.jpg"]
+    ["Makuro Tomosoke", "23", "Male", ["English", "Japanese"], "img/makuro.jpg","#/makuroProfile"],
+    ["Brendan Brown", "20", "Male", ["Japanese", "French"], "img/brendan.jpg", "#/brandonProfile"],
+    ["Caleb Castro", "28", "Male", ["Tagalog", "Japanese"], "img/caleb.jpg", "#/calebProfile"],
+    ["Louise Hay", "20", "Male", ["Japanese", "Korean"], "img/greenprofilepic.png",""],
+    ["Stella Wong", "20", "Female", ["English", "Chinese"], "img/greyprofilepic.png",""],
+    ["John Tay", "40", "Male", ["Malay", "Chinese"], "img/redprofilepic.png",""],
+    ["Leo Dicaprio", "25", "Male", ["English", "Chinese", "Cantonese"], "img/blueprofilepic.png",""],
+    ["Shane Haper", "25", "Male", ["English", "Hokkien"], "img/greenprofilepic.png",""],
+    ["Sora Kazuma", "25", "Male", ["English", "Hokkien"], "img/greyprofilepic.png",""],
+    ["Timmy Goh Zy", "26", "Male", ["English", "Hokkien"], "img/timmygoh.jpg",""]
 ];
 
 
@@ -42,10 +42,7 @@ if (sessionStorage.getItem("newBuddiesList")) {
 
 
 var commUpdates = [
-    ["K-Drama Craze", "img/koreandrama.JPG", "Stella has just joined your community"],
-    ["Japanese Cooks", "img/japanesefood.jpg", "Upcoming event: YummySushi is happening tonight"],
-    ["Japanese Cooks", "img/japanesefood.jpg", "New event: TastTampopo is created by Stella"],
-    ["Japanese Cooks", "img/japanesefood.jpg", "Tinna join your event Love 911 Movie Session"],
+
 ];
 
 // CHAT

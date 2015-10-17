@@ -93,14 +93,14 @@ connectWorld.controller('brandonProfileController', function ($scope) {
     {
         "fullname": "Brendan Brown",
         "gender": "Male",
-        "birthday": new Date('1995', '08', '18'),
+        "birthday": new Date('1987', '08', '18'),
         "nationality": "French",
         "location": "East Singapore",
-        "mySelf": "I love fashion."
+        "mySelf": "I am an working adult aged 28 who is proficient in Japanese and I really need to practice English as I just found a job in Singapore. I need help to adapt Singapore living environment. Thank you."
     };
     $scope.language =
     {
-        "proficient": "Japanese, French",
+        "proficient": "Japanese, Tagalog",
         "interested": "Mandarin"
     };
     $scope.tags = [
@@ -114,14 +114,14 @@ connectWorld.controller('calebProfileController', function ($scope) {
     {
         "fullname": "Caleb Castro",
         "gender": "Male",
-        "birthday": new Date('1987', '08', '18'),
+        "birthday": new Date('1995', '08', '18'),
         "nationality": "Phillipines",
         "location": "East Singapore",
-        "mySelf": "I am an working adult aged 28 who is proficient in Japanese and I really need to practice English as I just found a job in Singapore. I need help to adapt Singapore living environment. Thank you."
+        "mySelf": "I love fashion."
     };
     $scope.language =
     {
-        "proficient": "Japanese, Tagalog",
+        "proficient": "Japanese, French",
         "interested": "Mandarin"
     };
     $scope.tags = [
