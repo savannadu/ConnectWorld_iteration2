@@ -113,6 +113,10 @@ connectWorld.config(['$routeProvider',
                 controller: 'messageController'
             }).
 
+            when('/profile', {
+                templateUrl: 'profile.html',
+                controller: 'messageController'
+            }).
 
             when('/notification', {
                 templateUrl: 'notification.html',
@@ -121,6 +125,16 @@ connectWorld.config(['$routeProvider',
 
             when('/buddyrequest', {
                 templateUrl: 'buddyRequest.html',
+                controller: 'notificationController'
+            }).
+
+            when('/communityfeed', {
+                templateUrl: 'communityFeed.html',
+                controller: 'notificationController'
+            }).
+
+            when('/communityupdate', {
+                templateUrl: 'community.html',
                 controller: 'notificationController'
             }).
 

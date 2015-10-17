@@ -2,96 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8492b5ca-8b48-40a5-b4c8-e7b459c25d82" name="Default" comment="Sign in and forget your password done">
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\.idea\ConnectWorld_interation2.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\.idea\ConnectWorld_iteration2.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\blueprofilepic.PNG" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\greenprofilepic.PNG" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\group-active.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\group.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\japanesefood.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\smueetcorrect.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_animated.scss" afterPath="$PROJECT_DIR$/scss/_animated.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/scss/_bordered-pulled.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_core.scss" afterPath="$PROJECT_DIR$/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/scss/_fixed-width.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_icons.scss" afterPath="$PROJECT_DIR$/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_larger.scss" afterPath="$PROJECT_DIR$/scss/_larger.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_list.scss" afterPath="$PROJECT_DIR$/scss/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_mixins.scss" afterPath="$PROJECT_DIR$/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_path.scss" afterPath="$PROJECT_DIR$/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/scss/_rotated-flipped.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_stacked.scss" afterPath="$PROJECT_DIR$/scss/_stacked.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_variables.scss" afterPath="$PROJECT_DIR$/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/angular-route.js" afterPath="$PROJECT_DIR$/js/angular-route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/angular.min.js" afterPath="$PROJECT_DIR$/js/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/animate.css" afterPath="$PROJECT_DIR$/css/animate.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/animated.less" afterPath="$PROJECT_DIR$/less/animated.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/binhscript.js" afterPath="$PROJECT_DIR$/js/binhscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/css/bootstrap-responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap-responsive.min.css" afterPath="$PROJECT_DIR$/css/bootstrap-responsive.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="$PROJECT_DIR$/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/less/bordered-pulled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat.html" afterPath="$PROJECT_DIR$/chat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/components.css" afterPath="$PROJECT_DIR$/css/components.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/core.less" afterPath="$PROJECT_DIR$/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/createCommunity.html" afterPath="$PROJECT_DIR$/createCommunity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/events.css" afterPath="$PROJECT_DIR$/css/events.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exploreBuddy.html" afterPath="$PROJECT_DIR$/exploreBuddy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exploreCommunity.html" afterPath="$PROJECT_DIR$/exploreCommunity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/fixed-width.less" afterPath="$PROJECT_DIR$/less/fixed-width.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/font-awesome.css" afterPath="$PROJECT_DIR$/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/font-awesome.less" afterPath="$PROJECT_DIR$/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forgotpassword.html" afterPath="$PROJECT_DIR$/forgotpassword.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/generalTemplate.css" afterPath="$PROJECT_DIR$/css/generalTemplate.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/icons.less" afterPath="$PROJECT_DIR$/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inbox.html" afterPath="$PROJECT_DIR$/inbox.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.easing.min.js" afterPath="$PROJECT_DIR$/js/jquery.easing.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.fs.selecter.min.js" afterPath="$PROJECT_DIR$/js/jquery.fs.selecter.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.fs.stepper.min.js" afterPath="$PROJECT_DIR$/js/jquery.fs.stepper.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.scrollTo.min.js" afterPath="$PROJECT_DIR$/js/jquery.scrollTo.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.scrollsnap.js" afterPath="$PROJECT_DIR$/js/jquery.scrollsnap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.scrollstop.js" afterPath="$PROJECT_DIR$/js/jquery.scrollstop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/larger.less" afterPath="$PROJECT_DIR$/less/larger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/list.less" afterPath="$PROJECT_DIR$/less/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logout.html" afterPath="$PROJECT_DIR$/logout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/mixins.less" afterPath="$PROJECT_DIR$/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/moment.min.js" afterPath="$PROJECT_DIR$/js/moment.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myBuddy.html" afterPath="$PROJECT_DIR$/myBuddy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myCommunity.html" afterPath="$PROJECT_DIR$/myCommunity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/myProfile.css" afterPath="$PROJECT_DIR$/css/myProfile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myProfile.html" afterPath="$PROJECT_DIR$/myProfile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/npm.js" afterPath="$PROJECT_DIR$/js/npm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/path.less" afterPath="$PROJECT_DIR$/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/plugins.css" afterPath="$PROJECT_DIR$/css/plugins.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/less/rotated-flipped.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup.html" afterPath="$PROJECT_DIR$/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/stacked.less" afterPath="$PROJECT_DIR$/less/stacked.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/variables.less" afterPath="$PROJECT_DIR$/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ConnectWorld_iteration2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -147,11 +58,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chat.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chat.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chat.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42807424">
+            <state vertical-scroll-proportion="-6.15">
               <caret line="147" column="36" selection-start-line="147" selection-start-column="36" selection-end-line="147" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35855263">
+              <caret line="107" column="47" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -204,6 +125,7 @@
         <option value="$PROJECT_DIR$/js/stellaDB.js" />
         <option value="$PROJECT_DIR$/profile.html" />
         <option value="$PROJECT_DIR$/chat.html" />
+        <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
   </component>
@@ -215,10 +137,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="260" />
-    <option name="y" value="13" />
-    <option name="width" value="1230" />
-    <option name="height" value="1132" />
+    <option name="x" value="1015" />
+    <option name="width" value="1041" />
+    <option name="height" value="1122" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -275,7 +196,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="img">
+            <PATH_ELEMENT USER_OBJECT="js">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -344,27 +265,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="260" y="13" width="1230" height="1132" extended-state="0" />
+    <frame x="1015" y="0" width="1041" height="1122" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26368997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31362724" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -566,8 +487,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42807424">
+        <state vertical-scroll-proportion="-6.15">
           <caret line="147" column="36" selection-start-line="147" selection-start-column="36" selection-end-line="147" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35855263">
+          <caret line="107" column="47" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
           <folding />
         </state>
       </provider>
