@@ -1,5 +1,4 @@
-html,
-body {
+html,body {
     height: 100%;
     width: 100%;
     min-height: 100%;
@@ -102,11 +101,11 @@ body {
 }
 
 .groupIcon {
-    background: url('../img/group.png') no-repeat center 14px; 
+    background: url('../img/group.png') no-repeat center 14px;
 }
 
 .groupIcon-active {
-    background: url('../img/group-active.png') no-repeat center 14px; 
+    background: url('../img/group-active.png') no-repeat center 14px;
 }
 
 
@@ -130,8 +129,8 @@ body {
     overflow: scroll;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 
 #dummy-footer {
@@ -152,14 +151,14 @@ body {
 
 
 /* group meeting ============= */
-.text-middle { 
+.text-middle {
     display: inline-block;
     height: 30px;
     display: table-cell;
     vertical-align: middle;
 }
 
-.text-middle50 { 
+.text-middle50 {
     height: 50px;
 }
 
@@ -208,7 +207,7 @@ body {
     padding: 10px 0px;
 }
 
-.text-middle-header { 
+.text-middle-header {
     display: inline-block;
     height: 20px;
     display: table-cell;
@@ -238,15 +237,15 @@ body {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-    color: #CCD1D9; 
+    color: #CCD1D9;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-    color: #CCD1D9;  
+    color: #CCD1D9;
 }
 
-:-ms-input-placeholder {  
-    color: #CCD1D9; 
+:-ms-input-placeholder {
+    color: #CCD1D9;
 }
 
 input { outline: none; }
@@ -625,7 +624,7 @@ input { outline: none; }
 
 .noshadow {
     box-shadow: inset 0px;
-} 
+}
 
 .heightFull {
     height: 100%;
@@ -760,8 +759,8 @@ input { outline: none; }
     color: #fff;
     height: 100%;
     position: relative;
-    padding-left: 15px; 
-    padding-top: 5px; 
+    padding-left: 15px;
+    padding-top: 5px;
     width: 30%;
     float: left;
     display: inline-block;
@@ -780,7 +779,7 @@ input { outline: none; }
     color: #fff;
     height: 50%;
     position: relative;
-    padding-top: 8px; 
+    padding-top: 8px;
 }
 
 #year {
@@ -899,8 +898,8 @@ input { outline: none; }
 }
 
 .timeslots-container {
-    float:left; 
-    width:100%; 
+    float:left;
+    width:100%;
     overflow-y: scroll;
 }
 
@@ -961,11 +960,11 @@ input { outline: none; }
     width: 100%;
     height: 70%;
     min-height: 100px;
-    background: url('../img/smueetcorrect.svg') no-repeat center center; 
+    background: url('../img/smueetcorrect.svg') no-repeat center center;
 }
 
 .center-component input {
-    outline: none; 
+    outline: none;
     border-color: white;
     margin-bottom: 5px;
 }
@@ -978,10 +977,10 @@ input { outline: none; }
     border-style: none;
 }
 
-@font-face { 
-    font-family: 'Hobo Std Medium'; 
-    src: url('font/path/hobo_std_medium.eot'); 
-    font-weight: normal; 
+@font-face {
+    font-family: 'Hobo Std Medium';
+    src: url('font/path/hobo_std_medium.eot');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -1082,7 +1081,7 @@ input[type="text"]:disabled{
 .roundBtn{
     border-radius: 500px;
     width: 75px;
-    display:inline-block;    
+    display:inline-block;
 }
 
 .extendAll{

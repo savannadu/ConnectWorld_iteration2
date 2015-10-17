@@ -1,4 +1,218 @@
+<link rel="stylesheet" href="css/explore.css" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
 <!--Page Title-->
 <div id="navbar-template">
-    <div id="page-title"> Explore Buddy </div>
+    <div id="page-title"> Explore Buddy</div>
 </div>
+<br/>
+
+<!-- Seach bar-->
+<div class="container-input" style="width:90%; margin-left: auto; margin-right: auto;">
+
+    <div class="left-inner-addon" data-toggle="modal" data-target="#myModal">
+        <i class="fa fa-search" style="z-index: 50;position: absolute; padding-top: 1em; padding-left: 1em;"></i>
+        <input ng-model="searchString" type="text" class="form-control input-lg" placeholder="    Click to enter your search criteria" disabled/>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog" aria-labelledby="gridSystemModalLabel" style="font-size: 18px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Language </strong><br/>
+                    <i class="fa fa-search" style="z-index: 50;position: absolute; padding-top: 1em; padding-left: 1em;"></i>
+                    <tags-input ng-model="tags.language" "></tags-input>
+
+                    <strong>Interest </strong><br/>
+                    <i class="fa fa-search" style="z-index: 50;position: absolute; padding-top: 1em; padding-left: 1em;"></i>
+                    <tags-input ng-model="tags.interest" "></tags-input>
+
+                    <strong>Gender</strong>
+                    <br/>
+                    <span style="padding-right: 10px;">
+                        <input type="checkbox" name='gender' id="male-checkbox">
+                        <label for="male-checkbox" style="font-weight: normal;"><span></span> Male </label>
+                    </span>
+                    <span style="padding-right: 10px;">
+                        <input type="checkbox" name='gender' id="female-checkbox">
+                        <label for="female-checkbox" style="font-weight: normal"><span></span> Female </label>
+                    </span>
+
+                    <br/>
+
+                    <strong>Age group</strong>
+                    <br/>
+                    <span style="padding-right: 10px;">
+                        <input type="checkbox" name='agegroup' id="below20">
+                        <label for="below20" style="font-weight: normal;"><span></span> < 20 </label>
+                    </span>
+                    <span style="padding-right: 10px;">
+                        <input type="checkbox" name='agegroup' id="20to30">
+                        <label for="20to30" style="font-weight: normal;"><span></span> 20 - 30 </label>
+                    </span>
+                    <span style="padding-right: 10px;">
+                        <input type="checkbox" name='agegroup' id="above30">
+                        <label for="above30" style="font-weight: normal;"><span></span> > 30 </label>
+                    </span>
+                    <br/>
+
+                    <strong>Location</strong>
+                    <br/>
+                    <span style="padding-right: 10px;">
+                        <input type="checkbox" name='agegroup' id="central">
+                        <label for="central" style="font-weight: normal;"><span></span> Central </label>
+                    </span>
+                    <span style="padding-right: 10px;">
+                        <input type="checkbox" name='agegroup' id="East">
+                        <label for="East" style="font-weight: normal;"><span></span> East </label>
+                    </span>
+                    <span style="padding-right: 10px;">
+                        <input type="checkbox" name='agegroup' id="North">
+                        <label for="North" style="font-weight: normal;"><span></span> North </label>
+                    </span><br/>
+                    <span style="padding-right: 10px;">
+                        <input type="checkbox" name='agegroup' id="North-East">
+                        <label for="North-East" style="font-weight: normal;"><span></span> North-East </label>
+                    </span>
+                    <span style="padding-right: 10px;">
+                        <input type="checkbox" name='agegroup' id="West">
+                        <label for="North" style="font-weight: normal;"><span></span> West </label>
+                    </span>
+                    <br/>
+
+                </div>
+                <div class="modal-footer" onclick="location.href='#/exploreBuddySearchResult';">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                        Search </a>
+                    </button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+</div>
+
+<div class="container-fluid" style="width:95%; margin-left: auto; margin-right: auto;">
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <a ng-href="#/brandonProfile">
+            <img class="display-img" src="./img/brendan.jpg"/>
+            <span style="font-size: 16px; color: purple">Brendan, 20</span>
+        </a>
+        <span class = "additional-details">
+            <strong>French</strong><br/>
+            French, Japanese
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/alan.jpg"/>
+        <span style="font-size: 16px; color: purple">Alan, 30</span>
+        <span class = "additional-details">
+            <strong>Malaysia</strong><br/>
+            English, French
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/hoamai.jpg"/>
+        <span style="font-size: 16px; color: purple">Hoa mai, 23 </span>
+        <span class = "additional-details">
+            <strong>Vietnamese</strong><br/>
+            Vietnamese, English
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/huimin.jpg"/>
+        <span style="font-size: 16px; color: purple">Huimin, 19</span>
+        <span class = "additional-details">
+            <strong>Chinese</strong><br/>
+            Mandarin, French
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/cleopatra.jpg"/>
+        <span style="font-size: 16px; color: purple">Cleopatra, 21</span>
+        <span class = "additional-details">
+            <strong>French</strong><br/>
+            English, French
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <a ng-href="#/makuroProfile">
+            <img class="display-img" src="./img/makuro.jpg"/>
+            <span style="font-size: 16px; color: purple">Makuro, 23</span>
+        </a>
+        <span class = "additional-details">
+            <strong>Japanese</strong><br/>
+            Japanese, English
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <a ng-href="#/calebProfile">
+            <img class="display-img" src="./img/caleb.jpg"/>
+            <span style="font-size: 16px; color: purple">Caleb, 28</span>
+        </a>
+        <span class = "additional-details">
+            <strong>Philippines</strong><br/>
+            Tagalog, Japanese
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/alex.JPG"/>
+        <span style="font-size: 16px; color: purple">Alex, 21</span>
+        <span class = "additional-details">
+            <strong>Singporean</strong><br/>
+            Korean, Italian
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/naomi.jpg"/>
+        <span style="font-size: 16px; color: purple">Naomi, 26</span>
+        <span class = "additional-details">
+            <strong>Japanese</strong><br/>
+            Japanese, Korean
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/ishan.jpg"/>
+        <span style="font-size: 16px; color: purple">Ishan, 31</span>
+        <span class = "additional-details">
+            <strong>Indian</strong><br/>
+             Hindu, English
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/alice.jpg"/>
+        <span style="font-size: 16px; color: purple">Alice, 25</span>
+        <span class = "additional-details">
+            <strong>Singaporean</strong><br/>
+             Korean, English
+        </span>
+    </div>
+
+    <div class="col-xs-4" style="padding: 0.3em; display: table-cell; text-align: center">
+        <img onclick='alert("This function is not fully implemented. Please click on Makuro picture instead")' class="display-img" src="./img/chantelle.jpg"/>
+        <span style="font-size: 16px; color: purple">Chantelle</span>
+        <span class = "additional-details">
+            <strong>Singaporean</strong><br/>
+             English, Portugese
+        </span>
+    </div>
+</div>
+
+<br/><br/><br/>

@@ -1,0 +1,121 @@
+<link rel="stylesheet" href="css/communityProfile.css">
+
+<!--Page Title-->
+<div id="navbar-template">
+    <div id="page-title">
+        <a href="#" onclick="window.history.go(-1); return false;">
+            <i class=" fa fa-arrow-circle-left" style="color: white"></i>
+        </a>
+        K-Drama Craze
+    </div>
+</div>
+
+<br/>
+
+<center><img style="max-width: 80%; left:10%;" src="./img/koreandrama.JPG"/></center>
+<br/>
+
+<center>
+    <div class="container-input" style="background-color: white;padding:1em; margin:0; font-size: 18px" ng-controller="japaneseCooksController">
+
+        <div class="col-xs-4" style="padding: 0;">
+            <button id="groupinfo-button" class="btn btn-primary sign-in-button" ng-click="showGroupInfo()">
+                GROUP INFO
+            </button>
+        </div>
+        <div class="col-xs-4" style="padding: 0;">
+            <button id="member-button"class="btn btn-primary sign-in-button"  ng-click="showMembers()">
+                MEMBERS (1)
+            </button>
+        </div>
+        <div class="col-xs-4" style="padding: 0;">
+            <button id="join-button" class="btn btn-primary sign-in-button" onclick='alert("This function is not implemented")'>
+                LEAVE
+            </button>
+        </div>
+
+        <br/>
+        <div class="col-xs-6" style="padding: 0; margin-top: 0.5em;">
+            <button id="upcoming-button" class="btn btn-primary sign-in-button" style="color: white; background-color: #FEA900; width:90%;" ng-click="showUpcomingEvents()">
+                UPCOMING EVENTS
+            </button>
+        </div>
+
+        <div class="col-xs-6" style="padding: 0; margin-top: 0.5em;">
+            <button id="pastevents-button" class="btn btn-primary sign-in-button" ng-click="showPastEvents()">
+                PAST EVENTS
+            </button>
+        </div>
+
+        <div id="upcoming-events" style="border: 1px solid; margin-top: 3.5em; margin-bottom: 3.5em;">
+            <table class="myCommunityTable">
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.5em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/kDramaCrazeEventCreating">
+                                <img src="img/plus.png" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Create a new event
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>There's no upcoming event</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="past-events" style="display:none; border: 1px solid; margin-top: 3.5em; margin-bottom: 3.5em;">
+            <table class="myCommunityTable">
+
+                <tr>
+                    <td>There's no event yet</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="members" style="display:none; border: 1px solid; margin-top: 3.5em; margin-bottom: 3.5em;">
+            <table class="myCommunityTable">
+                <tr>
+                    <td style="padding-top: 0.2em; padding-bottom: 0.2em">
+                        <div class="col-xs-4">
+                            <a ng-href="#/createEvent">
+                                <img src="img/timmygoh.jpg" style="max-width: 100%;vertical-align: middle; "/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-8" class="community-content">
+                            <br/>
+                            Timmy Goh Zy
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="group-info" style="display:none; border: 1px solid; margin-top: 3.5em; margin-bottom: 3.5em;">
+            <table class="myCommunityTable">
+
+                <tr>
+                    <td style="padding-top: 1em; text-align: left; padding-left: 0.5em;">
+                        <br/><strong>Name: </strong>K-Drama Craze
+                        <br/><strong>Location: </strong>North-East  Singapore
+                        <br/><strong>Language: </strong>Korean
+                        <br/><strong>Interest Tags: </strong>Drama, Movie
+                        <br/><strong>Group Description: </strong>We are a community all about in Korean drama and movies. Join us and practice with locals and share a common interest with you. Speak like a local!
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+</center>

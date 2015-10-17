@@ -1,0 +1,14 @@
+.left-inner-addon {
+    position: relative;
+}
+
+.left-inner-addon i {
+    left: 0px;
+    position: absolute;
+    padding: 15px 12px;
+}
+
+.left-inner-addon input, .left-inner-addon select {
+    padding-left: 35px;
+    z-index: 500;
+}

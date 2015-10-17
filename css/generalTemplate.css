@@ -44,8 +44,8 @@
 }
 
 #page-title{
-    font-family: 'forte', sans-serif;
     color:white;
+    font-weight: bold;
 }
 
 #customized-dropdown-menu {
@@ -65,4 +65,12 @@
 .dropdown-menu .divider {
     float: right;
     width: 100%;
+}
+
+#general-button {
+    display: block;
+    width: 100%;
+    background-color: #FE7300;
+    height: 45%;
+    font-size: 18px
 }

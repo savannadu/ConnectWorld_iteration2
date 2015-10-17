@@ -1,4 +1,4 @@
-var connectWorld= angular.module('connectWorld', ['ngRoute', 'firebase']);
+var connectWorld = angular.module('connectWorld', ['ngRoute', 'ngTagsInput']);
 
 connectWorld.config(['$routeProvider',
     function ($routeProvider) {
@@ -8,9 +8,9 @@ connectWorld.config(['$routeProvider',
                 controller: 'exploreBuddyController'
             }).
 
-            when('/profile', {
-                templateUrl: 'profile.html',
-                controller: 'profileController'
+            when('/exploreBuddySearchResult', {
+                templateUrl: 'exploreBuddySearchResult.html',
+                controller: 'exploreBuddySearchResultController'
             }).
 
             when('/exploreCommunity', {
@@ -18,14 +18,64 @@ connectWorld.config(['$routeProvider',
                 controller: 'exploreCommunityController'
             }).
 
-            when('/communityProfile', {
-                templateUrl: 'communityProfile.html',
-                controller: 'communityProfileController'
+            when('/exploreCommunitySearchResult', {
+                templateUrl: 'exploreCommunitySearchResult.html',
+                controller: 'exploreCommunitySearchResultController'
+            }).
+
+            when('/japaneseCooks', {
+                templateUrl: 'japaneseCooks.html',
+                controller: 'japaneseCooksController'
+            }).
+
+            when('/kDramaCraze', {
+                templateUrl: 'kDramaCraze.html',
+                controller: 'kDramaCrazeController'
+            }).
+
+            when('/kDramaCrazeCreateEvent', {
+                templateUrl: 'kDramaCrazeCreateEvent.html',
+                controller: 'kDramaCrazeCreateEventController'
+            }).
+
+            when('/kDramaCrazeEventCreating', {
+                templateUrl: 'kDramaCrazeEventCreating.html',
+                controller: 'kDramaCrazeEventCreatingController'
+            }).
+
+            when('/japaneseCooksJoined', {
+                templateUrl: 'japaneseCooksJoined.html',
+                controller: 'japaneseCooksJoinedController'
+            }).
+
+            when('/createEvent', {
+                templateUrl: 'createEvent.html',
+                controller: 'createEventController'
             }).
 
             when('/myProfile', {
                 templateUrl: 'myProfile.html',
                 controller: 'myProfileController'
+            }).
+
+            when('/makuroProfile', {
+                templateUrl: 'makuroProfile.html',
+                controller: 'makuroProfileController'
+            }).
+
+            when('/brandonProfile', {
+                templateUrl: 'brandonProfile.html',
+                controller: 'brandonProfileController'
+            }).
+
+            when('/calebProfile', {
+                templateUrl: 'calebProfile.html',
+                controller: 'calebProfileController'
+            }).
+
+            when('/editMyProfile', {
+                templateUrl: 'editMyProfile.html',
+                controller: 'editMyProfileController'
             }).
 
             when('/myBuddy', {
@@ -58,12 +108,6 @@ connectWorld.config(['$routeProvider',
                 controller: 'messageController'
             }).
 
-
-            when('/profile', {
-                templateUrl: 'profile.html',
-                controller: 'messageController'
-            }).
-
             when('/chat', {
                 templateUrl: 'chat.html',
                 controller: 'messageController'
@@ -75,18 +119,8 @@ connectWorld.config(['$routeProvider',
                 controller: 'notificationController'
             }).
 
-            when('/communityfeed', {
-                templateUrl: 'communityFeed.html',
-                controller: 'notificationController'
-            }).
-
             when('/buddyrequest', {
                 templateUrl: 'buddyRequest.html',
-                controller: 'notificationController'
-            }).
-
-            when('/communityupdate', {
-                templateUrl: 'community.html',
                 controller: 'notificationController'
             }).
 
@@ -95,111 +129,17 @@ connectWorld.config(['$routeProvider',
             });
 }]);
 
-//connectWorld.factory('MasterData', function($firebase) {
-//    var ref = new Firebase("https://luminous-heat-6155.firebaseio.com/Users");
-//    var sync = $firebase(ref);
-//    var usersData = sync.$asArray();
-//    
-//    var refGroups = new Firebase("https://luminous-heat-6155.firebaseio.com/Groups");
-//    var syncGroups = $firebase(refGroups);
-//    var groupsData = syncGroups.$asArray();
-//    
-//    var refEvents = new Firebase("https://luminous-heat-6155.firebaseio.com/EventsList");
-//    var syncEvents = $firebase(refEvents);
-//    var eventsData = syncEvents.$asArray();
-//    
-//    var loginUser = "";
-//    
-//  return {
-//    getUsersData: function() {
-//      return usersData;
-//    },
-//    getGroupsData: function() {
-//      return groupsData;
-//    },
-//    getEventsData: function() {
-//      return eventsData;
-//    },
-//    setLoginUser: function(user) {
-//      loginUser = user;
-//    },
-//    getLoginUser: function() {
-//      return loginUser;
-//    }
-//  };
-//});
-
-connectWorld.controller('loginController', function ($scope, $firebase, $rootScope) {
-
-    var ref = new Firebase("https://luminous-heat-6155.firebaseio.com/Users");
-    var sync = $firebase(ref);
-    $rootScope.usersData = sync.$asArray();
-
-    var refGroups = new Firebase("https://luminous-heat-6155.firebaseio.com/Groups");
-    var syncGroups = $firebase(refGroups);
-    $rootScope.groupsData = syncGroups.$asArray();
-
-    var refEvents = new Firebase("https://luminous-heat-6155.firebaseio.com/EventsList");
-    var syncEvents = $firebase(refEvents);
-    $rootScope.eventsData = syncEvents.$asArray();
-
-    $scope.errorMsg = "";
-    
-    $scope.login = function () {
-        for (var i = 0; i < $scope.usersData.length; i++) {
-            // changed by savanna
-            //if ($scope.username == $scope.usersData[i].id && $scope.password == $scope.usersData[i].password) {
-             if (1) { 
-                console.log("Login success");
-//                $rootScope.thisUser = $scope.username;
-                //changing rootscope.thisUser and scope.user to string without DOT EG: mxchua.2012 = mxchua2012
-                $scope.username = "savanna";
-                $rootScope.thisUserWDot = $scope.username;
-                $rootScope.thisUser = $scope.username.replace(/\W/g, '');
-                $scope.username = $scope.username.replace(/\W/g, '');
-                console.log($rootScope.thisUser);
-
-                var refUser = new Firebase("https://luminous-heat-6155.firebaseio.com/Users/" + $scope.username);
-                var syncUser = $firebase(refUser);
-                $rootScope.thisUserData = syncUser.$asObject();
-
-                var refUserCalendar = new Firebase("https://luminous-heat-6155.firebaseio.com/Users/" + $scope.username + "/calendar");
-                var syncUserCalendar = $firebase(refUserCalendar);
-                $rootScope.thisCalendarData = syncUserCalendar.$asArray();
-
-                var refUserGroups = new Firebase("https://luminous-heat-6155.firebaseio.com/Users/" + $scope.username + "/groups");
-                var syncUserGroups = $firebase(refUserGroups);
-                $rootScope.thisGroupsData = syncUserGroups.$asArray();
-
-                $rootScope.thisGroupsObjData = [];
-
-                $rootScope.thisCalendarData.$loaded().then(function () {
-                    console.log("this calendar data loaded");
-
-                    $rootScope.thisGroupsData.$loaded().then(function () {
-                        // go match the groups in this user to the group objects
-                        for (var i = 0; i < $rootScope.thisGroupsData.length; i++) {
-
-                            for (var j = 0; j < $rootScope.groupsData.length; j++) {
-                                if ($rootScope.thisGroupsData[i].$value == $rootScope.groupsData[j].id) {
-//                                    console.log($rootScope.groupsData[j]);
-                                    $rootScope.thisGroupsObjData.push($rootScope.groupsData[j]);
-                                    break;
-                                }
-                            }
-                        }
-                        window.location = 'index.html#/events';
-                    });
-                });
-                return;
+connectWorld.controller('loginController',
+    function ($scope, $location) {
+        $scope.login = function() {
+            if ($scope.email === 'timgoh@hotmail.com' && $scope.password === '123456') {
+                window.location.href = 'index.html#/exploreBuddy';
+            } else {
+                $scope.errorMsg = "Ops! Incorrect email and/or password";
             }
         }
-
-        $scope.errorMsg = "Opps! Wrong username and/or password.";
-    };
 });
 
 connectWorld.controller('logOutController', function ($scope) {
     //setTimeout(function(){ window.location = "index.html#/login"; }, 5000);
 });
-

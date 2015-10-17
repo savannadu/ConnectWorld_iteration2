@@ -2,20 +2,29 @@
 
 <!--Page Title-->
 <div id="navbar-template">
-    <div id="page-title"> Timmy Goh Zy </div>
+    <div id="page-title">
+        <a href="#" onclick="window.history.go(-1); return false;">
+            <i class=" fa fa-arrow-circle-left" style="color: white"></i>
+        </a>
+        Caleb Castro
+    </div>
+
 </div>
 
 <br/>
 
-<div style="height: 45%; padding-left: 4em;">
-    <div style="z-index: auto; position: relative;">
-        <img style="position: absolute; z-index: 5; width: 80%;" src="./img/timmygoh.jpg"/>
+<div style="height: 45%; padding-left: 2em;">
+    <div style="z-index: auto;">
+        <img style="position: absolute; z-index: 5; width: 80%;" src="./img/caleb.jpg"/>
         <span style="position: absolute; z-index: 10; top:11%; right: 3%;">
-            <a ng-href="#/editMyProfile">
-                <button class="btn btn-primary sign-in-button" style="background-color: #FEA900; width:100%;">
-                    EDIT
-                </button>
-            </a>
+            <button class="btn" style="display: block;background-color: #009898; width:100%;" id="buddy"
+                    on-click="alert('This function is not implemented for Caleb')">
+                BUDDY UP
+            </button>
+            <button class="btn btn-primary sign-in-button" style="background-color: #FEA900; width:100%;"
+                    on-click="alert('This function is not implemented for Caleb')">
+                CHAT
+            </button>
         </span>
     </div>
     <br/>
@@ -23,7 +32,7 @@
 
 <center>
     <!--container to add content -->
-    <div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 12em; font-size: 18px" ng-controller="myProfileController">
+    <div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 15em; font-size: 18px" ng-controller="calebProfileController">
         <div id="basic-info" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
             <table style="width: 100%">
                 <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">

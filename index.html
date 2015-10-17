@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="css/site.min.css">
         <link rel="stylesheet" href="css/generalTemplate.css">
         <link href="css/custom.css" rel="stylesheet">
+        <link href="css/myCommunity.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/ng-tags-input.min.css">
         <link href="css/animate.css" rel="stylesheet" type="text/css"/>
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <!-- jQuery -->
@@ -19,6 +21,7 @@
         <!--angular-->
         <script src="js/angular.min.js"></script>
         <script src="js/angular-route.js"></script>
+        <script type="text/javascript" src="js/ng-tags-input.min.js"></script>
 
         <!-- jQuery scroll to panel -->
         <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
@@ -30,11 +33,13 @@
         <!--custom script-->
         <script src="js/script.js"></script>
         <script src="js/binhscript.js"></script>
+        <script src="js/savannascript.js"></script>
+
 
 
         <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
         <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
-        
+
         <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
 
     </head>
@@ -44,30 +49,30 @@
         <div style="padding:0" ng-view></div>
 
         <!--Navigation bar at footer-->
-        <div class="footer" id="footer-template">
+        <div class="footer" id="footer-template" ng-controller="navigationBarBottom">
                 <a ng-href="#/exploreBuddy">
-                    <div id="footer-navbar-icons1">
+                    <div id="footer-navbar-icons1" ng-click="explore()" style="color: darkorange">
                         <i class="fa fa-user "></i>
                     </div>
                 </a>
                 <a ng-href="#/exploreCommunity">
-                    <div id="footer-navbar-icons2">
+                    <div id="footer-navbar-icons2" ng-click="community()">
                         <i class=" fa fa-users "></i>
                     </div>
                 </a>
                 <a ng-href="#/message">
-                    <div id="footer-navbar-icons3">
+                    <div id="footer-navbar-icons3" ng-click="message()">
                         <i class="fa fa-comments"></i>
                     </div>
                 </a>
 
                 <a ng-href="#/notification">
-                    <div id="footer-navbar-icons4">
+                    <div id="footer-navbar-icons4" ng-click="notification()">
                         <i class="fa fa-bell"></i>
                     </div>
                 </a>
                 <div class="dropup">
-                    <div id="footer-navbar-icons5">
+                    <div id="footer-navbar-icons5" ng-click="more()">
                         <div class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-list"></i>
                         </div>

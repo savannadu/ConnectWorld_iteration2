@@ -1,4 +1,59 @@
+<link rel="stylesheet" href="css/signup.css">
+
 <!--Page Title-->
 <div id="navbar-template">
-    <div id="page-title"> Create a Community </div>
+    <div id="page-title">
+        <a ng-href="#/myCommunity" style="color: white;">
+            <i class="fa fa-arrow-circle-left"></i>
+        </a>
+        Create a Community
+    </div>
+</div>
+
+<br/>
+
+<center><img style="max-width: 80%;" src="./img/groupuser.png" onclick="alert('This function is not implemented')"/></center>
+
+
+<div class="container-input" style="background-color: white;padding:1em; margin:0; font-size: 18px;">
+
+    <div class="left-inner-addon">
+        <i class="fa fa-users"></i>
+        <input id="name" type="text" class="form-control input-lg" placeholder="Group name"/>
+    </div>
+    <br/>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-map-marker"></i>
+        <input id="location" type="text" class="form-control input-lg" placeholder="Location"/>
+    </div>
+    <br/>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-language"></i>
+        <input id="languageSpoken" type="text" class="form-control input-lg" placeholder="Language spoken"/>
+    </div>
+    <br/>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-heart" style="z-index: 100;"></i>
+        <tags-input ng-model="tags"></tags-input>
+    </div>
+    <br/>
+
+    <div class="left-inner-addon">
+        <i class="fa fa-quote-left"></i>
+        <textarea rows="4" cols="50" id="about" class="form-control input-lg" style="padding-left: 1.8em;"
+                  placeholder="About the community">We are a community all about in Korean drama and movies. Join us and practice with locals and share a common interest with you. Speak like a local!
+        </textarea>
+    </div>
+
+    <br/><br/>
+
+    <a ng-href="#/kDramaCraze">
+        <button id="general-button" class="btn btn-primary sign-in-button" onclick="alert('K-Drama Craze group has successfully been created')"> CREATE A COMMUNITY</button>
+    </a>
+
+    <br/><br/><br/><br/>
+
 </div>

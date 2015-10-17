@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="css/myProfile.css">
+<!--Page Title-->
+<div id="navbar-template">
+    <div id="page-title">
+        Timmy Goh Zy
+    </div>
+</div>
+
+<br/>
+
+<div style="height: 45%; padding-left: 2.5em;">
+    <div style="z-index: auto;">
+        <img style="position: absolute; z-index: 5; max-width: 80%;" src="./img/timmygoh.jpg" onclick="alert('This function is not implemented')"/>
+        <span style="position: absolute; z-index: 10; top:11%; right: 3%;">
+            <a ng-href="#/myProfile">
+                <button class="btn btn-primary sign-in-button" style="background-color: #FEA900; width:100%;" onclick="alert('This function is not implemented. Profile will not be updated.')">
+                    DONE
+                </button>
+            </a>
+        </span>
+        <span style="position: absolute; z-index: 10; top:50%; font-size: 18px; font-style: italic; color: white; padding-left: 1em;">Click to upload your profile pic</span>
+    </div>
+    <br/>
+</div>
+
+<center>
+    <!--container to add content -->
+    <div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 15em; font-size: 18px" ng-controller="myProfileController">
+        <div id="basic-info" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Basic Information
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <div class="row">
+                            <span class="category-display-edit">Gender: </span>
+                            <span class="details-display-edit"> {{basicInfo.gender}} </span>
+                        </div>
+
+                        <div class="row">
+                            <span class="category-display-edit">Birthday: </span>
+                            <span class="details-display">
+                                <input ng-model="basicInfo.birthday" type="date" class="edit-input" style="line-height: normal"/>
+                            </span>
+                        </div>
+
+                        <div class="row">
+                            <span class="category-display-edit">Nationality: </span>
+                            <span class="details-display">
+                                <input ng-model="basicInfo.nationality" type="text" class="edit-input"/>
+                            </span>
+                        </div>
+
+                        <div class="row">
+                            <span class="category-display-edit">Location: </span>
+                            <span class="details-display">
+                                <input ng-model="basicInfo.location" type="text" class="edit-input"/>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="language" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Language
+                </td></tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <div class="row">
+                            <span class="category-display-edit">Proficient: </span>
+                            <span class="details-display">
+                                <input ng-model="language.proficient" type="text" class="edit-input"/>
+                            </span>
+                        </div>
+
+                        <div class="row">
+                            <span class="category-display-edit">Interested : </span>
+                            <span class="details-display">
+                                <input ng-model="language.interested" type="text" class="edit-input"/>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="interest-tags" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table>
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    Interest Tags
+                </td></tr>
+                <tr>
+                    <td style="text-align: left; padding: 1em;">
+                        <tags-input ng-model="tags" >
+                        </tags-input>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="about" style="border: 1px solid; margin-top: 1.5em; margin-bottom: 1.5em;">
+            <table style="width: 100%;">
+                <tr><td style="padding-left:1em;font-weight: bold;font-size: 22px; background-color: #eaeaea">
+                    About Myself
+                </td></tr>
+                <tr>
+                    <td style="text-align: left; padding: 1em;">
+                        <textarea rows="8" cols="50" ng-model="basicInfo.mySelf" class="form-control input-lg" style="padding-left: 1.8em;"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <!--button style="display: block; width: 100%;background-color:#FE7300" type="button" class="btn btn-primary sign-in-button" ng-click="login()">Sign In</button-->
+
+    <br/>
+    <br/>
+    <br/>
+
+</center>
