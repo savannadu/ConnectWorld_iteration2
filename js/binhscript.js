@@ -5,9 +5,9 @@
 connectWorld.controller('exploreBuddyController', function ($scope, $http) {
     $scope.languageSearch = 'Add a language';
     $scope.interestSearch= 'Add an interest';
-    $scope.loadLanguages = function(query) {
-
-    }
+    $scope.loadTags = function(query) {
+        return $http.get('tags.json');
+    };
 });
 
 connectWorld.controller('kDramaCrazeController', function ($scope) {
