@@ -12,27 +12,30 @@
 
 <br/>
 
-<center><img style="max-width: 80%; left:10%;" src="./img/koreandrama.JPG"/></center>
-<br/>
-
-
+<div style="height: 45%; padding-left: 2.5em;">
+    <div style="z-index: auto;">
+        <img style="position: absolute; z-index: 5; width: 80%;" src="./img/koreandrama.JPG"/>
+        <span style="position: absolute; z-index: 10; top:12%; right: 3%;">
+            <button class="btn btn-primary sign-in-button" style="font-weight:bold;background-color: #FEA900; width:100%;"
+                    onclick='alert("This function is not implemented")'>
+                LEAVE
+            </button>
+        </span>
+    </div>
+    <br/>
+</div>
 
 <center>
-    <div class="container-input" style="background-color: white;padding:1em; margin:0; font-size: 18px" ng-controller="japaneseCooksController">
+    <div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 12em; font-size: 18px" ng-controller="japaneseCooksController">
 
-        <div class="col-xs-4" style="padding: 0;">
+        <div class="col-xs-6" style="padding: 0;">
             <button id="groupinfo-button" class="btn btn-primary sign-in-button" ng-click="showGroupInfo()">
                 GROUP INFO
             </button>
         </div>
-        <div class="col-xs-4" style="padding: 0;">
+        <div class="col-xs-6" style="padding: 0;">
             <button id="member-button"class="btn btn-primary sign-in-button"  ng-click="showMembers()">
                 MEMBERS (1)
-            </button>
-        </div>
-        <div class="col-xs-4" style="padding: 0;">
-            <button id="join-button" class="btn btn-primary sign-in-button" onclick='alert("This function is not implemented")'>
-                LEAVE
             </button>
         </div>
 
@@ -73,11 +76,12 @@
                             <span style="font-weight: bold; font-size: 20px; display: inline-block;">
                                 Love 911 Movie Session
                                 <button class="btn" style="display: inline-block;padding-left:15px;background-color: darkblue;"
-                                        onclick="alert('This fucntion is not implemented')"> Delete </button>
+                                        onclick="alert('This function is not implemented')"> Delete </button>
                             </span>
                             <br/>
                             <br/><strong>Interests: </strong> Movie, Romance, Story, Tea, Popcorn
                             <br/><strong>Date: </strong>13/11/2015
+                            <br/><strong>Location: </strong>Central, Singapore
                             <span class="read-more-target">
                         <br/><strong>Organizer: </strong>Timmy Goh Zy
                         <br/><strong>Member: </strong>Timmy Goh Zy
@@ -126,7 +130,6 @@
                 <tr>
                     <td style="padding-top: 1em; text-align: left; padding-left: 0.5em;">
                         <br/><strong>Name: </strong>K-Drama Craze
-                        <br/><strong>Location: </strong>North-East  Singapore
                         <br/><strong>Language: </strong>Korean
                         <br/><strong>Interest Tags: </strong>Drama, Movie
                         <br/><strong>Group Description: </strong>We are a community all about in Korean drama and movies. Join us and practice with locals and share a common interest with you. Speak like a local!

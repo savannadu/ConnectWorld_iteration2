@@ -12,29 +12,32 @@
 
 <br/>
 
-<center><img style="max-width: 80%; left:10%;" src="./img/japanesefood.jpg"/></center>
-<br/>
-
+<div style="height: 45%; padding-left: 2.5em;">
+    <div style="z-index: auto;">
+        <img style="position: absolute; z-index: 5; width: 80%;" src="./img/japanesefood.jpg"/>
+        <span style="position: absolute; z-index: 10; top:12%; right: 3%;">
+            <a ng-href="#/japaneseCooksJoined">
+                <button class="btn btn-primary sign-in-button" style="font-weight:bold;background-color: #009898; width:100%;" onclick='alert("You are now a member of Japanese Cooks group")'>
+                    JOIN
+                </button>
+            </a>
+        </span>
+    </div>
+    <br/>
+</div>
 
 <center>
-    <div class="container-input" style="background-color: white;padding:1em; margin:0; font-size: 18px" ng-controller="japaneseCooksController">
+    <div class="container-input" style="background-color: white;padding:1em; margin:0; margin-top: 12em; font-size: 18px" ng-controller="japaneseCooksController">
 
-        <div class="col-xs-4" style="padding: 0;">
+        <div class="col-xs-6" style="padding: 0;">
             <button id="groupinfo-button" class="btn btn-primary sign-in-button" ng-click="showGroupInfo()">
                 GROUP INFO
             </button>
         </div>
-        <div class="col-xs-4" style="padding: 0;">
+        <div class="col-xs-6" style="padding: 0;">
             <button id="member-button"class="btn btn-primary sign-in-button"  ng-click="showMembers()">
                 MEMBERS (15)
             </button>
-        </div>
-        <div class="col-xs-4" style="padding: 0;">
-            <a ng-href="#/japaneseCooksJoined">
-                <button id="join-button" class="btn btn-primary sign-in-button" onclick='alert("You are now a member of Japanese Cooks group")'>
-                    JOIN
-                </button>
-            </a>
         </div>
 
         <br/>
@@ -58,12 +61,13 @@
                         <p class="read-more-wrap" style="margin-bottom: 0;">
                             <span style="font-weight: bold; font-size: 20px; display: block">
                                 Traditional Food Hunt
-                                <button class="btn" style="display: inline-block;padding-left:15px;background-color: #009898;"
-                                        onclick='alert("You have to join the community first before joining this event")'> Join </button>
+                                <button class="btn" style="float: right; margin-right:1px; display: inline-block;padding-left:15px;background-color: #009898;"
+                                        onclick='alert("You have to join the community first before joining this event")'> Participate </button>
                             </span>
                             <br/>
                             <br/><strong>Interests: </strong>Cooking, Food
                             <br/><strong>Date: </strong>13/11/2015
+                            <br/><strong>Location: </strong>Central, Singapore
                             <span class="read-more-target">
                         <br/><strong>Organizer: </strong>Makuro Tomosoke
                         <br/><strong>Member: </strong>Gorou Arakaki, Aiko Hamada, Hikaru Ishibashi, Katsurou Ito, Kichiro Naito, Kokoro Muramoto, Makuro Tomosoke
@@ -79,12 +83,13 @@
                         <p class="read-more-wrap" style="margin-bottom: 0;">
                             <span style="font-weight: bold; font-size: 20px; display: block">
                                 Yummy Sushi
-                                <button class="btn" style="display: inline-block;padding-left:15px;background-color: #009898;"
-                                        onclick="alert('You have to join the community first before joining this event')"> Join </button>
+                                <button class="btn" style="float: right; margin-right:1px; display: inline-block;padding-left:15px;background-color: #009898;"
+                                        onclick="alert('You have to join the community first before joining this event')"> Participate </button>
                             </span>
                             <br/>
                             <br/><strong>Interests: </strong>Food, Cooking, Book
                             <br/><strong>Date: </strong>17/10/2015
+                            <br/><strong>Location: </strong>Central, Singapore
                             <span class="read-more-target">
                         <br/><strong>Organizer: </strong>Sibusha Shibata
                         <br/><strong>Member: </strong>Hakura Ikeda, Sakurai Sato,Alan Tan, Adam Chua, Le Vu Dai, Hosana Onggo, Ivan Wongso
@@ -106,6 +111,7 @@
                         <br/>
                         <br/><strong>Interests: </strong>Movie, Songs
                         <br/><strong>Date: </strong>13/11/2015
+                        <br/><strong>Location: </strong>Central, Singapore
                         <br/><strong>Organizer: </strong>Aiko Hamada
                         <br/><strong>Member: </strong>Gorou Arakaki, Aiko Hamada, Hikaru Ishibashi, Katsurou Ito
                         <br/><strong>Activity description: </strong>Get to know each other better by watching the movie "Attack of titans" and discuss about the movie in teams.<br/>
@@ -118,6 +124,7 @@
                         <br/>
                         <br/><strong>Interests: </strong>Food, Design, Cooking
                         <br/><strong>Date: </strong>13/12/2015
+                        <br/><strong>Location: </strong>Central, Singapore
                         <br/><strong>Organizer: </strong>Hakura Ikeda
                         <br/><strong>Member: </strong>Sibusha Shibata, Sakurai Sato,Alan Tan, Adam Chua, Le Vu Dai, Hosana Onggo, Ivan Wongso
                         <br/><strong>Activity description: </strong>Bento is a single-portion takeout or home-packed meal common in Japanese cuisine. A traditional bento holds rice, fish or meat, with pickled or cooked vegetables, usually in a box-shaped container.<br/>
@@ -362,7 +369,6 @@
                 <tr>
                     <td style="padding-top: 1em; text-align: left; padding-left: 0.5em;">
                         <br/><strong>Name: </strong>Japanese Cooks
-                        <br/><strong>Location: </strong>Central, Singapore
                         <br/><strong>Language: </strong>Japanese
                         <br/><strong>Interest Tags: </strong>Cooking, Japanese food
                         <br/><strong>Group Description: </strong>Japanese food has become very popular outside Japan over the years.  One can find Japanese restaurants almost everywhere in the world. Our goal is to show how simple it is to make Japanese meals at home.  We create and test our recipes to be as easy as possible, yet as tasty and authentic as what we eat at home. The only rule we have is to speak only Japanese when you come.

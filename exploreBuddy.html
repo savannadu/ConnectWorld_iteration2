@@ -16,20 +16,29 @@
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog" aria-labelledby="gridSystemModalLabel" style="font-size: 18px;">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" style="padding-top:4em;">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
+                    <strong>Name </strong><br/>
+                    <i class="fa fa-user" style="z-index: 50;position: absolute; padding-top: 1em; padding-left: 1em;"></i>
+                    <input ng-model="fullname" type="text" style="padding-left: 2em;" class="form-control input-lg" placeholder="Enter a name"/>
+
+
                     <strong>Language </strong><br/>
-                    <i class="fa fa-search" style="z-index: 50;position: absolute; padding-top: 1em; padding-left: 1em;"></i>
-                    <tags-input ng-model="tags.language" "></tags-input>
+                    <i class="fa fa-language" style="z-index: 50;position: absolute; padding-top: 1em; padding-left: 1em;"></i>
+
+                    <tags-input ng-model="languages" placeholder="{{languageSearch}}">
+                    </tags-input>
+
 
                     <strong>Interest </strong><br/>
-                    <i class="fa fa-search" style="z-index: 50;position: absolute; padding-top: 1em; padding-left: 1em;"></i>
-                    <tags-input ng-model="tags.interest" "></tags-input>
+                    <i class="fa fa-heart" style="z-index: 50;position: absolute; padding-top: 1em; padding-left: 1em;"></i>
+                    <tags-input ng-model="tags.interest" placeholder="{{interestSearch}}"></tags-input>
+
 
                     <strong>Gender</strong>
                     <br/>

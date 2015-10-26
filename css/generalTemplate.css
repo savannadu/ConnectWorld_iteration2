@@ -1,7 +1,7 @@
 #footer-navbar-icons1, #footer-navbar-icons2, #footer-navbar-icons3, #footer-navbar-icons4, #footer-navbar-icons5{
     padding:0;
     border: 0;
-    font-size:2.5em;
+    /*font-size:2.5em;*/
     text-align: center;
     vertical-align: middle;
     position: relative;
@@ -73,4 +73,12 @@
     background-color: #FE7300;
     height: 45%;
     font-size: 18px
+}
+
+.footer i {
+    font-size: 24px;
+}
+
+.footer .nav-text {
+    font-size: 10px;
 }

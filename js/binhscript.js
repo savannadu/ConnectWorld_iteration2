@@ -2,8 +2,12 @@
  * Created by tbnguyen.2012 on 2/10/2015.
  */
 
-connectWorld.controller('exploreBuddyController', function ($scope) {
+connectWorld.controller('exploreBuddyController', function ($scope, $http) {
+    $scope.languageSearch = 'Add a language';
+    $scope.interestSearch= 'Add an interest';
+    $scope.loadLanguages = function(query) {
 
+    }
 });
 
 connectWorld.controller('kDramaCrazeController', function ($scope) {
@@ -131,7 +135,9 @@ connectWorld.controller('calebProfileController', function ($scope) {
 });
 
 connectWorld.controller('exploreCommunityController', function ($scope) {
-
+    $scope.languageSearch = 'Add a language';
+    $scope.interestSearch= 'Add an interest';
+    $scope.groupnameSearch= 'Add a group name';
 });
 
 connectWorld.controller('createCommunityController', function ($scope) {
@@ -247,6 +253,7 @@ connectWorld.controller('signUpController',
 
 connectWorld.controller('signUpController2',
     function ($scope, $location) {
+        $scope.somePlaceholder = 'Interests';
         $scope.signUp2 = function() {
             if ($scope.fullname === undefined | $scope.fullname === null |
                 $scope.birthday === undefined | $scope.birthday === null |
@@ -263,6 +270,7 @@ connectWorld.controller('signUpController2',
                 }
             }
         }
+
 
 });
 
