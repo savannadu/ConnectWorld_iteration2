@@ -134,10 +134,13 @@ connectWorld.controller('calebProfileController', function ($scope) {
 
 });
 
-connectWorld.controller('exploreCommunityController', function ($scope) {
+connectWorld.controller('exploreCommunityController', function ($scope, $http) {
     $scope.languageSearch = 'Add a language';
     $scope.interestSearch= 'Add an interest';
     $scope.groupnameSearch= 'Add a group name';
+    $scope.loadTags = function(query) {
+        return $http.get('tags.json');
+    };
 });
 
 connectWorld.controller('createCommunityController', function ($scope) {
