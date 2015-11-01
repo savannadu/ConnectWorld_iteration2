@@ -28,10 +28,22 @@
 
     <div class="left-inner-addon">
         <i class="fa fa-calendar"></i>
-        <input ng-model="eventday" type="date" class="form-control input-lg" placeholder="Event day dd/mm/yyyy"/>
+        <input ng-model="eventday" type="text" class="form-control input-lg" placeholder="Event day dd/mm/yyyy"/>
     </div>
     <br/>
 
+    <div class="left-inner-addon">
+        <i class="fa fa-map-marker"></i>
+        <select id="location" class="form-control input-lg" placeholder="Location">
+            <option> Central Singapore </option>
+            <option> East Singapore </option>
+            <option> North Singapore </option>
+            <option> North-East Singapore </option>
+            <option> West Singapore </option>
+        </select>
+    </div>
+    <br/>
+    
     <div class="left-inner-addon">
         <i class="fa fa-quote-left"></i>
         <textarea rows="4" cols="50" id="about" class="form-control input-lg" style="padding-left: 1.8em;"

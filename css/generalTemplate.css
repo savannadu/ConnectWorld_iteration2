@@ -36,13 +36,6 @@
     z-index: 100;
 }
 
-@font-face {
-    font-family: 'forte', 'Roboto-Regular';
-    src: url('../fonts/FORTE.TTF');
-    src: url('../fonts/Roboto-Regular.ttf');
-    font-size:2.5em;
-}
-
 #page-title{
     color:white;
     font-weight: bold;

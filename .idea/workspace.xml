@@ -2,7 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d18183b8-96e2-4e5b-834f-6bd3534efb7a" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\angularicons\angularicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\angularicons\angularicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\fonts\FORTE.TTF" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\fonts\Lobster 1.4.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\fonts\Roboto-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\fonts\angularicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\fonts\angularicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\check_flat\default.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\check_flat\default.psd" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\cleopatra.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\greenprofilepic.PNG" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\miami.JPG" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\img\smueetcorrect.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\js\jquery.easing.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\js\jquery.fs.selecter.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\js\jquery.fs.stepper.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\js\jquery.scrollTo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\js\jquery.scrollsnap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\js\jquery.scrollstop.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\js\npm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\animated.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\MAMP\htdocs\ConnectWorld_iteration2\scss\font-awesome.scss" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/anime.JPG" afterPath="$PROJECT_DIR$/img/anime.JPG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/cosplay.JPG" afterPath="$PROJECT_DIR$/img/cosplay.JPG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/frenchfood.JPG" afterPath="$PROJECT_DIR$/img/frenchfood.JPG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/jpop.JPG" afterPath="$PROJECT_DIR$/img/jpop.JPG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/createCommunity.html" afterPath="$PROJECT_DIR$/createCommunity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/createEvent.html" afterPath="$PROJECT_DIR$/createEvent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exploreBuddy.html" afterPath="$PROJECT_DIR$/exploreBuddy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exploreCommunity.html" afterPath="$PROJECT_DIR$/exploreCommunity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forgotpassword.html" afterPath="$PROJECT_DIR$/forgotpassword.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/generalTemplate.css" afterPath="$PROJECT_DIR$/css/generalTemplate.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/japaneseCooks.html" afterPath="$PROJECT_DIR$/japaneseCooks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/japaneseCooksJoined.html" afterPath="$PROJECT_DIR$/japaneseCooksJoined.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kDramaCraze.html" afterPath="$PROJECT_DIR$/kDramaCraze.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kDramaCrazeCreateEvent.html" afterPath="$PROJECT_DIR$/kDramaCrazeCreateEvent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myBuddy.html" afterPath="$PROJECT_DIR$/myBuddy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup.html" afterPath="$PROJECT_DIR$/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup2.html" afterPath="$PROJECT_DIR$/signup2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/stellaDB.js" afterPath="$PROJECT_DIR$/js/stellaDB.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ConnectWorld_iteration2.iws" />
@@ -24,33 +96,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="binhscript.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/binhscript.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="japaneseCooks.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/japaneseCooks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="108" selection-start-line="19" selection-start-column="108" selection-end-line="19" selection-end-column="108" />
+            <state vertical-scroll-proportion="-4.8">
+              <caret line="371" column="74" selection-start-line="371" selection-start-column="24" selection-end-line="371" selection-end-column="74" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#0;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#a#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#td#0;n#tr#0;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,22 +113,9 @@
       <file leaf-file-name="japaneseCooksJoined.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/japaneseCooksJoined.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="121" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="121" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#a#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-5.109091">
+              <caret line="403" column="74" selection-start-line="403" selection-start-column="74" selection-end-line="403" selection-end-column="74" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,17 +123,9 @@
       <file leaf-file-name="kDramaCraze.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kDramaCraze.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="121" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="121" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-4.8">
+              <caret line="114" column="45" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,43 +133,41 @@
       <file leaf-file-name="kDramaCrazeCreateEvent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kDramaCrazeCreateEvent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.461538">
-              <caret line="78" column="70" selection-start-line="78" selection-start-column="70" selection-end-line="78" selection-end-column="70" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1790235">
-              <caret line="74" column="64" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
+            <state vertical-scroll-proportion="-6.0363636">
+              <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makuroProfile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/makuroProfile.html">
+      <file leaf-file-name="createCommunity.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/createCommunity.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="16" selection-start-line="29" selection-start-column="12" selection-end-line="33" selection-end-column="16" />
+            <state vertical-scroll-proportion="-17.346153">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kDramaCrazeEventCreating.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kDramaCrazeEventCreating.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.730769">
+              <caret line="44" column="9" selection-start-line="16" selection-start-column="4" selection-end-line="44" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createEvent.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/createEvent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9415808">
+              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,24 +187,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/stellaDB.js" />
         <option value="$PROJECT_DIR$/notification.html" />
-        <option value="$PROJECT_DIR$/myBuddy.html" />
         <option value="$PROJECT_DIR$/editMyProfile.html" />
         <option value="$PROJECT_DIR$/exploreCommunitySearchResult.html" />
-        <option value="$PROJECT_DIR$/createCommunity.html" />
         <option value="$PROJECT_DIR$/kDramaCrazeEventCreating.html" />
         <option value="$PROJECT_DIR$/js/ng-tags-input.min.js" />
-        <option value="$PROJECT_DIR$/signup2.html" />
-        <option value="$PROJECT_DIR$/exploreCommunity.html" />
         <option value="$PROJECT_DIR$/js/languages.json" />
+        <option value="$PROJECT_DIR$/css/generalTemplate.css" />
+        <option value="$PROJECT_DIR$/forgotpassword.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/signup.html" />
+        <option value="$PROJECT_DIR$/signup2.html" />
+        <option value="$PROJECT_DIR$/myBuddy.html" />
+        <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/exploreBuddy.html" />
+        <option value="$PROJECT_DIR$/exploreCommunity.html" />
         <option value="$PROJECT_DIR$/js/binhscript.js" />
+        <option value="$PROJECT_DIR$/js/stellaDB.js" />
         <option value="$PROJECT_DIR$/japaneseCooks.html" />
         <option value="$PROJECT_DIR$/japaneseCooksJoined.html" />
         <option value="$PROJECT_DIR$/kDramaCraze.html" />
         <option value="$PROJECT_DIR$/kDramaCrazeCreateEvent.html" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/createCommunity.html" />
+        <option value="$PROJECT_DIR$/createEvent.html" />
       </list>
     </option>
   </component>
@@ -213,7 +250,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -246,8 +282,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectWorld_iteration2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectWorld_iteration2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectWorld_iteration2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectWorld_iteration2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -334,6 +399,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -345,7 +411,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -365,91 +430,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/japaneseCooksJoined.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="140" column="27" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#a#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brandonProfile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calebProfile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/binhscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exploreBuddy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="138" column="10" selection-start-line="138" selection-start-column="10" selection-end-line="138" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/npm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/stellaDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/japaneseCooksJoined.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="140" column="27" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#a#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/brandonProfile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -484,18 +464,18 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="140" column="27" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="27" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#a#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#a#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#1;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -599,24 +579,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notification.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="85" column="69" selection-start-line="85" selection-start-column="69" selection-end-line="85" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exploreCommunitySearchResult.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6426117">
           <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myBuddy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6718213">
-          <caret line="23" column="166" selection-start-line="23" selection-start-column="166" selection-end-line="23" selection-end-column="166" />
         </state>
       </provider>
     </entry>
@@ -648,52 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/npm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/stellaDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5805921">
-          <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kDramaCrazeEventCreating.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33273056">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/createCommunity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33273056">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/ng-tags-input.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.96428573">
           <caret line="0" column="1902" selection-start-line="0" selection-start-column="1902" selection-end-line="0" selection-end-column="1902" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/signup2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9636364">
-          <caret line="70" column="9" selection-start-line="66" selection-start-column="4" selection-end-line="70" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -704,119 +628,242 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exploreCommunity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.4363637">
-          <caret line="34" column="124" selection-start-line="34" selection-start-column="124" selection-end-line="34" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exploreBuddy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/makuroProfile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="16" selection-start-line="29" selection-start-column="12" selection-end-line="33" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/generalTemplate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forgotpassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5">
+          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.84615386">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1538463">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/moment.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.6666665">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBuddy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.230769">
+          <caret line="24" column="114" selection-start-line="24" selection-start-column="114" selection-end-line="24" selection-end-column="114" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#a#0;n#div#0;n#div#1;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#1;n#div#0;n#div#1;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1611842">
+          <caret line="212" column="22" selection-start-line="212" selection-start-column="22" selection-end-line="212" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notification.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8694158">
+          <caret line="85" column="69" selection-start-line="85" selection-start-column="69" selection-end-line="85" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ConnectWorld-App1/js/stellaDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4539474">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/binhscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.50949913">
+          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exploreBuddy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31103075">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="n#span#5;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#span#6;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#span#7;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#span#8;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#span#9;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exploreCommunity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12371134">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#span#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#span#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#span#4;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#span#5;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#span#6;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#span#7;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#span#8;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/stellaDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3848684">
+          <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/japaneseCooks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="108" selection-start-line="19" selection-start-column="108" selection-end-line="19" selection-end-column="108" />
+        <state vertical-scroll-proportion="-4.8">
+          <caret line="371" column="74" selection-start-line="371" selection-start-column="24" selection-end-line="371" selection-end-column="74" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#0;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#a#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#td#0;n#tr#0;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myCommunity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.087628864">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/japaneseCooksJoined.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="121" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="121" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#a#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#span#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#p#0;n#td#0;n#tr#2;n#table#0;n#div#4;n#div#0;n#center#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-5.109091">
+          <caret line="403" column="74" selection-start-line="403" selection-start-column="74" selection-end-line="403" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kDramaCraze.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="121" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="121" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-4.8">
+          <caret line="114" column="45" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kDramaCrazeCreateEvent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.461538">
-          <caret line="78" column="70" selection-start-line="78" selection-start-column="70" selection-end-line="78" selection-end-column="70" />
+        <state vertical-scroll-proportion="-6.0363636">
+          <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createCommunity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.346153">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kDramaCrazeEventCreating.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.730769">
+          <caret line="44" column="9" selection-start-line="16" selection-start-column="4" selection-end-line="44" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#center#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/createEvent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1790235">
-          <caret line="74" column="64" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.9415808">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
           <folding />
         </state>
       </provider>

@@ -42,7 +42,10 @@ if (sessionStorage.getItem("newBuddiesList")) {
 
 
 var commUpdates = [
-
+    ["K-Drama Craze", "img/koreandrama.JPG", "Stella has just joined your community"],
+    ["Japanese Cooks", "img/japanesefood.jpg", "Upcoming event: YummySushi is happening tonight"],
+    ["Japanese Cooks", "img/japanesefood.jpg", "New event: TasteTampopo is created by Stella"],
+    ["K-Drama Craze", "img/koreandrama.JPG", "Stella join your event Love 911 Movie Session"],
 ];
 
 // CHAT
